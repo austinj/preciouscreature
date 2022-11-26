@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buttons - Focus Theme</title>
+  <meta name="description" content="Focus is a clean portfolio theme for Bootstrap.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="../assets/img/favicon.png">
+
+  <!-- Goole fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,600;1,400&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Material icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <!-- PrismJS theme -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism-okaidia.min.css">
+  
+
+  <!-- JS -->
+  <script src="../assets/js/bootstrap.js" defer></script>
+  <script src="../assets/js/lightbox.js" defer></script>
+  <script src="../assets/js/scripts.js" defer></script>
+</head>
+
+<body>
+<a href="#main" class="visually-hidden-focusable">Skip to main content</a>
+<header>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top" aria-label="Main">
+    <div class="container">
+      <a href="../index.html" class="navbar-brand d-inline-flex text-uppercase">Focus <i class="material-icons ms-2" aria-hidden="true">donut_large</i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="material-icons icon-2x" aria-hidden="true">menu</i>
+      </button>
+      <div class="collapse navbar-collapse text-uppercase" id="navbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="../pages.html" class="nav-link">Pages</a>
+          </li>
+          <li class="nav-item">
+            <a href="../style.html" class="nav-link">Style</a>
+          </li>
+          <li class="nav-item">
+            <a href="../docs/intro.html" class="nav-link active">Docs</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="container my-5">
+  <div class="row">
+    <div class="col-lg-9 col-xxl-8 order-lg-1">
+    <main id="main" class="article mb-5">
+    <h1>Buttons</h1>
+<p class="lead">Use Bootstrap’s custom button styles for actions in forms, dialogs, and more with support for multiple sizes and states.</p>
+
+<div class="mb-4">
+  <button type="button" class="btn btn-primary me-1 mb-3">Primary</button>
+  <button type="button" class="btn btn-secondary me-1 mb-3">Secondary</button>
+  <button type="button" class="btn btn-success me-1 mb-3">Success</button>
+  <button type="button" class="btn btn-danger me-1 mb-3">Danger</button>
+  <button type="button" class="btn btn-warning me-1 mb-3">Warning</button>
+  <button type="button" class="btn btn-info me-1 mb-3">Info</button>
+  <button type="button" class="btn btn-light me-1 mb-3">Light</button>
+  <button type="button" class="btn btn-dark me-1 mb-3">Dark</button>
+</div>
+
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-primary<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Primary<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-secondary<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Secondary<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span><br>...</code></pre>
+
+<h2>Button tags</h2>
+<p>The <code>.btn</code> classes are designed to be used with the <code>&lt;button&gt;</code> element. However, you can also use these classes on <code>&lt;a&gt;</code> or <code>&lt;input&gt;</code> elements.</p>
+
+<div class="mb-4">
+  <a class="btn btn-primary me-1 mb-3" href="#">Link</a>
+  <input class="btn btn-primary me-1 mb-3" type="submit" value="Submit">
+</div>
+
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-primary<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Link<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-primary<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>submit<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Submit<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></code></pre>
+
+<h2>Outline buttons</h2>
+<p>Replace the default modifier classes with the <code>.btn-outline-*</code> ones to remove all background images and colors on any button.</p>
+
+<div class="mb-4">
+  <button type="button" class="btn btn-outline-primary me-1 mb-3">Primary</button>
+  <button type="button" class="btn btn-outline-light me-1 mb-3">Light</button>
+</div>
+
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-outline-primary<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Primary<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-outline-light<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Light<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span></code></pre>
+
+<h2>Sizes</h2>
+<p>Fancy larger or smaller buttons? Add <code>.btn-lg</code> or <code>.btn-sm</code> for additional sizes.</p>
+
+<button type="button" class="btn btn-primary btn-lg me-1 mb-3">Large button</button>
+<button type="button" class="btn btn-primary btn-sm mb-3">Small button</button>
+
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-primary btn-lg<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Large button<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-primary btn-sm<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Small button<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span></code></pre>
+
+<p>
+  <a href="https://getbootstrap.com/docs/5.2/components/buttons/" target="_blank" rel="noopener">Bootstrap Documentation <i class="material-icons align-middle" aria-hidden="true">launch</i></a>
+</p>
+
+    </main>
+    </div>
+    <div class="col-lg-3">
+      <nav class="side-nav sticky-top mt-1" aria-label="Docs">
+        <dl>
+          <dt class="fw-normal text-uppercase mb-2">Getting Started</dt>
+          <dd>
+            <a href="intro.html" >Introduction</a>
+          </dd>
+          <dd>
+            <a href="accessibility.html" >Accessibility</a>
+          </dd>
+          <dd>
+            <a href="customization.html" >Customization</a>
+          </dd>
+          <dd>
+            <a href="development.html" >Development</a>
+          </dd>
+          <dd>
+            <a href="updating.html" >Updating</a>
+          </dd>
+          <dd>
+            <a href="changelog.html" >Changelog</a>
+          </dd>
+          <dt class="fw-normal text-uppercase mt-4 mb-2">Components</dt>
+          <dd>
+            <a href="accordion.html" >Accordion</a>
+          </dd>
+          <dd>
+            <a href="alerts.html" >Alerts</a>
+          </dd>
+          <dd>
+            <a href="avatars.html" >Avatars</a>
+          </dd>
+          <dd>
+            <a href="buttons.html" class=active>Buttons</a>
+          </dd>
+          <dd>
+            <a href="carousel.html" >Carousel</a>
+          </dd>
+          <dd>
+            <a href="forms.html" >Forms</a>
+          </dd>
+          <dd>
+            <a href="icons.html" >Icons</a>
+          </dd>
+          <dd>
+            <a href="images.html" >Images</a>
+          </dd>
+          <dd>
+            <a href="navbar.html" >Navbar</a>
+          </dd>
+          <dd>
+            <a href="pagination.html" >Pagination</a>
+          </dd>
+          <dd>
+            <a href="tables.html" >Tables</a>
+          </dd>
+          <dt class="fw-normal text-uppercase mt-4 mb-2">Plugins</dt>
+          <dd>
+            <a href="lightbox.html" >Lightbox</a>
+          </dd>
+        </dl>
+      </nav>
+    </div>
+  </div>
+</div>
+</body>
+</html>

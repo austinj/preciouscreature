@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+{% include "head.njk" %}
+<body>
+<a href="#main" class="visually-hidden-focusable">Skip to main content</a>
+{% include "header.njk" %}
+<div class="container my-5">
+  <div class="row">
+    <div class="col-lg-9 col-xxl-8 order-lg-1">
+    <main id="main" class="article mb-5">
+    {{ content | safe }}
+    </main>
+    </div>
+    <div class="col-lg-3">
+      <nav class="side-nav sticky-top mt-1" aria-label="Docs">
+        <dl>
+          <dt class="fw-normal text-uppercase mb-2">Getting Started</dt>
+          <dd>
+            <a href="intro.html" {{ 'class=active' if 'intro' in page.url }}>Introduction</a>
+          </dd>
+          <dd>
+            <a href="accessibility.html" {{ 'class=active' if 'accessibility' in page.url }}>Accessibility</a>
+          </dd>
+          <dd>
+            <a href="customization.html" {{ 'class=active' if 'customization' in page.url }}>Customization</a>
+          </dd>
+          <dd>
+            <a href="development.html" {{ 'class=active' if 'development' in page.url }}>Development</a>
+          </dd>
+          <dd>
+            <a href="updating.html" {{ 'class=active' if 'updating' in page.url }}>Updating</a>
+          </dd>
+          <dd>
+            <a href="changelog.html" {{ 'class=active' if 'changelog' in page.url }}>Changelog</a>
+          </dd>
+          <dt class="fw-normal text-uppercase mt-4 mb-2">Components</dt>
+          <dd>
+            <a href="accordion.html" {{ 'class=active' if 'accordion' in page.url }}>Accordion</a>
+          </dd>
+          <dd>
+            <a href="alerts.html" {{ 'class=active' if 'alerts' in page.url }}>Alerts</a>
+          </dd>
+          <dd>
+            <a href="avatars.html" {{ 'class=active' if 'avatars' in page.url }}>Avatars</a>
+          </dd>
+          <dd>
+            <a href="buttons.html" {{ 'class=active' if 'buttons' in page.url }}>Buttons</a>
+          </dd>
+          <dd>
+            <a href="carousel.html" {{ 'class=active' if 'carousel' in page.url }}>Carousel</a>
+          </dd>
+          <dd>
+            <a href="forms.html" {{ 'class=active' if 'forms' in page.url }}>Forms</a>
+          </dd>
+          <dd>
+            <a href="icons.html" {{ 'class=active' if 'icons' in page.url }}>Icons</a>
+          </dd>
+          <dd>
+            <a href="images.html" {{ 'class=active' if 'images' in page.url }}>Images</a>
+          </dd>
+          <dd>
+            <a href="navbar.html" {{ 'class=active' if 'navbar' in page.url }}>Navbar</a>
+          </dd>
+          <dd>
+            <a href="pagination.html" {{ 'class=active' if 'pagination' in page.url }}>Pagination</a>
+          </dd>
+          <dd>
+            <a href="tables.html" {{ 'class=active' if 'tables' in page.url }}>Tables</a>
+          </dd>
+          <dt class="fw-normal text-uppercase mt-4 mb-2">Plugins</dt>
+          <dd>
+            <a href="lightbox.html" {{ 'class=active' if 'lightbox' in page.url }}>Lightbox</a>
+          </dd>
+        </dl>
+      </nav>
+    </div>
+  </div>
+</div>
+</body>
+</html>

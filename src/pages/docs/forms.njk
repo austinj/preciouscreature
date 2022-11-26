@@ -1,0 +1,60 @@
+---
+layout: docs
+title: Forms
+description: Focus is a clean portfolio theme for Bootstrap.
+permalink: /docs/forms.html
+root: '../'
+---
+<h1>Forms</h1>
+<p class="lead">Examples of form control styles.</p>
+
+<form class="mb-4">
+  <div class="row g-2">
+    <div class="col-auto">
+      <label for="name" class="visually-hidden">First name</label>
+      <input type="text" class="form-control border-0 fst-italic" id="name" placeholder="First name">
+    </div>
+    <div class="col-auto">
+      <label for="email" class="visually-hidden">Email address</label>
+      <input type="email" class="form-control border-0 fst-italic" id="email" placeholder="Email address">
+    </div>
+    <div class="col-auto">
+      <button type="submit" class="btn btn-primary">Sign Up</button>
+    </div>
+  </div>
+</form>
+
+{% highlight "html" %}
+<form>
+  <div class="row g-2">
+    <div class="col-auto">
+      <label for="name" class="visually-hidden">First name</label>
+      <input type="text" class="form-control border-0 fst-italic" id="name" placeholder="First name">
+    </div>
+    <div class="col-auto">
+      <label for="email" class="visually-hidden">Email</label>
+      <input type="email" class="form-control border-0 fst-italic" id="email" placeholder="Email address">
+    </div>
+    <div class="col-auto">
+      <button type="submit" class="btn btn-primary">Sign Up</button>
+    </div>
+  </div>
+</form>
+{% endhighlight %}
+
+<h2>Sizing</h2>
+<p>Set heights using classes like <code>.form-control-lg</code> and <code>.form-control-sm</code>.</p>
+
+<input class="form-control form-control-lg border-0 mb-3" type="text" placeholder=".form-control-lg">
+<input class="form-control border-0 mb-3" type="text" placeholder="Default input">
+<input class="form-control form-control-sm border-0 mb-4" type="text" placeholder=".form-control-sm">
+
+{% highlight "html" %}
+<input class="form-control form-control-lg border-0" type="text" placeholder=".form-control-lg">
+<input class="form-control border-0" type="text" placeholder="Default input">
+<input class="form-control form-control-sm border-0" type="text" placeholder=".form-control-sm">
+{% endhighlight %}
+
+<p>
+  <a href="https://getbootstrap.com/docs/5.2/forms/overview/" target="_blank" rel="noopener">Bootstrap Documentation <i class="material-icons align-middle" aria-hidden="true">launch</i></a>
+</p>

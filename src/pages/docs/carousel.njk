@@ -1,0 +1,69 @@
+---
+layout: docs
+title: Carousel
+description: Focus is a clean portfolio theme for Bootstrap.
+permalink: /docs/carousel.html
+root: '../'
+---
+<h1>Carousel</h1>
+<p class="lead">A slideshow component for cycling through elements—images or slides of text—like a carousel.</p>
+
+<div id="slideshow" class="carousel slide mb-4" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../assets/img/modern-building-1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../assets/img/modern-building-2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../assets/img/modern-building-3.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev justify-content-start" type="button" data-bs-target="#slideshow" data-bs-slide="prev">
+    <i class="material-icons icon-lg" aria-hidden="true">arrow_back_ios_new</i>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next justify-content-end" type="button" data-bs-target="#slideshow" data-bs-slide="next">
+    <i class="material-icons icon-lg" aria-hidden="true">arrow_forward_ios</i>
+    <span class="visually-hidden">Next</span>
+  </button>
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#slideshow" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#slideshow" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#slideshow" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+</div>
+
+{% highlight "html" %}
+<div id="slideshow" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="assets/img/modern-building-1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/img/modern-building-2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/img/modern-building-3.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev justify-content-start" type="button" data-bs-target="#slideshow" data-bs-slide="prev">
+    <i class="material-icons icon-lg" aria-hidden="true">arrow_back_ios_new</i>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next justify-content-end" type="button" data-bs-target="#slideshow" data-bs-slide="next">
+    <i class="material-icons icon-lg" aria-hidden="true">arrow_forward_ios</i>
+    <span class="visually-hidden">Next</span>
+  </button>
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#slideshow" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#slideshow" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#slideshow" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+</div>
+{% endhighlight %}
+
+<p>
+  <a href="https://getbootstrap.com/docs/5.2/components/carousel/" target="_blank" rel="noopener">Bootstrap Documentation <i class="material-icons align-middle" aria-hidden="true">launch</i></a>
+</p>

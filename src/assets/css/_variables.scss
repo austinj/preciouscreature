@@ -1,0 +1,213 @@
+// Theme variables
+
+// Colors
+
+$gray-100: #f2f1f1;
+$gray-200: #e8e7e8;
+$gray-300: #a6a6a6;
+$gray-400: #979a9d;
+$gray-500: #6e6e6e;
+$gray-600: #595959;
+$gray-700: #404040;
+$gray-800: #262626;
+$gray-900: #170f18;
+
+$primary: #ff9285;
+$secondary: $gray-500;
+$success: #26a65b;
+$info: #00acc1;
+$warning: #f9690e;
+$danger: #ff0000;
+$light: $gray-100;
+$dark: $gray-800;
+$white: #fff;
+$black: #0e0e0e;
+
+// Options
+
+$enable-caret: false;
+$enable-rounded: false;
+$enable-negative-margins: true;
+
+// Spacing
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 5,
+);
+
+// Body
+
+$body-bg: $black;
+$body-color: $white;
+
+// Components
+
+$border-color: $gray-800;
+
+// Typography
+
+$paragraph-margin-bottom: 1.5rem;
+$font-family-serif: "Playfair Display", serif;
+$font-family-sans-serif: "Fira Sans", sans-serif;
+$font-family-base: $font-family-sans-serif;
+
+$h1-font-size: 2.5rem;
+$h2-font-size: 2rem;
+$h3-font-size: 1.75rem;
+$h4-font-size: 1.5rem;
+$h5-font-size: 1.25rem;
+$h6-font-size: 1rem;
+
+$headings-font-family: $font-family-serif;
+$headings-font-weight: 600;
+$headings-margin-bottom: 1rem;
+
+$display-font-sizes: (
+  1: 5.5rem,
+  2: 5rem,
+  3: 4.5rem,
+  4: 4rem,
+  5: 3.5rem,
+  6: 3rem,
+);
+
+$display-font-weight: 600;
+$display-line-height: 1.15;
+
+$text-muted: $gray-500;
+
+$blockquote-footer-color: $gray-300;
+
+$hr-color: $gray-400;
+
+// Code
+
+$code-font-size: 0.875rem;
+$code-color: #ee5da1;
+
+// Links
+
+$link-color: $white;
+$link-decoration: none;
+$link-hover-decoration: none;
+
+// Grid columns
+
+$grid-gutter-width: 2rem;
+
+// Accordion
+
+$accordion-padding-y: 1.25rem;
+$accordion-border-color: $gray-800;
+$accordion-button-active-bg: $dark;
+$accordion-button-active-color: $white;
+$accordion-button-focus-box-shadow: none;
+$accordion-icon-color: $white;
+
+// Alerts
+
+$alert-border-width: 0;
+$alert-bg-scale: -30%;
+$alert-color-scale: 10%;
+
+// Buttons
+
+$btn-padding-y: 0.75rem;
+$btn-padding-x: 1.5rem;
+$btn-font-size: 0.9rem;
+$btn-padding-y-sm: 0.5rem;
+$btn-padding-x-sm: 1rem;
+$btn-padding-y-lg: 1rem;
+$btn-padding-x-lg: 2rem;
+$btn-font-size-lg: 1.15rem;
+$btn-border-width: 2px;
+
+// Carousel
+
+$carousel-control-opacity: 0.8;
+$carousel-control-hover-opacity: 1;
+$carousel-indicator-width: 1rem;
+$carousel-indicator-height: 1rem;
+$carousel-indicator-spacer: 0.5rem;
+$carousel-indicator-opacity: 0.7;
+
+// Dropdowns
+
+$dropdown-spacer: 0;
+$dropdown-link-hover-color: $white;
+$dropdown-link-hover-bg: $black;
+$dropdown-link-active-bg: $black;
+$dropdown-item-padding-y: 0.5rem;
+
+// Forms
+$input-padding-y: 0.75rem;
+$input-padding-x: 1rem;
+$input-padding-y-sm: 0.5rem;
+$input-padding-x-sm: 0.75rem;
+$input-padding-y-lg: 1rem;
+$input-padding-x-lg: 1.25rem;
+$input-box-shadow: none;
+$input-bg: $white;
+$input-color: $gray-900;
+$input-focus-box-shadow: none;
+$input-placeholder-color: $gray-500;
+$input-height: auto;
+
+// Image thumbnails
+
+$thumbnail-padding: 1rem;
+$thumbnail-bg: transparent;
+$thumbnail-border-color: $gray-800;
+
+// Navbar
+
+$navbar-padding-y: 0;
+$navbar-padding-x: 0;
+$navbar-nav-link-padding-x: 0;
+$navbar-toggler-padding-y: 0.5rem;
+$navbar-dark-color: $white;
+$navbar-dark-hover-color: $white;
+$navbar-light-color: $gray-800;
+$navbar-light-hover-color: $gray-800;
+$navbar-dark-toggler-border-color: transparent;
+$navbar-light-toggler-border-color: transparent;
+$navbar-toggler-focus-width: 0;
+
+// Pagination
+
+$pagination-padding-y: 0.5rem;
+$pagination-padding-x: 1rem;
+$pagination-padding-y-sm: 0.25rem;
+$pagination-padding-x-sm: 0.65rem;
+$pagination-padding-y-lg: 0.9rem;
+$pagination-padding-x-lg: 1.5rem;
+$pagination-line-height: 1;
+$pagination-color: $gray-800;
+$pagination-focus-color: $black;
+$pagination-focus-bg: $primary;
+$pagination-focus-box-shadow: none;
+$pagination-focus-outline: 2;
+$pagination-hover-color: $black;
+$pagination-hover-bg: $primary;
+$pagination-active-color: $white;
+$pagination-active-bg: $black;
+$pagination-active-border-color: $gray-300;
+$pagination-transition: color 0.25s ease-in-out,
+  background-color 0.25s ease-in-out, border-color 0.25s ease-in-out,
+  box-shadow 0.25s ease-in-out;
+
+// Tables
+
+$table-cell-padding-y: 0.75rem;
+$table-cell-padding-x: 0.75rem;
+$table-cell-padding-y-sm: 0.5rem;
+$table-cell-padding-x-sm: 0.5rem;
+$table-border-color: $gray-700;
+$table-group-separator-color: inherit;

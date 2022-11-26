@@ -1,0 +1,27 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    "border-end": map-merge(
+      map-get($utilities, "border-end"),
+      (responsive: true)
+    ),
+    "border-width": map-merge(
+      map-get($utilities, "border-width"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "border-width"), "values"),
+          (6: 6px)
+        ),
+      )
+    ),
+    "width": map-merge(
+      map-get($utilities, "width"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "width"), "values"),
+          (15: 15%)
+        ),
+      )
+    ),
+  )
+);

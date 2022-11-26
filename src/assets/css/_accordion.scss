@@ -1,0 +1,9 @@
+.accordion-button {
+  &:hover {
+    background-color: $dark;
+  }
+
+  &:focus {
+    outline: auto;
+  }
+}

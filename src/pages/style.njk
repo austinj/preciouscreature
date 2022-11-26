@@ -1,0 +1,241 @@
+---
+layout: base
+title: Style
+description: Focus is a clean portfolio theme for Bootstrap.
+permalink: /style.html
+---
+  <div class="container">
+    <div class="col-lg-9 py-4 py-sm-5">
+      <h1 class="display-4 mb-4">Style</h1>
+      <p class="lead">Typography and colors used to design this theme.</p>
+    </div>
+
+    <h2 class="mb-4">Typography</h2>
+    <div class="table-responsive">
+      <table class="table align-middle mb-5">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Example</th>
+            <th>Font</th>
+            <th>Font Size</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Display 1</td>
+            <td class="display-1">ABCabc</td>
+            <td>Fira Sans</td>
+            <td>5.5 rem</td>
+          </tr>
+          <tr>
+            <td>Display 2</td>
+            <td class="display-2">ABCabc</td>
+            <td>Fira Sans</td>
+            <td>5 rem</td>
+          </tr>
+          <tr>
+            <td>Display 3</td>
+            <td class="display-3">ABCabc</td>
+            <td>Fira Sans</td>
+            <td>4.5 rem</td>
+          </tr>
+          <tr>
+            <td>Display 4</td>
+            <td class="display-4">ABCabc</td>
+            <td>Fira Sans</td>
+            <td>4 rem</td>
+          </tr>
+          <tr>
+            <td>Display 5</td>
+            <td class="display-5">ABCabc</td>
+            <td>Fira Sans</td>
+            <td>3.5 rem</td>
+          </tr>
+          <tr>
+            <td>Display 6</td>
+            <td class="display-6">ABCabc</td>
+            <td>Fira Sans</td>
+            <td>3 rem</td>
+          </tr>
+          <tr>
+            <td>Heading 1</td>
+            <td class="h1">ABCabc</td>
+            <td>Playfair Display</td>
+            <td>2.5 rem</td>
+          </tr>
+          <tr>
+            <td>Heading 2</td>
+            <td class="h2">ABCabc</td>
+            <td>Playfair Display</td>
+            <td>2 rem</td>
+          </tr>
+          <tr>
+            <td>Heading 3</td>
+            <td class="h3">ABCabc</td>
+            <td>Playfair Display</td>
+            <td>1.75 rem</td>
+          </tr>
+          <tr>
+            <td>Heading 4</td>
+            <td class="h4">ABCabc</td>
+            <td>Playfair Display</td>
+            <td>1.5 rem</td>
+          </tr>
+          <tr>
+            <td>Heading 5</td>
+            <td class="h5">ABCabc</td>
+            <td>Playfair Display</td>
+            <td>1.25 rem</td>
+          </tr>
+          <tr>
+            <td>Heading 6</td>
+            <td class="h6">ABCabc</td>
+            <td>Playfair Display</td>
+            <td>1 rem</td>
+          </tr>
+          <tr>
+            <td>Paragraph</td>
+            <td>ABCabc</td>
+            <td>Fira Sans</td>
+            <td>1 rem</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Font family</h3>
+    <p>Easily change the font family using <code>.font-sans</code> and <code>.font-serif</code>.</p>
+    <p class="font-serif mb-4">Example of a paragraph using font serif.</p>
+
+    {% highlight "html" %}
+    <p class="font-serif">Example of a paragraph using font serif.</p>
+    {% endhighlight %}
+
+    <h3>Lead</h3>
+    <p>Make a paragraph stand out by adding <code>.lead</code>.</p>
+    <p class="lead">The quick brown fox jumps over the lazy dog.</p>
+
+    {% highlight "html" %}
+    <p class="lead">The quick brown fox jumps over the lazy dog.</p>
+    {% endhighlight %}
+
+    <h3>Links</h3>
+    <p>Links inside paragraphs are underlined by default.</p>
+
+    <p>This is a <a href="#">link example</a> .</p>
+
+    {% highlight "html" %}
+    <p>This is a <a href="#">link example</a> .</p>
+    {% endhighlight %}
+
+    <p>If you want to underline a link that is not inside a paragraph, use <code>.link-underline</code>.</p>
+
+    <a href="#" class="link-underline d-inline-block mb-3">Underlined link</a>
+
+    {% highlight "html" %}
+    <a href="#" class="link-underline">Underlined link</a>
+    {% endhighlight %}
+
+    <h3>Quote</h3>
+    <p>Add <code>.quote</code> to add style and quotes to a text.</p>
+    <p class="quote">Excepteur sint occaecat cupidatat non proident, sunt<br> in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    {% highlight "html" %}
+    <p class="quote">Excepteur sint occaecat...</p>
+    {% endhighlight %}
+
+    <h3>Blockquote</h3>
+    <p>Add <code>.blockquote</code> for quoting blocks of content from another source.</p>
+    <figure class="ms-5 mb-5">
+      <blockquote class="blockquote">
+        <p>A well-known quote, contained in a blockquote element.</p>
+      </blockquote>
+      <figcaption class="blockquote-footer mt-n2">
+        Someone famous in <cite title="Source Title">Source Title</cite>
+      </figcaption>
+    </figure>
+
+    <figure class="mb-5">
+      <blockquote class="blockquote text-center">
+        <p>A well-known quote, contained in a blockquote element.</p>
+      </blockquote>
+      <figcaption class="blockquote-footer text-center mt-n2">
+        Someone famous in <cite title="Source Title">Source Title</cite>
+      </figcaption>
+    </figure>
+
+    <figure class="me-5 mb-5">
+      <blockquote class="blockquote text-end">
+        <p>A well-known quote, contained in a blockquote element.</p>
+      </blockquote>
+      <figcaption class="blockquote-footer text-end mt-n2">
+        Someone famous in <cite title="Source Title">Source Title</cite>
+      </figcaption>
+    </figure>
+
+{% highlight "html" %}
+<figure class="ms-5">
+  <blockquote class="blockquote">
+    <p>A well-known quote, contained in a blockquote element.</p>
+  </blockquote>
+  <figcaption class="blockquote-footer mt-n2">
+    Someone famous in <cite title="Source Title">Source Title</cite>
+  </figcaption>
+</figure>
+
+<figure>
+  <blockquote class="blockquote text-center">
+    <p>A well-known quote, contained in a blockquote element.</p>
+  </blockquote>
+  <figcaption class="blockquote-footer text-center mt-n2">
+    Someone famous in <cite title="Source Title">Source Title</cite>
+  </figcaption>
+</figure>
+
+<figure class="me-5">
+  <blockquote class="blockquote text-end">
+    <p>A well-known quote, contained in a blockquote element.</p>
+  </blockquote>
+  <figcaption class="blockquote-footer text-end mt-n2">
+    Someone famous in <cite title="Source Title">Source Title</cite>
+  </figcaption>
+</figure>
+{% endhighlight %}
+
+    <p class="mb-5">
+      <a href="https://getbootstrap.com/docs/5.2/content/typography/" target="_blank" rel="noopener">Bootstrap Documentation <i class="material-icons align-middle" aria-hidden="true">launch</i></a>
+    </p>
+
+    <h2 class="mt-5 mb-4">Colors</h2>
+    <div class="row g-0 mb-5">
+      <div class="col-md-3 text-bg-primary text-uppercase pt-2 pb-6 px-3">
+        Primary
+      </div>
+      <div class="col-md-3 text-bg-secondary text-uppercase pt-2 pb-6 px-3">
+        Secondary
+      </div>
+      <div class="col-md-3 text-bg-success text-uppercase pt-2 pb-6 px-3">
+        Success
+      </div>
+      <div class="col-md-3 text-bg-info text-uppercase pt-2 pb-6 px-3">
+        Info
+      </div>
+      <div class="col-md-3 text-bg-warning text-uppercase pt-2 pb-6 px-3">
+        Warning
+      </div>
+      <div class="col-md-3 text-bg-danger text-uppercase pt-2 pb-6 px-3">
+        Danger
+      </div>
+      <div class="col-md-3 text-bg-light text-uppercase pt-2 pb-6 px-3">
+        Light
+      </div>
+      <div class="col-md-3 text-bg-dark text-uppercase pt-2 pb-6 px-3">
+        Dark
+      </div>
+    </div>
+
+    <p class="mb-5">
+      <a href="https://getbootstrap.com/docs/5.2/customize/color/" target="_blank" rel="noopener">Bootstrap Documentation <i class="material-icons align-middle" aria-hidden="true">launch</i></a>
+    </p>
+  </div>

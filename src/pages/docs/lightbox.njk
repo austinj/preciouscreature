@@ -1,0 +1,45 @@
+---
+layout: docs
+title: Lightbox
+description: Focus is a clean portfolio theme for Bootstrap.
+permalink: /docs/lightbox.html
+root: '../'
+---
+<h1>Lightbox</h1>
+<p class="lead">Tobii is an accessible and open-source lightbox.</p>
+
+<div class="row g-2 g-md-3 mb-4">
+  <div class="col">
+    <a href="../assets/img/autumn-1.jpg" class="lightbox" data-group="autumn">
+      <img src="../assets/img/autumn-1-th.jpg" class="img-fluid" alt="White and brown house near a body of water during daytime" width="420" height="278">
+    </a>
+  </div>
+  <div class="col">
+    <a href="../assets/img/autumn-2.jpg" class="lightbox" data-group="autumn">
+      <img src="../assets/img/autumn-2-th.jpg" class="img-fluid" alt="Sun rays filter through the trees of a forest in autumn." width="420" height="278">
+    </a>
+  </div>
+</div>
+
+<p>Add a thumbnail image with the class name <code>lightbox</code> and link it to a larger image.</p>
+
+<p>And group a set of related images adding the <code>data-group</code> attribute.</p>
+
+{% highlight "html" %}
+<div class="row g-2 g-md-3">
+  <div class="col">
+    <a href="../assets/img/autumn-1.jpg" class="lightbox" data-group="autumn">
+      <img src="../assets/img/autumn-1-th.jpg" class="img-fluid" alt="White and brown house near a body of water during daytime" width="420" height="278">
+    </a>
+  </div>
+  <div class="col">
+    <a href="../assets/img/autumn-2.jpg" class="lightbox" data-group="autumn">
+      <img src="../assets/img/autumn-2-th.jpg" class="img-fluid" alt="Sun rays filter through the trees of a forest in autumn." width="420" height="278">
+    </a>
+  </div>
+</div>
+{% endhighlight %}
+
+<p>
+  <a href="https://github.com/midzer/tobii" target="_blank" rel="noopener">View Tobii on GitHub <i class="material-icons align-middle" aria-hidden="true">launch</i></a>
+</p>

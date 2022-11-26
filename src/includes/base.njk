@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+{% include "head.njk" %}
+<body>
+<a href="#main" class="visually-hidden-focusable">Skip to main content</a>
+{% include "header.njk" %}
+<main id="main">
+{{ content | safe -}}
+</main>
+
+{% include "footer.njk" -%}
+</body>
+</html>

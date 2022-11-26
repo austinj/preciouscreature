@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Images - Focus Theme</title>
+  <meta name="description" content="Focus is a clean portfolio theme for Bootstrap.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="../assets/img/favicon.png">
+
+  <!-- Goole fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,600;1,400&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Material icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <!-- PrismJS theme -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism-okaidia.min.css">
+  
+
+  <!-- JS -->
+  <script src="../assets/js/bootstrap.js" defer></script>
+  <script src="../assets/js/lightbox.js" defer></script>
+  <script src="../assets/js/scripts.js" defer></script>
+</head>
+
+<body>
+<a href="#main" class="visually-hidden-focusable">Skip to main content</a>
+<header>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top" aria-label="Main">
+    <div class="container">
+      <a href="../index.html" class="navbar-brand d-inline-flex text-uppercase">Focus <i class="material-icons ms-2" aria-hidden="true">donut_large</i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="material-icons icon-2x" aria-hidden="true">menu</i>
+      </button>
+      <div class="collapse navbar-collapse text-uppercase" id="navbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="../pages.html" class="nav-link">Pages</a>
+          </li>
+          <li class="nav-item">
+            <a href="../style.html" class="nav-link">Style</a>
+          </li>
+          <li class="nav-item">
+            <a href="../docs/intro.html" class="nav-link active">Docs</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="container my-5">
+  <div class="row">
+    <div class="col-lg-9 col-xxl-8 order-lg-1">
+    <main id="main" class="article mb-5">
+    <h1>Images</h1>
+<p class="lead">Styles for image thumbnails and hover effects.</p>
+
+<h2>Thumbnail</h2>
+<div class="mb-4">
+  <img src="../assets/img/club-workspace.jpg" alt="" class="img-thumbnail">
+</div>
+
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>assets/img/club-workspace.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>img-thumbnail<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></code></pre>
+
+<h2>Color</h2>
+<p>Add <code>.img-color</code> to colorize an image on hover.</p>
+<figure class="img-color">
+  <img src="../assets/img/club-workspace.jpg" alt="" class="img-fluid">
+</figure>
+
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>figure</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>img-color<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>assets/img/club-workspace.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>img-fluid<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>figure</span><span class="token punctuation">></span></span></code></pre>
+
+<h2>Overlay</h2>
+<p>Add <code>.img-overlay</code> and <code>.img-hover</code> to create an overlay effect on hover.</p>
+<figure class="img-overlay">
+  <img src="../assets/img/modern-room.jpg" alt="" class="img-fluid">
+  <div class="img-hover">
+    <div class="img-text">View Project</div>
+  </div>
+</figure>
+
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>figure</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>img-overlay<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>assets/img/modern-room.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>img-fluid<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>img-hover<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>img-text<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>View Project<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>figure</span><span class="token punctuation">></span></span></code></pre>
+
+<h2>Rising</h2>
+<p>Add <code>.img-rising</code> to create a rising hover effect.</p>
+<figure class="img-rising">
+  <img src="../assets/img/sofa-cat.jpg" alt="" class="img-fluid">
+</figure>
+
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>figure</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>img-rising<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>assets/img/sofa-cat.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>img-fluid<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>figure</span><span class="token punctuation">></span></span></code></pre>
+
+<h2>Scale</h2>
+<p>Add <code>.img-scale</code> and <code>.img-wrap</code> to scale an image on hover.</p>
+<figure class="img-scale">
+  <div class="img-wrap">
+    <img src="../assets/img/modern-kitchen.jpg" alt="" class="img-fluid">
+  </div>
+</figure>
+
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>figure</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>img-scale<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>img-wrap<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>assets/img/modern-kitchen.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>img-fluid<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>figure</span><span class="token punctuation">></span></span></code></pre>
+
+<p>
+  <a href="https://getbootstrap.com/docs/5.2/content/images/" target="_blank" rel="noopener">Bootstrap Documentation <i class="material-icons align-middle" aria-hidden="true">launch</i></a>
+</p>
+
+    </main>
+    </div>
+    <div class="col-lg-3">
+      <nav class="side-nav sticky-top mt-1" aria-label="Docs">
+        <dl>
+          <dt class="fw-normal text-uppercase mb-2">Getting Started</dt>
+          <dd>
+            <a href="intro.html" >Introduction</a>
+          </dd>
+          <dd>
+            <a href="accessibility.html" >Accessibility</a>
+          </dd>
+          <dd>
+            <a href="customization.html" >Customization</a>
+          </dd>
+          <dd>
+            <a href="development.html" >Development</a>
+          </dd>
+          <dd>
+            <a href="updating.html" >Updating</a>
+          </dd>
+          <dd>
+            <a href="changelog.html" >Changelog</a>
+          </dd>
+          <dt class="fw-normal text-uppercase mt-4 mb-2">Components</dt>
+          <dd>
+            <a href="accordion.html" >Accordion</a>
+          </dd>
+          <dd>
+            <a href="alerts.html" >Alerts</a>
+          </dd>
+          <dd>
+            <a href="avatars.html" >Avatars</a>
+          </dd>
+          <dd>
+            <a href="buttons.html" >Buttons</a>
+          </dd>
+          <dd>
+            <a href="carousel.html" >Carousel</a>
+          </dd>
+          <dd>
+            <a href="forms.html" >Forms</a>
+          </dd>
+          <dd>
+            <a href="icons.html" >Icons</a>
+          </dd>
+          <dd>
+            <a href="images.html" class=active>Images</a>
+          </dd>
+          <dd>
+            <a href="navbar.html" >Navbar</a>
+          </dd>
+          <dd>
+            <a href="pagination.html" >Pagination</a>
+          </dd>
+          <dd>
+            <a href="tables.html" >Tables</a>
+          </dd>
+          <dt class="fw-normal text-uppercase mt-4 mb-2">Plugins</dt>
+          <dd>
+            <a href="lightbox.html" >Lightbox</a>
+          </dd>
+        </dl>
+      </nav>
+    </div>
+  </div>
+</div>
+</body>
+</html>

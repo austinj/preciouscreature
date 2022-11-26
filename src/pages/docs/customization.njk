@@ -1,0 +1,34 @@
+---
+layout: docs
+title: Customization
+description: Focus is a clean portfolio theme for Bootstrap.
+permalink: /docs/customization.html
+root: '../'
+---
+<h1>Customization</h1>
+<p class="lead">How to edit and customize your theme.</p>
+
+<p>There are two ways to customize the theme. The more straightforward method is using CSS, and the more advanced is customizing the SCSS files.</p>
+
+<h2>CSS overrides</h2>
+<p>Using the compiled files from the <strong>dist</strong> folder is the simplest way to start with the theme.</p>
+
+<p>Create a <code>custom.css</code> file in <strong>assets/css</strong> and reference it after the <code>theme.css</code> in the <code>&lt;head&gt;</code> of your pages.</p>
+
+{% highlight "html" %}
+<link rel="stylesheet" href="assets/css/custom.css">
+{% endhighlight %}
+
+<p>Then add your CSS rules in the <code>custom.css</code> file to override the theme styles.</p>
+
+<h2>Customizing SCSS</h2>
+<p>This is the recommended option if you're comfortable using build tools and are familiar with SCSS syntax.</p>
+
+<p>In the <strong>src/assets/css</strong> folder, you'll see two files:</p>
+
+<ul class="mb-4">
+  <li><code>_user-vars.scss</code> for your custom variables.</li>
+  <li><code>_user.scss</code> to add your styles.</li>
+</ul>
+
+<p>Editing and compiling these files will extend and override the theme’s styles with your custom ones.</p>

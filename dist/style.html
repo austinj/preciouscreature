@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Style - Focus Theme</title>
+  <meta name="description" content="Focus is a clean portfolio theme for Bootstrap.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/img/favicon.png">
+
+  <!-- Goole fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,600;1,400&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Material icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- PrismJS theme -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism-okaidia.min.css">
+  
+
+  <!-- JS -->
+  <script src="assets/js/bootstrap.js" defer></script>
+  <script src="assets/js/lightbox.js" defer></script>
+  <script src="assets/js/scripts.js" defer></script>
+</head>
+
+<body>
+<a href="#main" class="visually-hidden-focusable">Skip to main content</a>
+<header>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top" aria-label="Main">
+    <div class="container">
+      <a href="index.html" class="navbar-brand d-inline-flex text-uppercase">Focus <i class="material-icons ms-2" aria-hidden="true">donut_large</i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="material-icons icon-2x" aria-hidden="true">menu</i>
+      </button>
+      <div class="collapse navbar-collapse text-uppercase" id="navbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="pages.html" class="nav-link">Pages</a>
+          </li>
+          <li class="nav-item">
+            <a href="style.html" class="nav-link active">Style</a>
+          </li>
+          <li class="nav-item">
+            <a href="docs/intro.html" class="nav-link">Docs</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="container">
+    <div class="col-lg-9 py-4 py-sm-5">
+      <h1 class="display-4 mb-4">Style</h1>
+      <p class="lead">Typography and colors used to design this theme.</p>
+    </div>
+
+    <h2 class="mb-4">Typography</h2>
+    <div class="table-responsive">
+      <table class="table align-middle mb-5">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Example</th>
+            <th>Font</th>
+            <th>Font Size</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Display 1</td>
+            <td class="display-1">ABCabc</td>
+            <td>Fira Sans</td>
+            <td>5.5 rem</td>
+          </tr>
+          <tr>
+            <td>Display 2</td>
+            <td class="display-2">ABCabc</td>
+            <td>Fira Sans</td>
+            <td>5 rem</td>
+          </tr>
+          <tr>
+            <td>Display 3</td>
+            <td class="display-3">ABCabc</td>
+            <td>Fira Sans</td>
+            <td>4.5 rem</td>
+          </tr>
+          <tr>
+            <td>Display 4</td>
+            <td class="display-4">ABCabc</td>
+            <td>Fira Sans</td>
+            <td>4 rem</td>
+          </tr>
+          <tr>
+            <td>Display 5</td>
+            <td class="display-5">ABCabc</td>
+            <td>Fira Sans</td>
+            <td>3.5 rem</td>
+          </tr>
+          <tr>
+            <td>Display 6</td>
+            <td class="display-6">ABCabc</td>
+            <td>Fira Sans</td>
+            <td>3 rem</td>
+          </tr>
+          <tr>
+            <td>Heading 1</td>
+            <td class="h1">ABCabc</td>
+            <td>Playfair Display</td>
+            <td>2.5 rem</td>
+          </tr>
+          <tr>
+            <td>Heading 2</td>
+            <td class="h2">ABCabc</td>
+            <td>Playfair Display</td>
+            <td>2 rem</td>
+          </tr>
+          <tr>
+            <td>Heading 3</td>
+            <td class="h3">ABCabc</td>
+            <td>Playfair Display</td>
+            <td>1.75 rem</td>
+          </tr>
+          <tr>
+            <td>Heading 4</td>
+            <td class="h4">ABCabc</td>
+            <td>Playfair Display</td>
+            <td>1.5 rem</td>
+          </tr>
+          <tr>
+            <td>Heading 5</td>
+            <td class="h5">ABCabc</td>
+            <td>Playfair Display</td>
+            <td>1.25 rem</td>
+          </tr>
+          <tr>
+            <td>Heading 6</td>
+            <td class="h6">ABCabc</td>
+            <td>Playfair Display</td>
+            <td>1 rem</td>
+          </tr>
+          <tr>
+            <td>Paragraph</td>
+            <td>ABCabc</td>
+            <td>Fira Sans</td>
+            <td>1 rem</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Font family</h3>
+    <p>Easily change the font family using <code>.font-sans</code> and <code>.font-serif</code>.</p>
+    <p class="font-serif mb-4">Example of a paragraph using font serif.</p>
+
+    <pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>font-serif<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Example of a paragraph using font serif.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span></code></pre>
+
+    <h3>Lead</h3>
+    <p>Make a paragraph stand out by adding <code>.lead</code>.</p>
+    <p class="lead">The quick brown fox jumps over the lazy dog.</p>
+
+    <pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>lead<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>The quick brown fox jumps over the lazy dog.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span></code></pre>
+
+    <h3>Links</h3>
+    <p>Links inside paragraphs are underlined by default.</p>
+
+    <p>This is a <a href="#">link example</a> .</p>
+
+    <pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>This is a <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>link example<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> .<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span></code></pre>
+
+    <p>If you want to underline a link that is not inside a paragraph, use <code>.link-underline</code>.</p>
+
+    <a href="#" class="link-underline d-inline-block mb-3">Underlined link</a>
+
+    <pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>link-underline<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Underlined link<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span></code></pre>
+
+    <h3>Quote</h3>
+    <p>Add <code>.quote</code> to add style and quotes to a text.</p>
+    <p class="quote">Excepteur sint occaecat cupidatat non proident, sunt<br> in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>quote<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Excepteur sint occaecat...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span></code></pre>
+
+    <h3>Blockquote</h3>
+    <p>Add <code>.blockquote</code> for quoting blocks of content from another source.</p>
+    <figure class="ms-5 mb-5">
+      <blockquote class="blockquote">
+        <p>A well-known quote, contained in a blockquote element.</p>
+      </blockquote>
+      <figcaption class="blockquote-footer mt-n2">
+        Someone famous in <cite title="Source Title">Source Title</cite>
+      </figcaption>
+    </figure>
+
+    <figure class="mb-5">
+      <blockquote class="blockquote text-center">
+        <p>A well-known quote, contained in a blockquote element.</p>
+      </blockquote>
+      <figcaption class="blockquote-footer text-center mt-n2">
+        Someone famous in <cite title="Source Title">Source Title</cite>
+      </figcaption>
+    </figure>
+
+    <figure class="me-5 mb-5">
+      <blockquote class="blockquote text-end">
+        <p>A well-known quote, contained in a blockquote element.</p>
+      </blockquote>
+      <figcaption class="blockquote-footer text-end mt-n2">
+        Someone famous in <cite title="Source Title">Source Title</cite>
+      </figcaption>
+    </figure>
+
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>figure</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>ms-5<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>blockquote</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>blockquote<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>A well-known quote, contained in a blockquote element.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>blockquote</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>figcaption</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>blockquote-footer mt-n2<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    Someone famous in <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>cite</span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Source Title<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Source Title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>cite</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>figcaption</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>figure</span><span class="token punctuation">></span></span><br><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>figure</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>blockquote</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>blockquote text-center<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>A well-known quote, contained in a blockquote element.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>blockquote</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>figcaption</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>blockquote-footer text-center mt-n2<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    Someone famous in <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>cite</span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Source Title<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Source Title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>cite</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>figcaption</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>figure</span><span class="token punctuation">></span></span><br><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>figure</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>me-5<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>blockquote</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>blockquote text-end<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>A well-known quote, contained in a blockquote element.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>blockquote</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>figcaption</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>blockquote-footer text-end mt-n2<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    Someone famous in <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>cite</span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Source Title<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Source Title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>cite</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>figcaption</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>figure</span><span class="token punctuation">></span></span></code></pre>
+
+    <p class="mb-5">
+      <a href="https://getbootstrap.com/docs/5.2/content/typography/" target="_blank" rel="noopener">Bootstrap Documentation <i class="material-icons align-middle" aria-hidden="true">launch</i></a>
+    </p>
+
+    <h2 class="mt-5 mb-4">Colors</h2>
+    <div class="row g-0 mb-5">
+      <div class="col-md-3 text-bg-primary text-uppercase pt-2 pb-6 px-3">
+        Primary
+      </div>
+      <div class="col-md-3 text-bg-secondary text-uppercase pt-2 pb-6 px-3">
+        Secondary
+      </div>
+      <div class="col-md-3 text-bg-success text-uppercase pt-2 pb-6 px-3">
+        Success
+      </div>
+      <div class="col-md-3 text-bg-info text-uppercase pt-2 pb-6 px-3">
+        Info
+      </div>
+      <div class="col-md-3 text-bg-warning text-uppercase pt-2 pb-6 px-3">
+        Warning
+      </div>
+      <div class="col-md-3 text-bg-danger text-uppercase pt-2 pb-6 px-3">
+        Danger
+      </div>
+      <div class="col-md-3 text-bg-light text-uppercase pt-2 pb-6 px-3">
+        Light
+      </div>
+      <div class="col-md-3 text-bg-dark text-uppercase pt-2 pb-6 px-3">
+        Dark
+      </div>
+    </div>
+
+    <p class="mb-5">
+      <a href="https://getbootstrap.com/docs/5.2/customize/color/" target="_blank" rel="noopener">Bootstrap Documentation <i class="material-icons align-middle" aria-hidden="true">launch</i></a>
+    </p>
+  </div>
+</main>
+
+<footer class="bg-light text-dark">
+  <div class="container py-5 py-md-6">
+    <div class="row justify-content-md-between">
+      <div class="col-4 col-md-2">
+        <h2 class="h6">About</h2>
+        <ul class="nav flex-column">
+          <li class="mb-1">
+            <a href="#" class="link-secondary">Team</a>
+          </li>
+          <li class="mb-1">
+            <a href="#" class="link-secondary">Careers</a>
+          </li>
+          <li class="mb-1">
+            <a href="#" class="link-secondary">Blog</a>
+          </li>
+          <li class="mb-1">
+            <a href="#" class="link-secondary">Privacy Policy</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-4 col-md-2">
+        <h2 class="h6 mb-3">Services</h2>
+        <ul class="nav flex-column">
+          <li class="mb-1">
+            <a href="#" class="link-secondary">Branding</a>
+          </li>
+          <li class="mb-1">
+            <a href="#" class="link-secondary">Design</a>
+          </li>
+          <li class="mb-1">
+            <a href="#" class="link-secondary">Photography</a>
+          </li>
+          <li class="mb-1">
+            <a href="#" class="link-secondary">UX/UI</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-4 col-md-2">
+        <h2 class="h6 mb-3">Social</h2>
+        <ul class="nav flex-column">
+          <li class="mb-1">
+            <a href="#" class="link-secondary">Twitter</a>
+          </li>
+          <li class="mb-1">
+            <a href="#" class="link-secondary">Instagram</a>
+          </li>
+          <li class="mb-1">
+            <a href="#" class="link-secondary">Dribbble</a>
+          </li>
+          <li class="mb-1">
+            <a href="#" class="link-secondary">Facebook</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-12 col-md-4 mt-4 mt-md-0">
+        <h2 class="h6 mb-3">Company</h2>
+        <p class="text-secondary">Focus is a portfolio theme based on Bootstrap 5 and created by <a href="https://webvy.xyz/" target="_blank" rel="noopener">webvy</a>.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
