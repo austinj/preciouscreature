@@ -2,6 +2,7 @@ const autoprefixer = require("autoprefixer");
 const eleventySass = require("eleventy-sass");
 const postcss = require("postcss");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const { EleventyRenderPlugin } = require("@11ty/eleventy");
 
 module.exports = function (config) {
   // Plugins
@@ -13,6 +14,7 @@ module.exports = function (config) {
     },
   });
   config.addPlugin(syntaxHighlight);
+  config.addPlugin(EleventyRenderPlugin);
 
   // Copy files
   config.addPassthroughCopy({
