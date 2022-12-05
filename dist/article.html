@@ -38,16 +38,24 @@
       <div class="collapse navbar-collapse text-uppercase" id="navbar">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a href="index.html" class="nav-link">Home</a>
+            <a href="services.html" class="nav-link">Services</a>
           </li>
           <li class="nav-item">
-            <a href="style.html" class="nav-link">Services</a>
+            <a href="portfolio.html" class="nav-link">Portfolio</a>
           </li>
-          <li class="nav-item">
-            <a href="grief.html" class="nav-link">Grief</a>
-          </li>
-          <li class="nav-item">
-            <a href="faq.html" class="nav-link">FAQ</a>
+          <li class="nav-item dropdown">
+            <a href="#"
+              class="nav-link dropdown-toggle"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false">Learn
+              <i class="material-icons align-middle ms-1" aria-hidden="true">expand_more</i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="grief.html" class="nav-link">Grieving</a></li>
+              <li><a class="dropdown-item" href="faq.html" class="nav-link">FAQ</a></li>
+            </ul>
           </li>
            <li class="nav-item">
             <a href="contact.html" class="nav-link">Contact</a>
@@ -106,8 +114,28 @@
     </div>
   </div>
 </main>
-
-<footer class="bg-light text-dark">
+  <!-- Call to action -->
+  <div class="bg-primary text-dark text-center">
+    <div class="container py-5 py-md-6">
+      <h2>Newsletter subscription</h2>
+      <p class="fw-light mb-4">Subscribe to our newsletter to receive news & updates</p>
+      <form>
+        <div class="row justify-content-center align-items-center g-2">
+          <div class="col-md-4 col-xl-3">
+            <label for="name" class="visually-hidden">First name</label>
+            <input type="text" class="form-control border-white fst-italic" id="name" placeholder="First name">
+          </div>
+          <div class="col-md-4 col-xl-3">
+            <label for="email" class="visually-hidden">Email address</label>
+            <input type="email" class="form-control border-white fst-italic" id="email" placeholder="Email address">
+          </div>
+          <div class="col-md-auto">
+            <button type="submit" class="btn btn-dark w-100">Sign Up</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div><footer class="bg-light text-dark">
   <div class="container py-5 py-md-6">
     <div class="row justify-content-md-between">
       <div class="col-4 col-md-2">

@@ -1,7 +1,43 @@
-# Lalala
+### Why do people preserve their pets?
 
-Lalala
+Reasons for preserving a pet are as varied as the people who opt for preservation or alternative aftercare services. For some, it is a way to simply keep their pet forever, and to never have to truly say goodbye to the physical body. People have been preserving pets for centuries; the ancient Egyptians carefully mummified pets and other animals they revered. In the Victorian era, taxidermy for pets made a huge come back and was considered a fashionable and trendy practice. A preserved pet stands the test of time as a tangible memory of the lost. Holding a preserved paw for example, creates a direct line to the loved one on the other side. Some do not like the idea of burial or cremation, or have religious beliefs that don't coincide with available methods of aftercare. Others wish to preserve their pet for the sake of aesthetic - to have their loved one preserved as a beautiful and artful tribute to their pet and its breed or species. Most simply, the answer always involves love.
 
-## Lalalal
+### What kinds of people preserve their pets?
 
-Lalalala
+Lots of people who write to me ask if they are “weird” or “morbid” for wanting to preserve their pets or a part of their pet. I don’t think so. The families I’ve come to serve have ranged greatly in age, creed, and in lifestyle. I’ve come to learn that in one way or another, most, if not all pet guardians have wished to hold onto their babies for just a bit longer if they could, or have wondered at the possibility of taxidermy preservation. 
+
+### What should I do with my companion animal when they have passed away if I am interested in taxidermy services?
+
+To prepare your pet for any kind of preservation, it is recommended that he or she be placed in any standard freezer or refrigerator as soon as possible. You may shroud your loved one in a favorite blanket, tuck them in with toys, flowers, and even written notes to them to help bring comfort. From here, it is best to seal your loved one in a heavy duty ziploc or storage baggy, to protect them from freezer burn or other external elements. If you are uncomfortable with keeping your pet in your kitchen freezer, you may consider purchasing a small chest freezer to store them in, or you can ask your veterinarian how long they would be able to keep your pet frozen in their care. Freezing puts decomposition on pause and allows the family time to process and research, before making a hasty decision in regards to their loved one’s aftercare. 
+
+### How much does taxidermy preservation cost?
+
+Prices start at around $4500 for cats and small dogs for full body taxidermy preservation. Other alternative services cost less, such as paw preservation at $450 per paw for most cats, or, a mini coat preservation, starting at $200. Traditional taxidermy costs more than freeze dry preservation because it is much more time, emotionally, and labor intensive for the preservationist. Each pet is given innumerable hours of care, study, and consideration during their time in our studio. Please note that Precious Creature does offer payment plans, so that the cost can be split into many smaller increments over the course of time it takes to complete the preservation.
+
+### What can I expect from the taxidermy process?
+
+Custom taxidermy takes innumerable amounts of time, love, and care to recreate your pet to the best of an artist’s ability. Your pet will not look exactly the same as he or she did in life. The eyes will be glass, and the body will be rigid in a fixed position of your choosing. It’s a challenge, but by recording measurements, using reference photos of the loved one in life, by molding, casting, and resculpting the anatomy, we get very close to replicating your pet’s body, preserving the home which housed the soul of your beloved. 
+
+### How long can my pet stay in the freezer while I make arrangements?
+
+Your pet can potentially stay safe in a freezer for many years, provided that they are wrapped in a couple good quality freezer storage baggies to prevent freezer burn on the skin. 
+
+### Is it legal to keep my pet after he or she has passed away? 
+
+Yes. Whether you are to receive preservation/aftercare services or simply wish to have a backyard burial (city ordinances allowing), it is completely legal to keep your pet post mortem.
+
+### Is it legal to own cat or dog fur items?
+
+When your pet passes away, you can legally pay an aftercare professional to preserve your pet's fur, bones, and even their entire body (as in the case of taxidermy and freeze dry). However, it is illegal to then sell said dog or cat to another party. They can be gifted, donated to a museum, or passed down to family or friends. If for any reason a family decides they can no longer keep their preserved pet, Precious Creature can accept them back as a donation.
+
+### Why choose traditional taxidermy over freeze dry preservation?
+
+No one service is "better" than the other. There have been a fair share of both terribly and beautifully preserved freeze dry and traditional taxidermy pets - it all boils down to the talent and skill of the artist as well as the "freshness" or "quality" of the specimen or pet at hand. With taxidermy, you *may* expect your pet to last much much longer than a freeze dry pet. I find that this boils down to two factors: for one, not enough time has past to truly test the longevity of freeze dry preservation as a whole, and two, that in freeze dry, nearly all of the actual tissue of the pet is left intact - including the muscle tissue, brain, and sometimes fat. Contrasting, a traditional taxidermy mount will only contain your pet's real preserved skin, fur, and nails. With a freeze dry pet, you will need to more carefully monitor the environment for excess humidity and insect activity wherein moths and beetles can be a problem. However, there are freeze dry businesses that do go to great lengths to ensure that their work is done with great care and integrity to ensure that your pet lasts years and years to come with no issues at all, just as a taxidermy mount. If you like the idea of freeze dry more than taxidermy, I would be happy to point you in the direction of a facility and preservationist closest to you that I trust. 
+
+### How can I ensure that my pet last a lifetime or more after he or she has been preserved?
+
+Simply care for your preserved pet as you would a fine art piece or a cherished heirloom. Dust once or twice a month and fluff fur with a blow drier set on cool. Cedar wood is always a good idea to have around to deter unwanted pests, just as you would to keep a wool sweater from being snacked on by moths. 
+
+### How long have you been practicing taxidermy? 
+
+I started learning the art of taxidermy in the spring of 2011, teaching myself from an old how-to book on the subject from the 1980’s. Luckily, my grandfather was supportive of me trying out the craft and lent me his garage and work bench to practice. My first subject was a blue and white parakeet, graciously given to me by a local pet store where the bird had passed away in the night. My first bird was a success in my eyes, as it had not fell prey to decay. This first bird began an obsession, passion, and calling. I knew very early on that I wanted to work with pets and their people, and set out to practice and hone my skills enough to where I would feel confidant working with such precious creatures. Two years later, I began studying under my mentor, Allis Markham of Prey Taxidermy and in the summer of 2015, I quit my normal jobs and committed to providing alternative pet aftercare full time. 

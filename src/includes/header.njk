@@ -8,16 +8,24 @@
       <div class="collapse navbar-collapse text-uppercase" id="navbar">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a href="{{ root }}index.html" class="nav-link{{ ' active' if 'index' in page.url }}">Home</a>
+            <a href="{{ root }}services.html" class="nav-link{{ ' active' if 'services' in page.url }}">Services</a>
           </li>
           <li class="nav-item">
-            <a href="{{ root }}style.html" class="nav-link{{ ' active' if 'style' in page.url }}">Services</a>
+            <a href="{{ root }}portfolio.html" class="nav-link{{ ' active' if 'portfolio' in page.url }}">Portfolio</a>
           </li>
-          <li class="nav-item">
-            <a href="{{ root }}grief.html" class="nav-link{{ ' active' if 'grief' in page.url }}">Grief</a>
-          </li>
-          <li class="nav-item">
-            <a href="{{ root }}faq.html" class="nav-link{{ ' active' if 'faq' in page.url }}">FAQ</a>
+          <li class="nav-item dropdown">
+            <a href="#"
+              class="nav-link dropdown-toggle"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false">Learn
+              <i class="material-icons align-middle ms-1" aria-hidden="true">expand_more</i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="{{ root }}grief.html" class="nav-link{{ ' active' if 'grief' in page.url }}">Grieving</a></li>
+              <li><a class="dropdown-item" href="{{ root }}faq.html" class="nav-link{{ ' active' if 'faq' in page.url }}">FAQ</a></li>
+            </ul>
           </li>
            <li class="nav-item">
             <a href="{{ root }}contact.html" class="nav-link{{ ' active' if 'contact' in page.url }}">Contact</a>

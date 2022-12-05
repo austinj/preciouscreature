@@ -1,0 +1,33 @@
+### First things first
+
+Hello and welcome. It is likely that you are here because you are in the process of or have lost a very important being in your life. A soulmate. A friend. Someone who cannot be replaced. You are here because you were lucky enough to have experienced the wonder of the human-animal bond.
+
+### Keep In Mind
+
+- Losing a companion animal can hurt just as much as the loss of a human family member. This has been proven time and time again through countless studies and personal testimonials.
+- It's ok to not be ok. It's also ok to feel nothing at all, or everything all at once.
+- The species of your pet doesn't matter; mice, parakeets, horses, and goldfish have all been greatly mourned by their human counterparts.
+- You are not "weird," "crazy," or "irrational" for mourning the loss of your companion animal; these are all ways I’ve heard grievers judged by themselves or others. You are also not weird for wanting a tangible piece of your loved one to hold onto. At Precious Creature, I receive countless calls and emails from mourners all over the country and world, each day. Mourn your own way, honor what your heart wants. 
+- Your family/friends/coworkers might not understand the weight of your grief.
+- No rules apply to your mourning process. There is no right or wrong way to celebrate, honor, and grieve the loss of a pet (or a human, for that matter).
+
+### Why It Hurts
+
+Many people lose a pet and expect to bounce back easily, only to find that the grief they feel for their Pomeranian or Persian cat outweighs that of the loss of a sibling or parent. Psychologists and grief counselors say that this pain derives from the constant companionship we receive from our companion animals. Our lives and routines are built around our pets. When that constant connectedness ends with the loss of the pet, we can feel their absence a lot more intensely. And for many of us, our animals are our family, sometimes the closest family we have.  
+
+### Ways to Cope, Celebrate, and Remember
+
+- It is important to mourn the loss of your friend and most trusted confidante. Mourning and grief come in many different forms, some which others may not understand; this is okay and important to remember during this time as there is no right or wrong way to grieve and heal. Here are a list of activities and actions you can take to ease the pain of loss, to honor, and to celebrate your pet. 
+- Take photos of your companion: This can be done before, during, or after your companion's passing. Adorn your pet's bedside with flowers, favorite toys, or other beautiful or meaningful pieces if you'd like.
+- Paint or draw your pet: Taking up a creative activity can be soothing for your overworked mind. Create a watercolor portrait of your pet or go big and paint a masterpiece on canvas of him or her to hang in your living room or bedroom.
+- Light a memorial candle: Any candle will do. A nice idea is to buckle or wrap your pet's collar around a glass-enclosed candle. Light, and enjoy the candlelit warmth.
+- Make an ID tag charm bracelet, necklace, or keychain: Use your pet's ID tag as a lasting memento of their life. This is a great way to keep your pet close to you while you are at work or on the go. Simply hang from a chain, or string onto a colorful beaded bracelet.
+- Consider crafting a ball out of their shed fur: Needle felting is the best way to get a tight, round little ball made from the fur of your beloved. Check out needle felting tutorials on YouTube and note the supplies needed. You’ll want to purchase a foam felting block as your surface, and a few felting needles to get started.  
+- Plant a tree or another plant in your pet's honor: Spending time outdoors and planting a special tree or plant can be a therapeutic act. These can be decorated for holidays and tended to like you would have for your pet, watering and making sure your new plant gets plenty of sun and shade (depending on the species of plant of course). If you live in an apartment or are likely to move, plant your small tree in a portable pot so it can be moved with you.
+- Call ASPCA's Pet Loss Hotline: When you just need to talk; open 7 days a week and open 24 hours a day (877)474-3310
+- Reach out to others: Google local pet loss support groups or simply get coffee or tea with a friend who is willing to lend an ear or a shoulder to cry on.
+- Have a funeral or wake: Don't feel silly if you feel the need or have the desire to host a formal or informal funeral for your pet. If you are providing a home burial, this gives everyone involved the opportunity to say their goodbyes and bring flowers. Burials and send-off's can be as simple or as extravagant as you choose. Pet cemeteries offer full service funerals for pets big and small. You may find that a more lax ceremony is more your cup of tea; invite friends and family for a potluck in honor of your pet. Here, stories of your loved one can be shared with all those involved. It can feel liberating to celebrate your pet's life in this way.
+- Create a Memory Box: This can be a shadow box for display or a more personal and intimate chest that can be put away; especially if you find that having your pet's things out causes too much sadness. A memory box serves to keep a pet's physical things and memories safe and kept in a special place. Items that you might place in your display or chest might be a favorite toy, his or her collar, photos, etc.
+- Journal through grief, celebrate, and record memories of your pet with "My Pet Remembrance Journal": Author Enid Traisman leaves no stone unturned in this interactive journal and what I like to call a "mini therapist." It can be found on Amazon and is around $10.
+- Volunteer at a local animal shelter, rescue, wildlife rehabilitation center, zoo, or aviary: For some people, being around other animals is the best medicine. And in this way, you can focus your love and attention on animals in need in honor of your pet. Consider a foster program too; it could be comforting to have another animal in your home.
+- When you feel ready, consider adopting a new pet: This step can come as soon or as distant in the future as you want or need. Try to let go of the feeling that you are "replacing" your deceased pet with a new one. No other could ever replace your beloved friend. Adopting a new pet in honor of a lost one can greatly ease the pain of loss by redirecting energy into another being in need of your love and care.
