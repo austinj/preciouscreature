@@ -44,3 +44,19 @@ body {
       font-family: $font-family-serif;
     }
   }
+
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    i {
+    }
+    &:focus-visible i {
+    }
+  }
+  
+  .carousel-indicators {
+  
+    button:focus-visible {
+    }
+  }
+  
