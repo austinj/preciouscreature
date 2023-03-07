@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Precious Creature Pet Taxidermy | Contact</title>
-  <meta name="description" content="You can contact Precious Creature by phone or email.">
+  <meta name="description" content="Precious Creature is a pet aftercare taxidermy service in California.">
 
   <!-- Favicon -->
   <link rel="icon" href="assets/img/favicon.png">
@@ -88,17 +88,17 @@
           <div class="col-lg-8">
             <form id="fs-frm" name="services-inquiry" accept-charset="utf-8" action="https://formspree.io/f/moqbgqqj" method="post">
             <fieldset id="fs-frm-inputs">
-              <label for="full-name">Full Name</label>
+              <label for="full-name"><h5>Full Name</h5><p class="text-warning">&nbsp; required</p></label>
               <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
-              <label for="email-address">Email Address</label>
+              <label for="email-address"><h5>Email Address</h5><p class="text-warning">&nbsp; required</p></label></label>
               <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
               <fieldset class="locale">
-              <label for="phone">Phone Number</label>
-              <input type="text" name="phone" id="phone" placeholder="555-555-1234" required="">
+              <label for="phone"><h5>Phone Number</h5></label>
+              <input type="text" name="phone" id="phone" placeholder="555-555-1234">
               <fieldset class="locale">
-                <legend>Locale</legend>
-                <input type="text" name="city" placeholder="City" required="">
-                <select name="state" required="">
+                <legend><h5>Location</h5></legend>
+                <input type="text" name="city" placeholder="City">
+                <select name="state">
                   <option value="" selected="" disabled="">State</option>
                   <option value="AL">Alabama</option>
                   <option value="AK">Alaska</option>
@@ -152,20 +152,20 @@
                   <option value="WI">Wisconsin</option>
                   <option value="WY">Wyoming</option>
                 </select>
-                <input type="text" name="postal-code" placeholder="12345" required="">
+                <input type="text" name="postal-code" placeholder="12345">
               </fieldset>
-              <label for="species">Is your pet a cat, dog, or something else?</label>
-                <select name="Species" required="">
+              <label for="species"><h5>Is your pet a cat, dog, or something else?</h5><p class="text-warning">&nbsp; required</p></label>
+                <select name="Species" required = "">
                   <option value="" selected="" disabled="">Type of pet</option>
                   <option value="Cat">Cat</option>
                   <option value="Dog">Dog</option>
                   <option value="Other">Other</option>
                 </select>
-                  <label for="services">Are there any specific services that you'd like to discuss?</label>
-              <input type="text" name="services" id="services" placeholder="See 'Preservation' and 'Burial' for more information" required="">
-                  <label for="weight">What is your pet's weight?</label>
-              <input type="text" name="weight" id="weight" placeholder="lbs" required="">
-              <label for="note">If there's any additional information you'd like to provide, please do so here.</label>
+                  <label for="services"><h5>Are there any specific services that you'd like to discuss?</h5><p class="text-warning">required</p></label>
+              <input type="text" name="services" id="services" placeholder="See 'Preservation' and 'Burial' for more information" required = "">
+                  <label for="weight"><h5>What is your pet's weight?</h5><p class="text-warning">&nbsp; required</p></label>
+              <input type="text" name="weight" id="weight" placeholder="lbs" required = "">
+              <label for="note"><h5>If there's any additional information you'd like to provide, please do so here.</h5></label>
               <textarea rows="2" name="note" id="note" placeholder="Any additional information"></textarea>
               <input type="hidden" name="_subject" id="email-subject" value="Form: services inquiry ">
             </fieldset>
