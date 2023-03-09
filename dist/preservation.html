@@ -71,22 +71,24 @@
 <main id="main">
     
   <!-- Header -->
-  <div class="container py-1 py-lg-5 text-dark">
-    <h1 class="display-3">Preservation</h1>
+  <div class="container py-5 text-dark">
+    <h1 class="display-2">Preservation</h1>
     <div class="border border-5 border-dark w-15 mb-4"></div>
     <div class="row">
-      <div class="col-lg-10 col-xxl-8">
+      <div class="col">
         <p class="lead">We provide aftercare for the most challenging time in pet companionship.</p>
         <p>Just as every individual and family's relationship with their pet is unique, so is our approach to understanding and supporting you. Whether you want to preserve your pet's memory with something as simple as a single bone preservation, or something as complex as full taxidermy, we look forward to talking to you about remembering your pet in the way that best honors their memory.</p>
         <p>As you'll notice in the images below, families commonly combine services to find the best way to memorialize their pet, such as a combined bones, fur, and cast preservation. All images shown are projects that were completed by Precious Creature. They are presented here with the express permission of the loved one's family.</p>
       </div>
     </div>
+    <div class="border border-6 border-dark w-100 my-4 border-opacity-25 d-lg-none"></div>
   </div>
+  
 
   <!-- Cards -->
-  <div class="container mb-4">
-    <div class="row gy-4 pb-5 pb-lg-6 row-cols-2 row-cols-md-4 g-4">
-      <div class="col-sm">
+  <div class="container mb-4 d-none d-lg-block">
+    <div class="row gy-4 pb-5 pb-lg-6 row-cols-1 row-cols-md-4 g-4">
+      <div class="col">
         <div class="card rounded bg-secondary h-100" >
           <img src="assets/img/fur/fur1thumb.jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -98,7 +100,7 @@
           </div>
         </div>
       </div>
-      <div class="col-sm">
+      <div class="col">
         <div class="card rounded bg-secondary h-100">
           <img src="assets/img/bones/bones1thumb.jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -110,7 +112,7 @@
           </div>
         </div>
       </div>
-      <div class="col-sm">
+      <div class="col">
         <div class="card rounded bg-secondary h-100">
           <img src="assets/img/casts/cast1thumb.jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -122,7 +124,7 @@
           </div>
         </div>
       </div>
-            <div class="col-sm">
+      <div class="col">
         <div class="card rounded bg-secondary h-100">
           <img src="assets/img/full/full1thumb.jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -136,12 +138,14 @@
       </div>
     </div>
     <div class="border border-6 border-dark w-100 my-4 border-opacity-25"></div>
-
+  </div>
+  
   <!-- Content -->
     <!-- Fur -->
-    <div class="row justify-content-center align-items-center gy-4 py-4 py-lg-4" id="fur">
-      <div class="col-lg-5">
-          <div id="carouselFur" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="container mb-4">
+    <div class="row justify-content-center align-items-center gy-4 py-4" id="fur">
+      <div class="col-10 col-md-4">
+          <div id="carouselFur" class="carousel slide carousel-fade border border-dark" data-bs-ride="carousel">
             <div class="carousel-inner h-25">
               <div class="carousel-item active">
                 <img src="assets/img/fur/fur1.jpg" class="d-block w-100" alt="...">
@@ -194,20 +198,16 @@
           </div>
       </div>
       <div class="col-lg-7">
-        <h1 class="fw-normal text-dark">Fur</h1>
-        <p class="fw-light text-dark">Fur preservation is one of the most versatile methods of preserving and remembering your pet. Families choose to remember their pets through shaped fur; paw, tail, or complete pelt preservation; whisker and fur clippings; and felted balls.</p>
+        <h1 class="display-4 fw-normal text-dark text-center text-md-start">Fur</h1>
+        <p class="fw-light text-dark ">Fur preservation is one of the most versatile methods of preserving and remembering your pet. Families choose to remember their pets through shaped fur; paw, tail, or complete pelt preservation; whisker and fur clippings; and felted balls.</p>
       </div>
     </div>
     <div class="border border-6 border-dark w-100 my-4 border-opacity-25"></div>
 
     <!-- Bones -->
     <div class="row justify-content-center align-items-center gy-4 pt-4 pb-5 pb-lg-6" id="bones">
-      <div class="col-lg-7">
-        <h1 class="fw-normal text-dark">Bones</h1>
-        <p class="fw-light text-dark">Families often choose to preserve their pet's bones as an elegant, insightful homage to their departed loved one. Bone preservation can be as simple as just your pet's skull, as artful as a container storing a collection of their cleaned bones for viewing, or as complex as a full articulation of their skeleton.</p>
-      </div>
-      <div class="col-lg-5">
-          <div id="carouselBones" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="col-10 col-md-4">
+          <div id="carouselBones" class="carousel slide carousel-fade border border-dark" data-bs-ride="carousel">
             <div class="carousel-inner h-25">
               <div class="carousel-item active">
                 <img src="assets/img/bones/bones1.jpg" class="d-block w-100" alt="...">
@@ -277,13 +277,17 @@
             </button>
           </div>
       </div>
+      <div class="col-lg-7">
+        <h1 class="display-4 fw-normal text-dark text-center text-md-start">Bones</h1>
+        <p class="fw-light text-dark">Families often choose to preserve their pet's bones as an elegant, insightful homage to their departed loved one. Bone preservation can be as simple as just your pet's skull, as artful as a container storing a collection of their cleaned bones for viewing, or as complex as a full articulation of their skeleton.</p>
+      </div>
     </div>
     <div class="border border-6 border-dark w-100 my-4 border-opacity-25"></div>
 
     <!-- Casts -->
     <div class="row justify-content-center align-items-center gy-4 py-4 py-lg-4" id="casts">
-      <div class="col-lg-5">
-          <div id="carouselCasts" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="col-10 col-md-4">
+          <div id="carouselCasts" class="carousel slide carousel-fade border border-dark" data-bs-ride="carousel">
             <div class="carousel-inner h-25">
               <div class="carousel-item active">
                 <img src="assets/img/casts/cast1.jpg" class="d-block w-100" alt="...">
@@ -327,7 +331,7 @@
           </div>
       </div>
       <div class="col-lg-7">
-        <h1 class="fw-normal text-dark">Casts</h1>
+        <h1 class="display-4 fw-normal text-dark text-center text-md-start">Casts</h1>
         <p class="fw-light text-dark">Casts allow families to honor the memory of a loved pet without the preservation of their original fur or bones. Instead, alternative materials are used to accurately and intimately represent your pet's nose, paws, or other preferred aspect from life.</p>
       </div>
     </div>
@@ -335,12 +339,8 @@
 
     <!-- Complete -->
     <div class="row justify-content-center align-items-center gy-4 pt-4 pb-5 pb-lg-6" id="complete">
-      <div class="col-lg-7">
-        <h1 class="fw-normal text-dark">Complete</h1>
-        <p class="fw-light text-dark">The complete preservation of your pet's body serves as a remarkable memorial to their life and dignity. Although taxidermy encompasses a wide array of practices, complete or full-body taxidermy is likely the most recognizable form of the medium, and one that is both arresting in its accuracy and breathtaking in its connection to your beloved. As is true for any service we provide, consultation with you is key to understanding the thought, pose, and details necessary for a complete preservation and memorial to your loved one that will last a lifetime.</p>
-      </div>
-      <div class="col-lg-5">
-          <div id="carouselComplete" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="col-10 col-md-4">
+          <div id="carouselComplete" class="carousel slide carousel-fade border border-dark" data-bs-ride="carousel">
             <div class="carousel-inner h-25">
               <div class="carousel-item active">
                 <img src="assets/img/full/full1.jpg" class="d-block w-100" alt="...">
@@ -374,7 +374,12 @@
             </button>
           </div>
       </div>
+      <div class="col-lg-7">
+        <h1 class="display-4 fw-normal text-dark text-center text-md-start">Complete</h1>
+        <p class="fw-light text-dark">The complete preservation of your pet's body serves as a remarkable memorial to their life and dignity. Although taxidermy encompasses a wide array of practices, complete or full-body taxidermy is likely the most recognizable form of the medium, and one that is both arresting in its accuracy and breathtaking in its connection to your beloved. As is true for any service we provide, consultation with you is key to understanding the thought, pose, and details necessary for a complete preservation and memorial to your loved one that will last a lifetime.</p>
+      </div>
     </div>
+  </div>
 </main>
 <footer class="bg-light text-dark">
   <div class="container py-5 py-md-6">
