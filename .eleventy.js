@@ -23,6 +23,8 @@ module.exports = function (config) {
       "assets/js/bootstrap.js",
     "node_modules/@midzer/tobii/dist/tobii.min.js": "assets/js/lightbox.js",
     "src/assets/js": "assets/js",
+    "src/robots.txt": "/robots.txt",
+    "src/_redirects": "/_redirects",
   });
 
   // BrowserSync
