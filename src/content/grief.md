@@ -1,4 +1,4 @@
-### First things first
+### First Things First
 
 Hello and welcome. It is likely that you are here because you are in the process of or have lost a very important being in your life. A soulmate. A friend. Someone who cannot be replaced. You are here because you were lucky enough to have experienced the wonder of the human-animal bond.
 
