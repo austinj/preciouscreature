@@ -1,21 +1,5 @@
 // Place your own CSS or SCSS below this line.
 
-.navbar-brand {
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-    font-family: "UnifrakturMaguntia";
-
-    i {
-      font-size: inherit;
-      line-height: inherit;
-    }
-
-    img {
-      max-height: 30px;
-      width: auto;
-    }
-}
-
 [class^="display"] {
     font-family: $font-family-serif;
     letter-spacing: normal;
