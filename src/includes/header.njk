@@ -1,17 +1,17 @@
 <header>
   <nav class="navbar navbar-{{ navbarColor|default("dark") }} navbar-expand-lg fixed-top" aria-label="Main">
     <div class="container">
-      <a href="{{ root }}index.html" class="navbar-brand d-inline-flex text-lowercase">Precious Creature<i class="material-icons ms-2" aria-hidden="true">emoji_nature</i></a>
+      <a href="{{ root }}index.html" class="navbar-brand d-inline-flex text-lowercase">Precious Creature</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
         <i class="material-icons icon-2x" aria-hidden="true">menu</i>
       </button>
       <div class="collapse navbar-collapse text-uppercase" id="navbar">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a href="{{ root }}preservation.html" class="nav-link{{ ' active' if 'preservation' in page.url }}">Preservation</a>
+            <a href="{{ root }}preservation" class="nav-link{{ ' active' if 'preservation' in page.url }}">Preservation</a>
           </li>
           <li class="nav-item">
-            <a href="{{ root }}burial.html" class="nav-link{{ ' active' if 'burial' in page.url }}">Burial</a>
+            <a href="{{ root }}cremation" class="nav-link{{ ' active' if 'burial' in page.url }}">Cremation and burial</a>
           </li>
           <li class="nav-item dropdown">
             <a href="#"
@@ -23,13 +23,13 @@
               <i class="material-icons align-middle ms-1" aria-hidden="true">expand_more</i>
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="{{ root }}about.html" class="nav-link{{ ' active' if 'about' in page.url }}">About</a></li>
-              <li><a class="dropdown-item" href="{{ root }}grief.html" class="nav-link{{ ' active' if 'grief' in page.url }}">Grieving</a></li>
-              <li><a class="dropdown-item" href="{{ root }}faq.html" class="nav-link{{ ' active' if 'faq' in page.url }}">FAQ</a></li>
+              <li><a class="dropdown-item" href="{{ root }}about" class="nav-link{{ ' active' if 'about' in page.url }}">About</a></li>
+              <li><a class="dropdown-item" href="{{ root }}grief" class="nav-link{{ ' active' if 'grief' in page.url }}">Grieving</a></li>
+              <li><a class="dropdown-item" href="{{ root }}faq" class="nav-link{{ ' active' if 'faq' in page.url }}">FAQ</a></li>
             </ul>
           </li>
            <li class="nav-item">
-            <a href="{{ root }}contact.html" class="nav-link{{ ' active' if 'contact' in page.url }}">Contact</a>
+            <a href="{{ root }}contact" class="nav-link{{ ' active' if 'contact' in page.url }}">Contact</a>
           </li>
         </ul>
       </div>
