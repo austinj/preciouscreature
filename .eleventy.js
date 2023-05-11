@@ -19,6 +19,7 @@ module.exports = function (config) {
   // Copy files
   config.addPassthroughCopy({
     "src/assets/img": "assets/img",
+    "src/assets/svg": "assets/svg",
     "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js":
       "assets/js/bootstrap.js",
     "node_modules/@midzer/tobii/dist/tobii.min.js": "assets/js/lightbox.js",
