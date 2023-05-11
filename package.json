@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "@midzer/tobii": "^2.4.0",
+    "@quasibit/eleventy-plugin-schema": "^1.11.0",
     "bootstrap": "^5.2.0",
     "eleventy": "^1.0.6"
   }

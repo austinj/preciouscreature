@@ -83,6 +83,77 @@
 </header>
 
 <main id="main">
+ 
+  <!-- Structured data -->
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "{{ root }}#website",
+      "url": "{{ root }}",
+      "name": "{{ title }}",
+      "description": "{{ description }}",
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How old are you?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": 12
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is your name?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Joe</p>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What of it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not much."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ root }}{{ permalink }}"
+      },
+      "url": "{{ root }}{{ permalink }}",
+      "isPartOf": {
+        "@id": "{{ root }}#website"
+      },
+      "headline": "{{ title }}",
+      "description": "{{ description }}",
+      "image": "https://example.com/images/page.png",
+      "inLanguage": "en-US",
+      "publisher": {
+        "@type": "Organization",
+        "name": "{{ title }}",
+        "url": "{{ root }}#organization",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://example.com/images/logo.png",
+          "width": 1200,
+          "height": 630
+        }
+      }
+    }
+  ]
+}</script>
+  
   <!-- Header -->
   <div class="container py-5 py-md-6 text-dark">
     <div class="row justify-content-center">

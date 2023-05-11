@@ -3,7 +3,33 @@ layout: content
 title: FAQ on pet preservation and pet taxidermy
 description: FAQ - Common questions and answers about pet preservation and pet taxidermy
 permalink: /faq.html
+meta:
+  faq:
+    - question: How old are you?
+      answer: 12
+    - question: What is your name?
+      answer: "<p>Joe</p>"
+    - question: What of it?
+      answer: Not much.
+  site:
+    name: "{{ title }}"
+    description: "{{ description }}"
+    url: "{{ root }}"
+    logo:
+      src: https://example.com/images/logo.png
+      width: 1200
+      height: 630
+  language: en-US
+  url: "{{ root }}{{ permalink }}"
+  title: "{{ title }}"
+  description: "{{ description }}"
+  image:
+    src: https://example.com/images/page.png
 ---
+ 
+  <!-- Structured data -->
+  {% jsonLdScript meta, type, tags %}
+  
   <!-- Header -->
   <div class="container py-5 py-md-6 text-dark">
     <div class="row justify-content-center">

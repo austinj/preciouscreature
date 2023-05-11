@@ -3,6 +3,7 @@ const eleventySass = require("eleventy-sass");
 const postcss = require("postcss");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const { EleventyRenderPlugin } = require("@11ty/eleventy");
+const schema = require("@quasibit/eleventy-plugin-schema");
 
 module.exports = function (config) {
   // Plugins
@@ -15,6 +16,7 @@ module.exports = function (config) {
   });
   config.addPlugin(syntaxHighlight);
   config.addPlugin(EleventyRenderPlugin);
+  config.addPlugin(schema);
 
   // Copy files
   config.addPassthroughCopy({
