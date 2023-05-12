@@ -28,6 +28,7 @@ module.exports = function (config) {
     "src/assets/js": "assets/js",
     "src/robots.txt": "/robots.txt",
     "src/_redirects": "/_redirects",
+    "src/assets/img/favicon": "/"
   });
 
   // BrowserSync

@@ -12,7 +12,7 @@ To prepare your pet for any kind of preservation, it is recommended that he or s
 
 ### How much does taxidermy preservation cost?
 
-Due to the wide range of services provided, costs can range anywhere from $40 to $14,000. Traditional taxidermy costs more than freeze dry preservation because it is much more time, emotionally, and labor intensive for the preservationist. Each pet is given innumerable hours of care, study, and consideration during their time in our studio. Please note that Precious Creature does offer payment plans, so that the cost can be split into smaller increments over the course of time it takes to complete the preservation.
+Due to the uniqueness of each loved one and the wishes of each family, prices vary widely. To discuss pricing on specific services, [please contact us directly]({{ root }}contact). Traditional taxidermy costs more than freeze dry preservation because it is much more time, emotionally, and labor intensive for the preservationist. Each pet is given innumerable hours of care, study, and consideration during their time in our studio. Please note that Precious Creature does offer payment plans, so that the cost can be split into smaller increments over the course of time it takes to complete the preservation.
 
 ### What can I expect from the taxidermy process?
 
