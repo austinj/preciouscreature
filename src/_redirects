@@ -1,9 +1,11 @@
 # Redirect with a 301
 /new-page   /   301
 /pet    /   301
-/modern-mourning    /grief 301
+/modern-mourning    /grief  301
 /faq    /faq   301
 /contact-devlin /contact   301
 /other-work /   301
 /pets   /   301
 /classes    /   301
+/taxidermy  /   301
+/page-cv    /   301
