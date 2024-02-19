@@ -14,7 +14,6 @@
 }
 
 .carousel-indicators {
-  background-color: $black;
   opacity: 0.9;
   margin-bottom: 0;
   margin-left: 0;
@@ -25,4 +24,30 @@
     outline-color: $white;
     outline-offset: 1px;
   }
+}
+
+.carousel-wrap {
+  padding: 50px 50px 120px;
+}
+
+.carousel-item > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.img-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s ease;
+  transform: scale(2);
+}
+.img-thumbnail.active img {
+  opacity: 1;
+  transform: scale(2);
+  position: relative;
+  z-index: 2;
+  outline: 1px solid white;
 }
