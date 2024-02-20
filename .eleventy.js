@@ -18,7 +18,6 @@ module.exports = function (config) {
   config.addPlugin(EleventyRenderPlugin);
   config.addPlugin(schema);
 
-
   // Shortcode
   config.addShortcode("imgGallery", function(fileName, altText, dataGroup) {
     return `<div class="col p-2">
