@@ -3,6 +3,7 @@ const eleventySass = require("eleventy-sass");
 const postcss = require("postcss");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const { EleventyRenderPlugin } = require("@11ty/eleventy");
+const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 const schema = require("@quasibit/eleventy-plugin-schema");
 
 module.exports = function (config) {
@@ -18,10 +19,11 @@ module.exports = function (config) {
   config.addPlugin(EleventyRenderPlugin);
   config.addPlugin(schema);
 
+
   // Shortcode
   config.addShortcode("imgGallery", function(fileName, altText, dataGroup) {
     return `<div class="col p-2">
-<a href="${fileName}" class="lightbox" data-group="${dataGroup}">
+<a href="${fileName}" class="lightbox" data-group="${dataGroup}" data-zoom="false">
 <img src="${fileName}" class="img-fluid" alt="${altText}">
 </a>
 </div>`;
