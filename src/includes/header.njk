@@ -7,8 +7,21 @@
       </button>
       <div class="collapse navbar-collapse text-uppercase" id="navbar">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a href="{{ root }}preservation" class="nav-link{{ ' active' if 'preservation' in page.url }}">Preservation</a>
+          <li class="nav-item dropdown">
+            <a href="#"
+              class="nav-link dropdown-toggle"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false">Preservation
+              <i class="material-icons align-middle ms-1" aria-hidden="true">expand_more</i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="{{ root }}fur" class="nav-link{{ ' active' if 'fur' in page.url }}">Fur</a></li>
+              <li><a class="dropdown-item" href="{{ root }}bones" class="nav-link{{ ' active' if 'bones' in page.url }}">Bones</a></li>
+              <li><a class="dropdown-item" href="{{ root }}casts" class="nav-link{{ ' active' if 'casts' in page.url }}">Casts</a></li>
+              <li><a class="dropdown-item" href="{{ root }}full" class="nav-link{{ ' active' if 'full' in page.url }}">Complete</a></li>
+            </ul>
           </li>
           <li class="nav-item">
             <a href="{{ root }}cremation" class="nav-link{{ ' active' if 'cremation' in page.url }}">Cremation and burial</a>

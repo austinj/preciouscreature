@@ -52,8 +52,21 @@
       </button>
       <div class="collapse navbar-collapse text-uppercase" id="navbar">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a href="preservation" class="nav-link">Preservation</a>
+          <li class="nav-item dropdown">
+            <a href="#"
+              class="nav-link dropdown-toggle"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false">Preservation
+              <i class="material-icons align-middle ms-1" aria-hidden="true">expand_more</i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="fur" class="nav-link">Fur</a></li>
+              <li><a class="dropdown-item" href="bones" class="nav-link">Bones</a></li>
+              <li><a class="dropdown-item" href="casts" class="nav-link">Casts</a></li>
+              <li><a class="dropdown-item" href="full" class="nav-link">Complete</a></li>
+            </ul>
           </li>
           <li class="nav-item">
             <a href="cremation" class="nav-link active">Cremation and burial</a>

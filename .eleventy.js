@@ -18,6 +18,15 @@ module.exports = function (config) {
   config.addPlugin(EleventyRenderPlugin);
   config.addPlugin(schema);
 
+  // Shortcode
+  config.addShortcode("imgGallery", function(fileName, altText, dataGroup) {
+    return `<div class="col p-2">
+<a href="${fileName}" class="lightbox" data-group="${dataGroup}">
+<img src="${fileName}" class="img-fluid" alt="${altText}">
+</a>
+</div>`;
+  });
+
   // Copy files
   config.addPassthroughCopy({
     "src/assets/img": "assets/img",
