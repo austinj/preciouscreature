@@ -27,6 +27,10 @@ module.exports = function (config) {
 </div>`;
   });
 
+  config.addShortcode("imgSrc", function(fileName, altText, classDetails) {
+    return `<img src="assets/img/${fileName}" class="${classDetails}" alt="${altText}" srcset="assets/img/sm_${fileName} 299w, assets/img/md_${fileName} 500w, assets/img/lg_${fileName} 718w, assets/img/xl_${fileName} 838w">`;
+  });
+
   // Copy files
   config.addPassthroughCopy({
     "src/assets/img": "assets/img",
