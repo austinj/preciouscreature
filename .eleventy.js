@@ -21,15 +21,28 @@ module.exports = function (config) {
   // Shortcode
   config.addShortcode("imgGallery", function(fileName, altText, dataGroup) {
     return `<div class="col p-2">
-<a href="assets/img/${dataGroup}/${fileName}" class="lightbox" data-group="${dataGroup}" data-zoom="false">
-<img src="assets/img/${dataGroup}/${fileName}" class="img-fluid" alt="${altText}"  srcset="assets/img/${dataGroup}/sm_${fileName} 299w, assets/img/${dataGroup}/md_${fileName} 500w, assets/img/${dataGroup}/lg_${fileName} 718w, assets/img/${dataGroup}/xl_${fileName} 838w">
-</a>
-</div>`;
+      <a href="assets/img/${dataGroup}/${fileName}" class="lightbox" data-group="${dataGroup}" data-zoom="false">
+      <img src="assets/img/${dataGroup}/${fileName}" class="img-fluid" alt="${altText}" decoding="async" srcset="assets/img/${dataGroup}/sm_${fileName} 299w, assets/img/${dataGroup}/md_${fileName} 500w, assets/img/${dataGroup}/lg_${fileName} 718w, assets/img/${dataGroup}/xl_${fileName} 838w">
+      </a>
+      </div>`;
   });
 
   config.addShortcode("imgSrc", function(fileName, altText, classDetails) {
-    return `<img src="assets/img/${fileName}" class="${classDetails}" alt="${altText}" srcset="assets/img/sm_${fileName} 299w, assets/img/md_${fileName} 500w, assets/img/lg_${fileName} 718w, assets/img/xl_${fileName} 838w">`;
+    return `<img src="assets/img/${fileName}" class="${classDetails}" alt="${altText}" decoding="async" srcset="assets/img/sm_${fileName} 299w, assets/img/md_${fileName} 500w, assets/img/lg_${fileName} 718w, assets/img/xl_${fileName} 838w">`;
   });
+
+  config.addShortcode("imgGalleryBelowFold", function(fileName, altText, dataGroup) {
+    return `<div class="col p-2">
+      <a href="assets/img/${dataGroup}/${fileName}" class="lightbox" data-group="${dataGroup}" data-zoom="false">
+      <img src="assets/img/${dataGroup}/${fileName}" class="img-fluid" alt="${altText}" decoding="async" loading="lazy" srcset="assets/img/${dataGroup}/sm_${fileName} 299w, assets/img/${dataGroup}/md_${fileName} 500w, assets/img/${dataGroup}/lg_${fileName} 718w, assets/img/${dataGroup}/xl_${fileName} 838w">
+      </a>
+      </div>`;
+  });
+
+  config.addShortcode("imgSrcBelowFold", function(fileName, altText, classDetails) {
+    return `<img src="assets/img/${fileName}" class="${classDetails}" alt="${altText}" decoding="async" loading="lazy" srcset="assets/img/sm_${fileName} 299w, assets/img/md_${fileName} 500w, assets/img/lg_${fileName} 718w, assets/img/xl_${fileName} 838w">`;
+  });
+
 
   // Copy files
   config.addPassthroughCopy({
