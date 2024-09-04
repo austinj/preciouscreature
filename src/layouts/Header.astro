@@ -8,15 +8,15 @@ import { Astronav, MenuItems, MenuIcon, Dropdown, DropdownItems, DropdownSubmenu
   scrollY={40}
   defaultClass="py-1 border-black"
   activeClass="bg-white/10 border-gray-200 backdrop-blur-lg border-transparent">
-<header class="lg:flex justify-between p-3 gap-5 mx-auto container">
+<header class="lg:flex justify-between p-3 lg:p-2 gap-5 mx-auto container">
   <Astronav closeOnClick>
     <div class="flex w-full lg:w-auto justify-between">
       <a class="font-serif text-2xl tracking-wide" href="/">precious creature</a>
       <div class="block lg:hidden">
-        <MenuIcon class="w-4 h-4 mt-1.5 text-gray-800" />
+        <MenuIcon class="w-4 h-4 mt-2 text-gray-800" />
       </div>
     </div>
-    <MenuItems class="hidden lg:flex">
+    <MenuItems class="hidden lg:flex lg:pt-1">
       <ul class="flex flex-col lg:flex-row lg:gap-5">
         <li>
           <Dropdown class="group">
@@ -34,7 +34,8 @@ import { Astronav, MenuItems, MenuIcon, Dropdown, DropdownItems, DropdownSubmenu
                   stroke-linejoin="round"
                   d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
               </svg>
-            </button>            <DropdownItems class="relative">
+            </button>
+            <DropdownItems class="relative">
               <div
                 class="lg:absolute bg-tan top-2 w-40 border pl-3 lg:shadow rounded lg:p-3">
                 <ul>
