@@ -3,55 +3,51 @@ import Header from "../layouts/Header.astro";
 import Footer from "../layouts/Footer.astro";
 
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
 ---
 
-
 <!doctype html>
-<html lang='en'>
-
+<html lang="en">
   <head>
-    <meta charset='UTF-8' />
-    <meta name='description' content='Astro description' />
-    <meta name='viewport' content='width=device-width' />
-    <link rel='icon' type='image/svg+xml' href='/favicon.ico' />
-    <meta name='generator' content={Astro.generator} />
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburgerMenu = document.getElementById("hamburgerMenu");
+        const mobileMenu = document.getElementById("mobileMenu");
+        const dropdownToggles = document.querySelectorAll(
+          ".dropdown-toggle-mobile",
+        );
 
-      document.addEventListener('DOMContentLoaded', function() {
-        const hamburgerMenu = document.getElementById('hamburgerMenu');
-        const mobileMenu = document.getElementById('mobileMenu');
-        const dropdownToggles = document.querySelectorAll('.dropdown-toggle-mobile');
-      
         // Toggle mobile menu visibility
         // @ts-ignore
-        hamburgerMenu.addEventListener('click', function() {
+        hamburgerMenu.addEventListener("click", function () {
           // @ts-ignore
-          mobileMenu.classList.toggle('hidden');
+          mobileMenu.classList.toggle("hidden");
         });
-      
+
         // Toggle dropdown menu visibility in mobile view
-        dropdownToggles.forEach(toggle => {
-          toggle.addEventListener('click', function() {
-              // @ts-ignore
+        dropdownToggles.forEach((toggle) => {
+          toggle.addEventListener("click", function () {
+            // @ts-ignore
             const dropdownMenu = this.nextElementSibling;
-            dropdownMenu.classList.toggle('hidden');
+            dropdownMenu.classList.toggle("hidden");
           });
         });
       });
-      
-      
     </script>
   </head>
 
   <body class="flex">
     <Header />
-      <slot />
+    <slot />
     <Footer />
   </body>
-
 </html>

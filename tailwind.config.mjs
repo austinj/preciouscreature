@@ -1,32 +1,32 @@
 /** @type {import('tailwindcss').Config} */
 
-const colors = require('tailwindcss/colors');
+const colors = require("tailwindcss/colors");
 
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
       backgroundImage: {
-        'doglady': "url('../images/full/doglady.webp')",
+        doglady: "url('../images/full/doglady.webp')",
       },
     },
     colors: {
-      transparent: 'transparent',
-      current: 'currentColor',
+      transparent: "transparent",
+      current: "currentColor",
       black: colors.black,
       white: colors.white,
       gray: colors.gray,
       emerald: colors.emerald,
       indigo: colors.indigo,
       yellow: colors.yellow,
-      'tan': '#e8e2d1',
-      'tan-dark': '#565584',
-      'peach': '#ffefe6',
+      tan: "#e8e2d1",
+      "tan-dark": "#565584",
+      peach: "#ffefe6",
     },
     fontFamily: {
-      sans: ['Cormorant\\ Garamond', 'sans-serif'],
-      serif: ['UnifrakturMaguntia', 'serif'],
-      display: ['Fondamento', 'serif'],
+      sans: ["Cormorant\\ Garamond", "sans-serif"],
+      serif: ["UnifrakturMaguntia", "serif"],
+      display: ["Fondamento", "serif"],
     },
   },
   daisyui: {
