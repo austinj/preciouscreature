@@ -5,3 +5,35 @@
   to = "/.netlify/images?url=/images/cdn/:file"
   # ... and the status code of 200 will make this behave as a rewrite
   status = 200
+
+  [[redirects]]
+  # Requests to URLs matching this pattern...
+  from = "/images/cdn/taxidermy/:file"
+  # ...will resolve to this URL pattern
+  to = "/.netlify/images?url=/images/cdn/taxidermy/:file"
+  # ... and the status code of 200 will make this behave as a rewrite
+  status = 200
+
+  [[redirects]]
+  # Requests to URLs matching this pattern...
+  from = "/images/cdn/skeleton/:file"
+  # ...will resolve to this URL pattern
+  to = "/.netlify/images?url=/images/cdn/skeleton/:file"
+  # ... and the status code of 200 will make this behave as a rewrite
+  status = 200
+
+  [[redirects]]
+  # Requests to URLs matching this pattern...
+  from = "/images/cdn/casts/:file"
+  # ...will resolve to this URL pattern
+  to = "/.netlify/images?url=/images/cdn/casts/:file"
+  # ... and the status code of 200 will make this behave as a rewrite
+  status = 200
+
+  [[redirects]]
+  # Requests to URLs matching this pattern...
+  from = "/images/cdn/coat/:file"
+  # ...will resolve to this URL pattern
+  to = "/.netlify/images?url=/images/cdn/coat/:file"
+  # ... and the status code of 200 will make this behave as a rewrite
+  status = 200
