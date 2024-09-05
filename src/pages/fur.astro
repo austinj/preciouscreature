@@ -1,6 +1,7 @@
 ---
 
 import Layout from "../layouts/Base.astro";
+import LightboxImage from '../components/LightboxImage.astro';
 import "../styles/index.css";
 
 ---
@@ -17,7 +18,7 @@ import "../styles/index.css";
     </div>
     <div class="px-4 pt-4">
       Coat preservation is one of the most versatile methods of preserving and remembering your pet. Families choose to remember their pets through shaped fur; paw, tail, or complete pelt preservation; whisker and fur clippings; and felted balls.
-    <div id="my-gallery" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+    <div id="my-gallery" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 pt-4 justify-items-center gap-y-4">
       <a href="https://picsum.photos/900/1600" data-pswp-width="900" data-pswp-height="1600" class="contents">
         <img
           width="900"
@@ -38,6 +39,7 @@ import "../styles/index.css";
           class="h-[250px] w-[300px] object-cover shadow"
         />
       </a>
+      <LightboxImage url="../images/cdn/coat/coat_akita.jpg" />
     </div>
   </div>
     
@@ -52,6 +54,9 @@ import "../styles/index.css";
         pswpModule,
         children: 'a',
         gallery: '#my-gallery',
+        showHideAnimationType: 'fade',
+        imageClickAction: 'next',
+        tapAction: 'next',
       })
 
       document.addEventListener(
