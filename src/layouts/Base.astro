@@ -1,6 +1,7 @@
 ---
 import Header from "../layouts/Header.astro";
 import Footer from "../layouts/Footer.astro";
+import CTA from "../components/CTA.astro";
 
 interface Props {
   title: string;
@@ -19,35 +20,15 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const hamburgerMenu = document.getElementById("hamburgerMenu");
-        const mobileMenu = document.getElementById("mobileMenu");
-        const dropdownToggles = document.querySelectorAll(
-          ".dropdown-toggle-mobile",
-        );
-
-        // Toggle mobile menu visibility
-        // @ts-ignore
-        hamburgerMenu.addEventListener("click", function () {
-          // @ts-ignore
-          mobileMenu.classList.toggle("hidden");
-        });
-
-        // Toggle dropdown menu visibility in mobile view
-        dropdownToggles.forEach((toggle) => {
-          toggle.addEventListener("click", function () {
-            // @ts-ignore
-            const dropdownMenu = this.nextElementSibling;
-            dropdownMenu.classList.toggle("hidden");
-          });
-        });
-      });
     </script>
   </head>
 
   <body class="flex">
     <Header />
-    <slot />
+    <main class="flex grow flex-col bg-doglady bg-cover bg-center pb-6">
+      <slot />
+      <CTA />
+    </main>
     <Footer />
   </body>
 </html>
