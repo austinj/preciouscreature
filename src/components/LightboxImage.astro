@@ -1,10 +1,11 @@
 ---
-// Usage: <ImageLightbox url="/images/cdn/picture.webp" />
-const { url } = Astro.props;
+// Usage: <ImageLightbox url="/images/cdn/picture.webp" alt="caption here" />
+const { url, caption } = Astro.props;
 ---
 
 <a href={url} data-pswp-width="960" data-pswp-height="1200" class="contents">
   <img
+    alt={caption}
     width="960"
     height="1200"
     loading="lazy"
@@ -12,4 +13,5 @@ const { url } = Astro.props;
     src={url}
     class="w-[300px] h-[375px] object-cover shadow"
   />
+  <span class="pswp-caption-content">{caption}</span>
 </a>

@@ -3,6 +3,9 @@
 import Layout from "../layouts/Base.astro";
 import LightboxImage from '../components/LightboxImage.astro';
 import "../styles/index.css";
+import 'photoswipe/style.css'
+import 'photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.css';
+
 
 ---
 
@@ -19,51 +22,21 @@ import "../styles/index.css";
     <div class="px-4 pt-4">
       Coat preservation is one of the most versatile methods of preserving and remembering your pet. Families choose to remember their pets through shaped fur; paw, tail, or complete pelt preservation; whisker and fur clippings; and felted balls.
     <div id="my-gallery" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 pt-4 justify-items-center gap-y-4">
-      <a href="https://picsum.photos/900/1600" data-pswp-width="900" data-pswp-height="1600" class="contents">
-        <img
-          width="900"
-          height="1600"
-          loading="lazy"
-          decoding="async"
-          src="https://picsum.photos/900/1600"
-          class="h-[250px] w-[300px] object-cover shadow"
-        />
-      </a>
-      <a href="https://picsum.photos/900/1600" data-pswp-width="900" data-pswp-height="1600" class="contents">
-        <img
-          width="900"
-          height="1600"
-          loading="lazy"
-          decoding="async"
-          src="https://picsum.photos/900/1600"
-          class="h-[250px] w-[300px] object-cover shadow"
-        />
-      </a>
-      <LightboxImage url="../images/cdn/coat/coat_akita.jpg" />
+
+      <LightboxImage url="../images/cdn/coat/coat_akita.jpg" caption="Akita's pelt with a focus on the face" />
+      <LightboxImage url="../images/cdn/coat/coat_ballneedles.jpg" caption="Three felted hair balls with needles in the foreground" />
+      <LightboxImage url="../images/cdn/coat/coat_ballornament.jpg" caption="" />
+      <LightboxImage url="../images/cdn/coat/coat_ballsorangeblack.jpg" caption="" />
+      <LightboxImage url="../images/cdn/coat/coat_blackpoof.jpg" caption="" />
+      <LightboxImage url="../images/cdn/coat/coat_drape.jpg" caption="" />
+      <LightboxImage url="../images/cdn/coat/coat_heart.jpg" caption="" />
+      <LightboxImage url="../images/cdn/coat/coat_heartblack.jpg" caption="" />
+      <LightboxImage url="../images/cdn/coat/coat_orangeinframe.jpg" caption="" />
+      <LightboxImage url="../images/cdn/coat/coat_tinyball.jpg" caption="" />
+
     </div>
   </div>
-    
 
-
-    <script>
-      import 'photoswipe/style.css'
-      import pswpModule from 'photoswipe'
-      import PhotoSwipeLightbox from 'photoswipe/lightbox'
-
-      const lightbox = new PhotoSwipeLightbox({
-        pswpModule,
-        children: 'a',
-        gallery: '#my-gallery',
-        showHideAnimationType: 'fade',
-        imageClickAction: 'next',
-        tapAction: 'next',
-      })
-
-      document.addEventListener(
-        'astro:page-load',
-        () => { if (lightbox) lightbox.init() },
-        { once: false },
-      )
-    </script>
+  <script src="../scripts/lightbox.js"></script>
 
 </Layout>
