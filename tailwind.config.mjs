@@ -8,7 +8,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        doglady: "url('../images/full/doglady.webp')",
+        doglady: "url('../images/cdn/doglady.webp')",
       },
     },
     colors: {
