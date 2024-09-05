@@ -8,7 +8,7 @@ const lightbox = new PhotoSwipeLightbox({
   gallery: '#my-gallery',
   showHideAnimationType: 'fade',
   imageClickAction: 'next',
-  tapAction: 'next',
+  tapAction: 'zoom',
 })
 
 const captionPlugin = new PhotoSwipeDynamicCaption(lightbox, {
