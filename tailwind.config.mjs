@@ -42,7 +42,7 @@ export default {
     themeRoot: ":root", // The element that receives theme color CSS variables
   },
   plugins: [
-    require("daisyui"),
+    require("daisyui", "@tailwindcss/forms"),
     iconsPlugin({
       collections: getIconCollections(["f7"]),
     }),
