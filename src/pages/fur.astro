@@ -1,0 +1,64 @@
+---
+
+import Layout from "../layouts/Base.astro";
+import "../styles/index.css";
+
+---
+
+<Layout
+  title="Precious Creature - Pet Aftercare, Pet Taxidermy, and Pet Preservation"
+>
+
+    <div class="px-4 py-4 font-display text-4xl">
+        <strong>Coat</strong>
+    </div>
+    <div class="px-4 pt-4 font-display text-lg">
+      Using only fur clippings, you can have a memorial of your pet to touch and cherish.
+    </div>
+    <div class="px-4 pt-4">
+      Coat preservation is one of the most versatile methods of preserving and remembering your pet. Families choose to remember their pets through shaped fur; paw, tail, or complete pelt preservation; whisker and fur clippings; and felted balls.
+    <div id="my-gallery" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <a href="https://picsum.photos/900/1600" data-pswp-width="900" data-pswp-height="1600" class="contents">
+        <img
+          width="900"
+          height="1600"
+          loading="lazy"
+          decoding="async"
+          src="https://picsum.photos/900/1600"
+          class="h-[250px] w-[300px] object-cover shadow"
+        />
+      </a>
+      <a href="https://picsum.photos/900/1600" data-pswp-width="900" data-pswp-height="1600" class="contents">
+        <img
+          width="900"
+          height="1600"
+          loading="lazy"
+          decoding="async"
+          src="https://picsum.photos/900/1600"
+          class="h-[250px] w-[300px] object-cover shadow"
+        />
+      </a>
+    </div>
+  </div>
+    
+
+
+    <script>
+      import 'photoswipe/style.css'
+      import pswpModule from 'photoswipe'
+      import PhotoSwipeLightbox from 'photoswipe/lightbox'
+
+      const lightbox = new PhotoSwipeLightbox({
+        pswpModule,
+        children: 'a',
+        gallery: '#my-gallery',
+      })
+
+      document.addEventListener(
+        'astro:page-load',
+        () => { if (lightbox) lightbox.init() },
+        { once: false },
+      )
+    </script>
+
+</Layout>
