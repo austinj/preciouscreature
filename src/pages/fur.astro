@@ -1,28 +1,9 @@
 ---
-
-import Layout from "../layouts/Base.astro";
 import LightboxImage from '../components/LightboxImage.astro';
-import "../styles/index.css";
-import 'photoswipe/style.css'
-import 'photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.css';
-
-
+import Layout from "../layouts/Gallery.astro";
 ---
-
-<Layout
-  title="Precious Creature - Pet Aftercare, Pet Taxidermy, and Pet Preservation"
->
-
-    <div class="px-4 py-4 font-display text-4xl">
-        <strong>Coat</strong>
-    </div>
-    <div class="px-4 pt-4 font-display text-lg">
-      Using only fur clippings, you can have a memorial of your pet to touch and cherish.
-    </div>
-    <div class="px-4 pt-4">
-      Coat preservation is one of the most versatile methods of preserving and remembering your pet. Families choose to remember their pets through shaped fur; paw, tail, or complete pelt preservation; whisker and fur clippings; and felted balls.
-    <div id="my-gallery" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 pt-4 justify-items-center gap-y-4">
-
+<Layout>
+  <p slot="title">Copyright 2022</p>
       <LightboxImage url="../images/cdn/coat/coat_akita.jpg" caption="Akita's pelt with a focus on the face" />
       <LightboxImage url="../images/cdn/coat/coat_ballneedles.jpg" caption="Three felted hair balls with needles in the foreground" />
       <LightboxImage url="../images/cdn/coat/coat_ballornament.jpg" caption="" />
@@ -33,10 +14,4 @@ import 'photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.css'
       <LightboxImage url="../images/cdn/coat/coat_heartblack.jpg" caption="" />
       <LightboxImage url="../images/cdn/coat/coat_orangeinframe.jpg" caption="" />
       <LightboxImage url="../images/cdn/coat/coat_tinyball.jpg" caption="" />
-
-    </div>
-  </div>
-
-  <script src="../scripts/lightbox.js"></script>
-
 </Layout>
