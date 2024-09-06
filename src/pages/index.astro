@@ -1,5 +1,7 @@
 ---
 import Layout from "../layouts/Base.astro";
+import { Image } from 'astro:assets';
+import coverImage from '/images/cover.webp';
 ---
 
 <Layout
@@ -7,7 +9,7 @@ import Layout from "../layouts/Base.astro";
 >
 
     <div class="flex items-center justify-center">
-      <img class="mt-5 mb-2 w-5/6 rounded-lg" src="/images/cover.webp" />
+      <Image class="mt-5 mb-2 w-5/6 rounded-lg" src={coverImage} alt="Small dog's skull with a nose cast and tail preservation next to them. Antlers are in the background." />
     </div>
     <div class="px-4 py-4 font-display text-4xl">
         <strong>Honoring your companion.</strong>
