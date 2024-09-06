@@ -2,16 +2,16 @@
 import type { ImageMetadata } from 'astro';
 import { Image } from 'astro:assets';
 
-const { imagePath, altText } = Astro.props;
+const { imagePath, altText, width, height } = Astro.props;
 const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/**/*.{jpeg,jpg,png,gif,webp}');
 if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: "/src/images/**/*.{jpeg,jpg,png,gif,webp}"`);
 ---
 
-<a href={imagePath} data-pswp-width="960" data-pswp-height="1200" class="contents">
+<a href={imagePath} data-pswp-width={width} data-pswp-height={height} class="contents">
   <Image
     alt={altText}
-    width="960"
-    height="1200"
+    width={width}
+    height={height}
     loading="lazy"
     decoding="async"
     src={images[imagePath]()}
