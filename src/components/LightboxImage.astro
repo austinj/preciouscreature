@@ -1,13 +1,23 @@
 ---
-import type { ImageMetadata } from 'astro';
-import { Image } from 'astro:assets';
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
 
 const { imagePath, altText, width, height } = Astro.props;
-const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/**/*.{jpeg,jpg,png,gif,webp}');
-if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: "/src/images/**/*.{jpeg,jpg,png,gif,webp}"`);
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/images/**/*.{jpeg,jpg,png,gif,webp}",
+);
+if (!images[imagePath])
+  throw new Error(
+    `"${imagePath}" does not exist in glob: "/src/images/**/*.{jpeg,jpg,png,gif,webp}"`,
+  );
 ---
 
-<a href={imagePath} data-pswp-width={width} data-pswp-height={height} class="contents">
+<a
+  href={imagePath}
+  data-pswp-width={width}
+  data-pswp-height={height}
+  class="contents"
+>
   <Image
     alt={altText}
     width={width}
@@ -15,7 +25,7 @@ if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: 
     loading="lazy"
     decoding="async"
     src={images[imagePath]()}
-    class="w-[300px] h-[375px] object-cover shadow"
+    class="h-[375px] w-[300px] object-cover shadow"
   />
   <span class="pswp-caption-content">{altText}</span>
 </a>

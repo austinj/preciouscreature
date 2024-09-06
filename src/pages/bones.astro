@@ -1,42 +1,211 @@
 ---
-import LightboxImage from '../components/LightboxImage.astro';
+import LightboxImage from "../components/LightboxImage.astro";
 import Layout from "../layouts/Gallery.astro";
 ---
+
 <Layout>
   <p slot="title">Skeleton</p>
-  <p slot="subtitle">Revealing and elegant, bones tell the remarkable story of your loved one's life.</p>
-  <p slot="description">Families often choose to preserve their pet's bones as an elegant, insightful homage to their departed loved one. Bone preservation can be as simple as just your pet's skull, as artful as a container storing a collection of their cleaned bones for viewing, or as complex as a full articulation of their skeleton.</p>
-  <LightboxImage imagePath="/src/images/skeleton/skeleton_and_fur_tail.jpg" altText="" width="960" height="1200"/>
-  <LightboxImage imagePath="/src/images/skeleton/skeleton_bonesarranged.jpg" altText="" width="900" height="1200"/>
-  <LightboxImage imagePath="/src/images/skeleton/skeleton_catcrossbones.jpg" altText="" width="960" height="1200"/>
-  <LightboxImage imagePath="/src/images/skeleton/skeleton_catcrouchingfur.jpg" altText="" width="960" height="1200"/>
-  <LightboxImage imagePath="/src/images/skeleton/skeleton_catfurballs.jpg" altText="" width="960" height="1200"/>
-  <LightboxImage imagePath="/src/images/skeleton/skeleton_catheartnose.jpg" altText="" width="960" height="1200"/>
-  <LightboxImage imagePath="/src/images/skeleton/skeleton_catholdingoutpaw.jpg" altText="" width="960" height="1200"/>
-  <LightboxImage imagePath="/src/images/skeleton/skeleton_onfur.jpg" altText="" width="960" height="1200"/>
-  <LightboxImage imagePath="/src/images/skeleton/skeleton_onfur2.jpg" altText="" width="961" height="1200"/>
-  <LightboxImage imagePath="/src/images/skeleton/skeleton_skullbonesjar.jpg" altText="" width="960" height="1200"/>
-  <LightboxImage imagePath="/src/images/skeleton/skeleton_skullcatheadstone.jpg" altText="" width="960" height="1200"/>
-  <LightboxImage imagePath="/src/images/skeleton/skeleton_skullcrossbonescatfur.jpg" altText="" width="960" height="1200"/>
-  <LightboxImage imagePath="/src/images/skeleton/skeleton_skulldogcandles.jpg" altText="" width="960" height="1200"/>
-  <LightboxImage imagePath="/src/images/skeleton/skeleton_skulldogonbox.jpg" altText="" width="960" height="1200"/>
-  <LightboxImage imagePath="/src/images/skeleton/skeleton_skulldogonfur.jpg" altText="" width="960" height="1200"/>
-  <LightboxImage imagePath="/src/images/skeleton/skeleton_skulldogotherbonestable.jpg" altText="" width="960" height="1200"/>
-  <LightboxImage imagePath="/src/images/skeleton/skeleton_skulldogtoothgold.jpg" altText="" width="960" height="1200"/>
-  <LightboxImage imagePath="/src/images/skeleton/skeleton_skullhazelpawprint.jpg" altText="" width="959" height="1199"/>
-  <LightboxImage imagePath="/src/images/skeleton/skeleton_skullsoldbrown.jpg" altText="" width="960" height="1200"/>
-  <LightboxImage imagePath="/src/images/skeleton/skeleton_skulltableblack.jpg" altText="" width="960" height="1200"/>
-  <LightboxImage imagePath="/src/images/skeleton/skeleton_three.jpg" altText="" width="781" height="977"/>
-  <LightboxImage imagePath="/src/images/skeleton/skeleton_withvial.jpg" altText="" width="960" height="1200"/>
-  <LightboxImage imagePath="/src/images/skeleton/skeleton_articdogtulipfull.jpg" altText="" width="900" height="1200"/>
-  <LightboxImage imagePath="/src/images/skeleton/skeleton_dogartictulip.jpg" altText="" width="960" height="1200"/>
-  <LightboxImage imagePath="/src/images/skeleton/skeleton_dogskullcandles.jpg" altText="" width="900" height="1124"/>
-  <LightboxImage imagePath="/src/images/skeleton/skeleton_fulldogartictabletulip.jpg" altText="" width="903" height="1200"/>
-  <LightboxImage imagePath="/src/images/skeleton/skeleton_skullcatclose.jpg" altText="" width="1024" height="1191"/>
-  <LightboxImage imagePath="/src/images/skeleton/skeleton_skulldogcandle.jpg" altText="" width="900" height="1200"/>
-  <LightboxImage imagePath="/src/images/skeleton/skeleton_skulldoghandsup.jpg" altText="" width="900" height="1200"/>
-  <LightboxImage imagePath="/src/images/skeleton/skeleton_skulldogmarbleoutside.jpg" altText="" width="900" height="1200"/>
-  <LightboxImage imagePath="/src/images/skeleton/skeleton_skulldogsky.jpg" altText="" width="909" height="1200"/>
-  <LightboxImage imagePath="/src/images/skeleton/skeleton_skullsdogtaxidermy.jpg" altText="" width="900" height="1200"/>
+  <p slot="subtitle">
+    Revealing and elegant, bones tell the remarkable story of your loved one's
+    life.
+  </p>
+  <p slot="description">
+    Families often choose to preserve their pet's bones as an elegant,
+    insightful homage to their departed loved one. Bone preservation can be as
+    simple as just your pet's skull, as artful as a container storing a
+    collection of their cleaned bones for viewing, or as complex as a full
+    articulation of their skeleton.
+  </p>
+  <LightboxImage
+    imagePath="/src/images/skeleton/skeleton_and_fur_tail.jpg"
+    altText=""
+    width="960"
+    height="1200"
+  />
+  <LightboxImage
+    imagePath="/src/images/skeleton/skeleton_bonesarranged.jpg"
+    altText=""
+    width="900"
+    height="1200"
+  />
+  <LightboxImage
+    imagePath="/src/images/skeleton/skeleton_catcrossbones.jpg"
+    altText=""
+    width="960"
+    height="1200"
+  />
+  <LightboxImage
+    imagePath="/src/images/skeleton/skeleton_catcrouchingfur.jpg"
+    altText=""
+    width="960"
+    height="1200"
+  />
+  <LightboxImage
+    imagePath="/src/images/skeleton/skeleton_catfurballs.jpg"
+    altText=""
+    width="960"
+    height="1200"
+  />
+  <LightboxImage
+    imagePath="/src/images/skeleton/skeleton_catheartnose.jpg"
+    altText=""
+    width="960"
+    height="1200"
+  />
+  <LightboxImage
+    imagePath="/src/images/skeleton/skeleton_catholdingoutpaw.jpg"
+    altText=""
+    width="960"
+    height="1200"
+  />
+  <LightboxImage
+    imagePath="/src/images/skeleton/skeleton_onfur.jpg"
+    altText=""
+    width="960"
+    height="1200"
+  />
+  <LightboxImage
+    imagePath="/src/images/skeleton/skeleton_onfur2.jpg"
+    altText=""
+    width="961"
+    height="1200"
+  />
+  <LightboxImage
+    imagePath="/src/images/skeleton/skeleton_skullbonesjar.jpg"
+    altText=""
+    width="960"
+    height="1200"
+  />
+  <LightboxImage
+    imagePath="/src/images/skeleton/skeleton_skullcatheadstone.jpg"
+    altText=""
+    width="960"
+    height="1200"
+  />
+  <LightboxImage
+    imagePath="/src/images/skeleton/skeleton_skullcrossbonescatfur.jpg"
+    altText=""
+    width="960"
+    height="1200"
+  />
+  <LightboxImage
+    imagePath="/src/images/skeleton/skeleton_skulldogcandles.jpg"
+    altText=""
+    width="960"
+    height="1200"
+  />
+  <LightboxImage
+    imagePath="/src/images/skeleton/skeleton_skulldogonbox.jpg"
+    altText=""
+    width="960"
+    height="1200"
+  />
+  <LightboxImage
+    imagePath="/src/images/skeleton/skeleton_skulldogonfur.jpg"
+    altText=""
+    width="960"
+    height="1200"
+  />
+  <LightboxImage
+    imagePath="/src/images/skeleton/skeleton_skulldogotherbonestable.jpg"
+    altText=""
+    width="960"
+    height="1200"
+  />
+  <LightboxImage
+    imagePath="/src/images/skeleton/skeleton_skulldogtoothgold.jpg"
+    altText=""
+    width="960"
+    height="1200"
+  />
+  <LightboxImage
+    imagePath="/src/images/skeleton/skeleton_skullhazelpawprint.jpg"
+    altText=""
+    width="959"
+    height="1199"
+  />
+  <LightboxImage
+    imagePath="/src/images/skeleton/skeleton_skullsoldbrown.jpg"
+    altText=""
+    width="960"
+    height="1200"
+  />
+  <LightboxImage
+    imagePath="/src/images/skeleton/skeleton_skulltableblack.jpg"
+    altText=""
+    width="960"
+    height="1200"
+  />
+  <LightboxImage
+    imagePath="/src/images/skeleton/skeleton_three.jpg"
+    altText=""
+    width="781"
+    height="977"
+  />
+  <LightboxImage
+    imagePath="/src/images/skeleton/skeleton_withvial.jpg"
+    altText=""
+    width="960"
+    height="1200"
+  />
+  <LightboxImage
+    imagePath="/src/images/skeleton/skeleton_articdogtulipfull.jpg"
+    altText=""
+    width="900"
+    height="1200"
+  />
+  <LightboxImage
+    imagePath="/src/images/skeleton/skeleton_dogartictulip.jpg"
+    altText=""
+    width="960"
+    height="1200"
+  />
+  <LightboxImage
+    imagePath="/src/images/skeleton/skeleton_dogskullcandles.jpg"
+    altText=""
+    width="900"
+    height="1124"
+  />
+  <LightboxImage
+    imagePath="/src/images/skeleton/skeleton_fulldogartictabletulip.jpg"
+    altText=""
+    width="903"
+    height="1200"
+  />
+  <LightboxImage
+    imagePath="/src/images/skeleton/skeleton_skullcatclose.jpg"
+    altText=""
+    width="1024"
+    height="1191"
+  />
+  <LightboxImage
+    imagePath="/src/images/skeleton/skeleton_skulldogcandle.jpg"
+    altText=""
+    width="900"
+    height="1200"
+  />
+  <LightboxImage
+    imagePath="/src/images/skeleton/skeleton_skulldoghandsup.jpg"
+    altText=""
+    width="900"
+    height="1200"
+  />
+  <LightboxImage
+    imagePath="/src/images/skeleton/skeleton_skulldogmarbleoutside.jpg"
+    altText=""
+    width="900"
+    height="1200"
+  />
+  <LightboxImage
+    imagePath="/src/images/skeleton/skeleton_skulldogsky.jpg"
+    altText=""
+    width="909"
+    height="1200"
+  />
+  <LightboxImage
+    imagePath="/src/images/skeleton/skeleton_skullsdogtaxidermy.jpg"
+    altText=""
+    width="900"
+    height="1200"
+  />
 </Layout>
-
