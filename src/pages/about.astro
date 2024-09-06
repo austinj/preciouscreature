@@ -1,5 +1,7 @@
 ---
 import Layout from "../layouts/Base.astro";
+import { Image } from 'astro:assets';
+import coverImage from '../images/lauren.jpg';
 ---
 
 <Layout
@@ -19,7 +21,7 @@ import Layout from "../layouts/Base.astro";
     
   </div>
   <div class="flex items-center justify-center">
-    <img class="mt-5 mb-2 w-5/6 rounded-lg" src="/images/lauren.jpg" />
+    <Image class="mt-5 mb-2 w-5/6 rounded-lg" src={coverImage} alt="Lauren in her workshop next to a skull and a taxidermied dog" />
   </div>
   <div class="px-4 pt-4">
     <p><strong>Precious Creature is a full-time alternative pet aftercare business/passion</strong> located in the sleepy city of Redlands, just an hour east of Los Angeles. With a lifelong love of animals, art, and death care, owner and expert taxidermist Lauren Kane marries all three together to bring a renewed vision to pet aftercare. We have worked with over 350 families, and are always happy to provide references regarding our services upon request.</p>

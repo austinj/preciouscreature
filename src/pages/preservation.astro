@@ -1,5 +1,10 @@
 ---
 import Layout from "../layouts/Base.astro";
+import { Image } from 'astro:assets';
+import coatImage from '../images/coat/coat_akita.jpg';
+import castsImage from '../images/casts/cast_pawdogblackstand.jpg';
+import skeletonImage from '../images/skeleton/skeleton_skullcrossbonescatfur.jpg';
+import taxidermyImage from '../images/taxidermy/taxidermy_dogproudcard.webp';
 ---
 
 <Layout title="Preservation">
@@ -26,9 +31,9 @@ import Layout from "../layouts/Base.astro";
   <div class="flex flex-col pt-4 justify-items-center px-10">
     <div class="card glass mb-10">
       <figure>
-        <img
-          src="/images/coat/coat_akita.jpg"
-          alt="car!" />
+        <Image
+          src={coatImage}
+          alt="Akita's pelt with a focus on the face!" />
       </figure>
       <div class="card-body">
         <a class="card-title text-3xl">Coat</a>
@@ -40,9 +45,9 @@ import Layout from "../layouts/Base.astro";
     </div>
     <div class="card glass">
       <figure>
-        <img
-          src="/images/casts/cast_pawdogblackstand.jpg"
-          alt="car!" />
+        <Image
+          src={castsImage}
+          alt="Casts of two large dog paws on a black stand" />
       </figure>
       <div class="card-body">
         <a class="card-title text-3xl">Casts</a>
@@ -54,9 +59,9 @@ import Layout from "../layouts/Base.astro";
     </div>
     <div class="card glass">
       <figure>
-        <img
-          src="images/skeleton/skeleton_skullcrossbonescatfur.jpg"
-          alt="car!" />
+        <Image
+          src={skeletonImage}
+          alt="Dog's skull with a jar of bones and a plant in the background" />
       </figure>
       <div class="card-body">
         <a class="card-title text-3xl">Skeleton</a>
@@ -68,9 +73,9 @@ import Layout from "../layouts/Base.astro";
     </div>
     <div class="card glass">
       <figure>
-        <img
-          src="/images/taxidermy/taxidermy_dogproudcard.webp"
-          alt="car!" />
+        <Image
+          src={taxidermyImage}
+          alt="Taxidermied small dog, sitting up and looking proud" />
       </figure>
       <div class="card-body">
         <a class="card-title text-3xl">Taxidermy</a>
