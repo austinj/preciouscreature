@@ -16,12 +16,12 @@ import { Astronav, MenuItems, MenuIcon, Dropdown, DropdownItems, DropdownSubmenu
         <MenuIcon class="w-4 h-4 mt-2 text-gray-800" />
       </div>
     </div>
-    <MenuItems class="hidden lg:flex lg:pt-1">
+    <MenuItems class="hidden lg:flex lg:pt-1 text-lg font-bold">
       <ul class="flex flex-col lg:flex-row lg:gap-5">
         <li>
           <Dropdown class="group">
-            <button class="flex items-center">
-              <span> Preservation</span>
+            <button class="flex items-center -mb-1">
+              <span>Preservation</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -37,18 +37,18 @@ import { Astronav, MenuItems, MenuIcon, Dropdown, DropdownItems, DropdownSubmenu
             </button>
             <DropdownItems class="relative">
               <div
-                class="lg:absolute lg:bg-tan top-2 w-40 lg:border pl-3 lg:shadow rounded lg:p-3">
+                class="lg:absolute lg:bg-tan top-2 w-40 lg:border pl-3 lg:shadow rounded lg:p-3 font-normal">
                 <ul>
-                  <li>
-                    <a href="#">Overview</a>
+                  <li class="-mb-1">
+                    <a href="/preservation">Overview</a>
                   </li>
-                  <li>
+                  <li class="-mb-1">
                     <a href="/fur">Coat</a>
                   </li>
-                  <li>
+                  <li class="-mb-1">
                     <a href="/casts">Casts</a>
                   </li>
-                  <li>
+                  <li class="-mb-1">
                     <a href="/bones">Skeleton</a>
                   </li>
                   <li>
@@ -59,13 +59,13 @@ import { Astronav, MenuItems, MenuIcon, Dropdown, DropdownItems, DropdownSubmenu
             </DropdownItems>
           </Dropdown>
         </li>
-        <li>
-          <a href="#">Cremation</a>
+        <li class="-mb-1">
+          <a href="/cremation">Cremation</a>
         </li>
         <li>
           <Dropdown class="group">
-            <button class="flex items-center">
-              <span> Learn</span>
+            <button class="flex items-center -mb-1">
+              <span>Learn</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -81,12 +81,15 @@ import { Astronav, MenuItems, MenuIcon, Dropdown, DropdownItems, DropdownSubmenu
             </button>
             <DropdownItems class="relative">
               <div
-                class="lg:absolute lg:bg-tan top-2 w-40 lg:border pl-3 lg:shadow rounded lg:p-3">
+                class="lg:absolute lg:bg-tan top-2 w-40 lg:border pl-3 lg:shadow rounded lg:p-3 font-normal">
                 <ul>
-                  <li>
+                  <li class="-mb-1">
                     <a href="/about">About</a>
                   </li>
-                  <li>
+                  <li class="-mb-1">
+                    <a href="/process">Our Process</a>
+                  </li>
+                  <li class="-mb-1">
                     <a href="/grief">Grief</a>
                   </li>
                   <li>
@@ -96,10 +99,10 @@ import { Astronav, MenuItems, MenuIcon, Dropdown, DropdownItems, DropdownSubmenu
               </div>
             </DropdownItems>
           </Dropdown>
-          <li>
+          <li class="-mb-1">
             <a href="/contact">Contact</a>
           </li>
-          <li>
+          <li class="-mb-1">
             <a href="https://family.preciouscreature.com/">Login</a>
           </li>
         </li>
