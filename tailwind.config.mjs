@@ -20,6 +20,7 @@ export default {
       emerald: colors.emerald,
       indigo: colors.indigo,
       yellow: colors.yellow,
+      red: colors.red,
       tan: "#e8e2d1",
       "tan-dark": "#565584",
       peach: "#ffefe6",
@@ -44,7 +45,7 @@ export default {
   plugins: [
     require("daisyui", "@tailwindcss/forms"),
     iconsPlugin({
-      collections: getIconCollections(["f7"]),
+      collections: getIconCollections(["f7", "solar", "game-icons", "logos"]),
     }),
   ],
 };
