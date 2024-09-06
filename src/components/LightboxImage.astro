@@ -1,17 +1,21 @@
 ---
-// Usage: <ImageLightbox url="/images/picture.webp" alt="caption here" />
-const { url, caption } = Astro.props;
+import type { ImageMetadata } from 'astro';
+import { Image } from 'astro:assets';
+
+const { imagePath, altText } = Astro.props;
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/**/*.{jpeg,jpg,png,gif,webp}');
+if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: "/src/images/**/*.{jpeg,jpg,png,gif,webp}"`);
 ---
 
-<a href={url} data-pswp-width="960" data-pswp-height="1200" class="contents">
-  <img
-    alt={caption}
+<a href={imagePath} data-pswp-width="960" data-pswp-height="1200" class="contents">
+  <Image
+    alt={altText}
     width="960"
     height="1200"
     loading="lazy"
     decoding="async"
-    src={url}
+    src={images[imagePath]()}
     class="w-[300px] h-[375px] object-cover shadow"
   />
-  <span class="pswp-caption-content">{caption}</span>
+  <span class="pswp-caption-content">{altText}</span>
 </a>
