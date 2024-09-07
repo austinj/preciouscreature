@@ -10,28 +10,31 @@ import LineFancy from "../components/LineFancy.astro";
 ---
 
 <Layout title="Preservation">
-  <div class="px-4 pt-4 font-display text-4xl">
+  <div class="px-4 pt-4 font-display text-4xl lg:px-24 lg:text-6xl lg:pt-8">
     <strong> Preservation </strong>
   </div>
-  <div class="px-4 pt-4 font-display text-lg">
+  <div class="px-4 pt-4 font-display text-lg lg:px-24 lg:text-2xl lg:pt-4">
     We provide aftercare for the most challenging time in pet companionship.
   </div>
-  <div class="justify-left flex items-center pl-4 pt-2">
+  <div class="justify-left flex items-center pl-4 pt-2 lg:hidden">
     <LineFancy width="40%" />
   </div>
-  <div class="px-4 pt-2">
+  <div class="justify-left items-center pl-4 pt-2 hidden lg:flex lg:px-24 lg:pt-4">
+    <LineFancy width="30%" />
+  </div>
+  <div class="px-4 pt-2 lg:px-24">
     Just as every individual and family's relationship with their pet is unique,
     so is our approach to understanding and supporting you. There are a number
     of ways you can memorialize your companion.
   </div>
-  <div class="px-4 pb-4 pt-4">
+  <div class="px-4 pb-4 pt-4 lg:px-24">
     As you'll notice when looking through our past work, families commonly
     combine services to find the best way to memorialize their pet, such as a
     combined skeleton, coat, and cast preservation. All images shown are
     projects that were completed by Precious Creature. They are presented here
     with the express permission of the loved one's family.
   </div>
-  <div class="flex flex-col justify-items-center px-10 pt-4">
+  <div class="grid grid-cols-1 lg:grid-cols-4 lg:gap-x-6 justify-items-center px-10 pt-4 lg:px-24">
     <div class="card glass mb-10">
       <figure>
         <Image src={coatImage} alt="Akita's pelt with a focus on the face!" />
@@ -83,7 +86,7 @@ import LineFancy from "../components/LineFancy.astro";
         </div>
       </div>
     </div>
-    <div class="card glass">
+    <div class="card glass lg:mb-10">
       <figure>
         <Image
           src={taxidermyImage}

@@ -8,37 +8,74 @@ import LineFancy from "../components/LineFancy.astro";
 <Layout
   title="Precious Creature - Pet Aftercare, Pet Taxidermy, and Pet Preservation"
 >
-  <div class="flex items-center justify-center">
-    <Image
-      class="mb-2 mt-5 w-5/6 rounded-lg"
-      src={coverImage}
-      alt="Small dog's skull with a nose cast and tail preservation next to them. Antlers are in the background."
-    />
+  <div class="lg:hidden">
+    <div class="flex items-center justify-center">
+      <Image
+        class="mb-2 mt-5 w-5/6 rounded-lg"
+        src={coverImage}
+        alt="Small dog's skull with a nose cast and tail preservation next to them. Antlers are in the background."
+      />
+    </div>
+    <div class="px-4 py-4 font-display text-4xl">
+      <strong>Honoring your companion.</strong>
+    </div>
+    <div class="flex items-center justify-center">
+      <LineFancy width="70%" />
+    </div>
+    <div class="px-4 pt-4 font-display text-lg">
+      At Precious Creature, we provide compassionate pet aftercare services using
+      taxidermy, leather-free preservation, and other traditional and innovative
+      artisanal methods.
+    </div>
+    <div class="px-4 pt-4">
+      We work with families across the United States to care for deceased pets
+      with dignity and compassion. <strong
+        >Because every family and loved one is unique, we work individually with
+        you to create the right memorial for your departed companion.</strong
+      > For families who would prefer honoring the memory of their pet without preserving
+      their hard or soft tissue, we regularly provide services including casts and
+      felted hair spheres. Explore our website to learn more.
+    </div>
+    <div class="px-4 pt-4">
+      <strong
+        >Contact us to learn more about the ways we can work together to honor
+        your companion.</strong
+      >
+    </div>
   </div>
-  <div class="px-4 py-4 font-display text-4xl">
-    <strong>Honoring your companion.</strong>
-  </div>
-  <div class="flex items-center justify-center">
-    <LineFancy width="70%" />
-  </div>
-  <div class="px-4 pt-4 font-display text-lg">
-    At Precious Creature, we provide compassionate pet aftercare services using
-    taxidermy, leather-free preservation, and other traditional and innovative
-    artisanal methods.
-  </div>
-  <div class="px-4 pt-4">
-    We work with families across the United States to care for deceased pets
-    with dignity and compassion. <strong
-      >Because every family and loved one is unique, we work individually with
-      you to create the right memorial for your departed companion.</strong
-    > For families who would prefer honoring the memory of their pet without preserving
-    their hard or soft tissue, we regularly provide services including casts and
-    felted hair spheres. Explore our website to learn more.
-  </div>
-  <div class="px-4 pt-4">
-    <strong
-      >Contact us to learn more about the ways we can work together to honor
-      your companion.</strong
-    >
+
+  <div class="hidden lg:block lg:mt-10 lg:px-24 lg:justify-self-center">
+    <div class="float-right ml-1 mb-1">
+      <Image
+        class="rounded-lg"
+        src={coverImage}
+        width="400"
+        alt="Small dog's skull with a nose cast and tail preservation next to them. Antlers are in the background."
+      />
+    </div>
+    <p class="font-display text-6xl pb-4">
+      Honoring your companion.
+    </p>
+    <div class="flex items-center pb-4">
+      <LineFancy width="40%" />
+    </div>
+    <div class="font-display text-lg pb-4">
+      At Precious Creature, we provide compassionate pet aftercare services using
+      taxidermy, leather-free preservation, and other traditional and innovative
+      artisanal methods.
+    </div>
+    <div class="pb-4">
+      We work with families across the United States to care for deceased pets
+      with dignity and compassion. <strong
+        >Because every family and loved one is unique, we work individually with
+        you to create the right memorial for your departed companion.</strong
+      > For families who would prefer honoring the memory of their pet without preserving
+      their hard or soft tissue, we regularly provide services including casts and
+      felted hair spheres. Explore our website to learn more.
+    </div>
+    <div class="font-bold">
+        Contact us to learn more about the ways we can work together to honor
+        your companion.
+    </div>
   </div>
 </Layout>
