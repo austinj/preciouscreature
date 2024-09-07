@@ -8,6 +8,10 @@ import LineFancy from "../components/LineFancy.astro";
 <Layout
   title="Precious Creature - Pet Aftercare, Pet Taxidermy, and Pet Preservation"
 >
+
+
+
+<div class="lg:hidden">
   <div class="px-4 pt-4 font-display text-4xl font-bold">Our story</div>
   <div class="px-4 pt-4 font-display text-lg">
     Where grief, art, craft, and passion meet.
@@ -24,10 +28,8 @@ import LineFancy from "../components/LineFancy.astro";
   </div>
   <div class="px-4 pt-4">
     <p>
-      <strong
-        >Precious Creature is a full-time alternative pet aftercare
-        business/passion</strong
-      > located in the sleepy city of Redlands, just an hour east of Los Angeles.
+      <span class="text-bold">Precious Creature is a full-time alternative pet aftercare
+      business/passion</span> located in the sleepy city of Redlands, just an hour east of Los Angeles.
       With a lifelong love of animals, art, and death care, owner and expert taxidermist
       Lauren Kane marries all three together to bring a renewed vision to pet aftercare.
       We have worked with over 350 families, and are always happy to provide references
@@ -60,4 +62,63 @@ import LineFancy from "../components/LineFancy.astro";
       here and here no longer, and star-crossed souls.
     </p>
   </div>
+</div>
+
+
+
+<div class="hidden lg:block lg:px-60 lg:mt-24 lg:justify-self-center">
+  <p class="font-display text-7xl pb-4 font-extrabold">
+    Our story
+  </p>
+  <div class="font-display text-3xl pb-4 tracking-tight">
+    Where grief, art, craft, and passion meet.
+  </div>
+  <div class="flex justify-center pb-10 pt-4">
+    <LineFancy width="60%" />
+  </div>
+  <div>
+  <div class="float-right ml-1 mb-1">
+    <Image
+      class="rounded-lg ml-3"
+      src={coverImage}
+      width="350"
+      alt="Lauren in her workshop next to a skull and a taxidermied dog"
+    />
+  </div>
+  <div class="pb-4">
+    <p>
+      <span class="text-bold">Precious Creature is a full-time alternative pet aftercare
+      business/passion</span> located in the sleepy city of Redlands, just an hour east of Los Angeles.
+      With a lifelong love of animals, art, and death care, owner and expert taxidermist
+      Lauren Kane marries all three together to bring a renewed vision to pet aftercare.
+      We have worked with over 350 families, and are always happy to provide references
+      regarding our services upon request.
+    </p>
+    <br />
+    <p>
+      We are a small team of two: Lauren and her magnificent apprentice Triss Krohne. Our team is assisted by our internet helper Austin and our partnered colleagues at Paws and Claws Aquamation and Memorials,
+      Gateway Pet Cemetery, and Valley Fur Shed Tannery. Our work has been
+      featured in <a href="https://www.ebbartels.com/good-grief/" class="font-medium underline underline-offset-2 decoration-[1px] decoration-gray-300 hover:no-underline">books</a>,
+      newspapers (<a
+        href="https://www.wsj.com/real-estate/luxury-homes/deceased-pet-home-memorials-62ac5827?st=6ht1x1x4gb608z6" class="font-medium underline underline-offset-2 decoration-[1px] decoration-gray-300 hover:no-underline"
+        >1</a
+      >, <a
+        href="https://nypost.com/2017/05/16/these-extremely-loving-owners-preserve-their-pets-for-eternity/" class="font-medium underline underline-offset-2 decoration-[1px] decoration-gray-300 hover:no-underline"
+        >2</a
+      >), podcasts (<a
+        href="https://www.ellekayetaxidermy.co.uk/podcast-1/episode/22ca8fec/lauren-kane-pet-mortician" class="font-medium underline underline-offset-2 decoration-[1px] decoration-gray-300 hover:no-underline"
+        >1</a
+      >, <a href="https://www.griefdreams.ca/podcast/134" class="font-medium underline underline-offset-2 decoration-[1px] decoration-gray-300 hover:no-underline">2</a>, <a
+        href="https://www.alieward.com/ologies/nassology" class="font-medium underline underline-offset-2 decoration-[1px] decoration-gray-300 hover:no-underline">3</a
+      >), and <a href="https://www.theodradek.com/" class="font-medium underline underline-offset-2 decoration-[1px] decoration-gray-300 hover:no-underline">fancy zines</a>.
+    </p>
+    <br />
+    <p>
+      Lauren lives in a cozy neighborhood with her familiar Laika. She is
+      inspired by Victorian and world mourning practices, natural history, pets
+      here and here no longer, and star-crossed souls.
+    </p>
+</div>
+</div>
+
 </Layout>
