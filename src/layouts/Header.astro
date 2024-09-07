@@ -5,7 +5,6 @@ import {
   MenuIcon,
   Dropdown,
   DropdownItems,
-  DropdownSubmenu,
   StickyHeader,
 } from "astro-navbar";
 ---
@@ -26,7 +25,7 @@ import {
           <MenuIcon class="mt-2 h-4 w-4 text-gray-800" />
         </div>
       </div>
-      <MenuItems class="hidden text-lg font-bold lg:flex lg:pt-1">
+      <MenuItems class="hidden text-lg lg:flex lg:pt-1">
         <ul class="flex flex-col lg:flex-row lg:gap-5">
           <li>
             <Dropdown class="group">
@@ -99,9 +98,6 @@ import {
                   <ul>
                     <li class="-mb-1">
                       <a href="/about">About</a>
-                    </li>
-                    <li class="-mb-1">
-                      <a href="/process">Our Process</a>
                     </li>
                     <li class="-mb-1">
                       <a href="/grief">Grief</a>
