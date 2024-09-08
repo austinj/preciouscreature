@@ -2,8 +2,8 @@
 import Header from "../layouts/Header.astro";
 import Footer from "../layouts/Footer.astro";
 import CTA from "../components/CTA.astro";
+import GoogleAnalytics from "../components/GoogleAnalytics.astro";
 import { ViewTransitions } from "astro:transitions";
-import { Fathom } from 'astro-analytics';
 import "../styles/index.css";
 
 interface Props {
@@ -25,6 +25,7 @@ const { title, description } = Astro.props;
     <title>Precious Creature - {title}</title>
     <ViewTransitions />
     <script></script>
+    <GoogleAnalytics measurementId={"G-2F379VJG2C"} />
   </head>
 
   <body class="flex">

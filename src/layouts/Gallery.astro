@@ -7,28 +7,30 @@ import "photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.css"
 
 <Layout title="Coat preservation">
   <div class="lg:flex lg:flex-col">
-  <div class="px-4 pt-4 font-display text-4xl lg:px-24 lg:text-6xl lg:pt-8 font-bold">
-      <slot name="title" />
-  </div>
-  <div class="justify-left flex items-center pl-4 pt-2 lg:hidden">
-    <LineFancy width="40%" />
-  </div>
-  <div class="lg:pl-4 lg:pt-3 hidden lg:flex lg:mx-20">
-    <LineFancy width="30%" />
-  </div>
-  <div class="px-4 pt-4 font-display text-lg lg:px-24 lg:pt-6">
-    <slot name="subtitle" />
-  </div>
-  <div class="px-4 pt-4 lg:px-24 lg:pt-2">
-    <slot name="description" />
     <div
-      id="my-gallery"
-      class="grid grid-cols-1 justify-items-center gap-y-4 pt-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:mt-4 lg:gap-x-4"
+      class="px-4 pt-4 font-display text-4xl font-bold lg:px-24 lg:pt-8 lg:text-6xl"
     >
-      <slot />
+      <slot name="title" />
+    </div>
+    <div class="justify-left flex items-center pl-4 pt-2 lg:hidden">
+      <LineFancy width="40%" />
+    </div>
+    <div class="hidden lg:mx-20 lg:flex lg:pl-4 lg:pt-3">
+      <LineFancy width="30%" />
+    </div>
+    <div class="px-4 pt-4 font-display text-lg lg:px-24 lg:pt-6">
+      <slot name="subtitle" />
+    </div>
+    <div class="px-4 pt-4 lg:px-24 lg:pt-2">
+      <slot name="description" />
+      <div
+        id="my-gallery"
+        class="grid grid-cols-1 justify-items-center gap-y-4 pt-4 sm:grid-cols-2 md:grid-cols-3 lg:mt-4 lg:grid-cols-4 lg:gap-x-4"
+      >
+        <slot />
+      </div>
     </div>
   </div>
-</div>
 
   <script src="../scripts/lightbox.js"></script>
 </Layout>

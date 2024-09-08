@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@astrojs/netlify": "^5.5.1",
+    "@astrojs/partytown": "^2.1.2",
     "@astrojs/tailwind": "^5.1.0",
     "astro": "^4.15.2",
     "astro-navbar": "^2.3.3",
