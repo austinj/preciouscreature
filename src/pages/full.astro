@@ -3,7 +3,10 @@ import LightboxImage from "../components/LightboxImage.astro";
 import Layout from "../layouts/Gallery.astro";
 ---
 
-<Layout>
+<Layout
+title="Complete and full body pet preservation and pet taxidermy"
+description="Precious Creature offers a range of services including casts from your loved one's body, fur preservation, bone and skull preservation, and full pet taxidermy."
+>
   <p slot="title">Taxidermy</p>
   <p slot="subtitle">
     Sculptural and emotive, taxidermy preserves your pet's body to cherish
@@ -19,6 +22,12 @@ import Layout from "../layouts/Gallery.astro";
     thought, pose, and details necessary for a memorial to your loved one that
     will last a lifetime.
   </p>
+  <LightboxImage
+  imagePath="/src/images/taxidermy/taxidermy_sleepingcat1.jpg"
+  altText=""
+  height="1200"
+  width="960"
+/>
   <LightboxImage
     imagePath="/src/images/taxidermy/taxidermy_blackpaws.jpg"
     altText=""
@@ -63,12 +72,6 @@ import Layout from "../layouts/Gallery.astro";
   />
   <LightboxImage
     imagePath="/src/images/taxidermy/taxidermy_dogfaceheld.jpg"
-    altText=""
-    height="1200"
-    width="960"
-  />
-  <LightboxImage
-    imagePath="/src/images/taxidermy/taxidermy_dogfulloutside.jpg"
     altText=""
     height="1200"
     width="960"
@@ -181,12 +184,7 @@ import Layout from "../layouts/Gallery.astro";
     height="960"
     width="768"
   />
-  <LightboxImage
-    imagePath="/src/images/taxidermy/taxidermy_sleepingcat1.jpg"
-    altText=""
-    height="1200"
-    width="960"
-  />
+
   <LightboxImage
     imagePath="/src/images/taxidermy/taxidermy_sleepingcat2.jpg"
     altText=""
