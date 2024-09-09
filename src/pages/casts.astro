@@ -4,63 +4,56 @@ import LineFancy from "../components/LineFancy.astro";
 
 import { Image, getImage } from "astro:assets";
 
-import imageAkita from "/src/images/coat/coat_akita.jpg";
-const optimizedImageAkita = await getImage({ src: imageAkita, width: 960 });
+import imageCompleteDog from "/src/images/casts/casts_completedog.jpg";
+const optimizedImageCompleteDog = await getImage({ src: imageCompleteDog, width: 900 });
 
-import imageBallNeedles from "/src/images/coat/coat_ballneedles.jpg";
-const optimizedImageBallNeedles = await getImage({ src: imageBallNeedles, width: 960 });
+import imageFaceCat from "/src/images/casts/casts_facecat.jpg";
+const optimizedImageFaceCat = await getImage({ src: imageFaceCat, width: 960 });
 
-import imageBallOrnament from "/src/images/coat/coat_ballornament.jpg";
-const optimizedImageBallOrnament = await getImage({ src: imageBallOrnament, width: 960 });
+import imagePawsDogWhippetYellow from "/src/images/casts/casts_pawsdogwhippetyellow.jpg";
+const optimizedImagePawsDogWhippetYellow = await getImage({ src: imagePawsDogWhippetYellow, width: 837 });
 
-import imageHeart from "/src/images/coat/coat_heart.jpg";
-const optimizedImageHeart = await getImage({ src: imageHeart, width: 960 });
+import imageNosesThree from "/src/images/casts/casts_nosesthree.jpg";
+const optimizedImageNosesThree = await getImage({ src: imageNosesThree, width: 960 });
 
-import imageBlackPoof from "/src/images/coat/coat_blackpoof.jpg";
-const optimizedImageBlackPoof = await getImage({ src: imageBlackPoof, width: 960 });
+import imagePawCatHand from "/src/images/casts/casts_pawcathand.jpg";
+const optimizedImagePawCatHand = await getImage({ src: imagePawCatHand, width: 960 });
 
-import imageDrape from "/src/images/coat/coat_drape.jpg";
-const optimizedImageDrape = await getImage({ src: imageDrape, width: 960 });
+import imagePawDogBlackStand from "/src/images/casts/casts_pawdogblackstand.jpg";
+const optimizedImagePawDogBlackStand = await getImage({ src: imagePawDogBlackStand, width: 960 });
 
-import imageOrangeInFrame from "/src/images/coat/coat_orangeinframe.jpg";
-const optimizedImageOrangeInFrame = await getImage({ src: imageOrangeInFrame, width: 960 });
+import imagePawDogWhiteDown from "/src/images/casts/casts_pawdogwhitedown.jpg";
+const optimizedImagePawDogWhiteDown = await getImage({ src: imagePawDogWhiteDown, width: 960 });
 
-import imageTinyCat from "/src/images/coat/coat_tinycat.jpg";
-const optimizedImageTinyCat = await getImage({ src: imageTinyCat, width: 900 });
+import imagePawPrintPallete from "/src/images/casts/casts_pawprintpallete.jpg";
+const optimizedImagePawPrintPallete = await getImage({ src: imagePawPrintPallete, width: 900 });
 
-import imageTinyBall from "/src/images/coat/coat_tinyball.jpg";
-const optimizedImageTinyBall = await getImage({ src: imageTinyBall, width: 960 });
+import imagePawsNoseMarble from "/src/images/casts/casts_pawsnosemarble.jpg";
+const optimizedImagePawsNoseMarble = await getImage({ src: imagePawsNoseMarble, width: 960 });
 
-import imageFeathersVialsBox from "/src/images/coat/coat_feathersvialsbox.jpeg";
-const optimizedImageFeathersVialsBox = await getImage({ src: imageFeathersVialsBox, width: 900 });
+import imagePawWhiteDogHand from "/src/images/casts/casts_pawwhitedoghand.jpg";
+const optimizedImagePawWhiteDogHand = await getImage({ src: imagePawWhiteDogHand, width: 960 });
 
-import imageFullCatSkull from "/src/images/coat/coat_fullcatskullincase2.jpg";
-const optimizedImageFullCatSkull = await getImage({ src: imageFullCatSkull, width: 900 });
+import imagePawDogBlack from "/src/images/casts/casts_pawdogblack.jpg";
+const optimizedImagePawDogBlack = await getImage({ src: imagePawDogBlack, width: 960 });
 
-import imageHeartBlack from "/src/images/coat/coat_heartblack.jpg";
-const optimizedImageHeartBlack = await getImage({ src: imageHeartBlack, width: 960 });
+import imageIguana from "/src/images/casts/casts_iguana.jpg";
+const optimizedImageIguana = await getImage({ src: imageIguana, width: 900 });
 
-import imageHeartBrownWhite from "/src/images/coat/coat_heartbrownwhite.jpeg";
-const optimizedImageHeartBrownWhite = await getImage({ src: imageHeartBrownWhite, width: 900 });
-
-import imageVialsMusicBonesTable from "/src/images/coat/coat_vialsmusicbonestable.jpeg";
-const optimizedImageVialsMusicBonesTable = await getImage({ src: imageVialsMusicBonesTable, width: 900 });
-
-import imageBallsOrangeBlack from "/src/images/coat/coat_ballsorangeblack.jpg";
-const optimizedImageBallsOrangeBlack = await getImage({ src: imageBallsOrangeBlack, width: 959 });
-
+import imagePawWhiteDogUp from "/src/images/casts/casts_pawwhitedogup.jpg";
+const optimizedImagePawWhiteDogUp = await getImage({ src: imagePawWhiteDogUp, width: 960 });
 
 ---
 
 <Layout
-  title="Fur for pet preservation and pet taxidermy"
+  title="Casts for pet preservation and pet taxidermy"
   description="Precious Creature offers a range of services including casts from your loved one's body, fur preservation, bone and skull preservation, and full pet taxidermy.">
 
   <div class="lg:flex lg:flex-col">
     <div
       class="px-4 pt-4 font-display text-4xl font-bold lg:px-24 lg:pt-8 lg:text-6xl"
     >
-    Coat
+    Casts
     </div>
     <div class="justify-left flex items-center pl-4 pt-2 lg:hidden">
       <LineFancy width="40%" />
@@ -69,14 +62,14 @@ const optimizedImageBallsOrangeBlack = await getImage({ src: imageBallsOrangeBla
       <LineFancy width="30%" />
     </div>
     <div class="px-4 pt-4 font-display text-lg lg:px-24 lg:pt-6">
-      By preserving your companion's coat, you can have a memorial of them to
-    touch and cherish.
+      Lifelike and inorganic, casts use alternative materials to commemorate your
+      beloved.
     </div>
     <div class="px-4 pt-4 lg:px-24 lg:pt-2">
-      Coat preservation is one of the most versatile methods of preserving and
-      remembering your pet. Families choose to remember their pets through shaped
-      fur; paw, tail, or complete pelt preservation; whisker and fur clippings;
-      and felted balls.
+      Casts allow families to honor the memory of a loved pet without the
+      preservation of their original fur or bones. Instead, alternative materials
+      are used to accurately and intimately represent your pet's nose, paws, or
+      other preferred aspect from life.
       </div>
     </div>
 
@@ -85,139 +78,121 @@ const optimizedImageBallsOrangeBlack = await getImage({ src: imageBallsOrangeBla
 class="grid grid-cols-1 justify-items-center gap-y-4 pt-4 sm:grid-cols-2 md:grid-cols-3 lg:mt-4 lg:grid-cols-4 lg:gap-x-4 lg:px-20">
 
 
-  <a
-  href={optimizedImageAkita.src}
-  data-pswp-width={optimizedImageAkita.attributes.width}
-  data-pswp-height={optimizedImageAkita.attributes.height}
-  target="_blank"
+<a
+href={optimizedImageCompleteDog.src}
+data-pswp-width={optimizedImageCompleteDog.attributes.width}
+data-pswp-height={optimizedImageCompleteDog.attributes.height}
+target="_blank"
 >
-  <Image src={imageAkita} alt="Coat preservation of the face and ears of an Akita" height={350} />
+<Image src={imageCompleteDog} alt={"Full body cast of Chihuahua on sculptural base"} height={350} />
 </a>
 
 <a
-  href={optimizedImageBallNeedles.src}
-  data-pswp-width={optimizedImageBallNeedles.attributes.width}
-  data-pswp-height={optimizedImageBallNeedles.attributes.height}
-  target="_blank"
+href={optimizedImageFaceCat.src}
+data-pswp-width={optimizedImageFaceCat.attributes.width}
+data-pswp-height={optimizedImageFaceCat.attributes.height}
+target="_blank"
 >
-  <Image src={imageBallNeedles} alt="Three needle felted fur spheres with a Whippet and a Himalayan cat" height={350} />
+<Image src={imageFaceCat} alt={"Face cast with Sphinx cat"} height={350} />
 </a>
 
 <a
-  href={optimizedImageBallOrnament.src}
-  data-pswp-width={optimizedImageBallOrnament.attributes.width}
-  data-pswp-height={optimizedImageBallOrnament.attributes.height}
-  target="_blank"
+href={optimizedImagePawsDogWhippetYellow.src}
+data-pswp-width={optimizedImagePawsDogWhippetYellow.attributes.width}
+data-pswp-height={optimizedImagePawsDogWhippetYellow.attributes.height}
+target="_blank"
 >
-  <Image src={imageBallOrnament} alt="Coat preservation sphere with a Pomeranian" height={350} />
+<Image src={imagePawsDogWhippetYellow} alt={"Paw casts with Whippet"} height={350} />
 </a>
 
 <a
-  href={optimizedImageHeart.src}
-  data-pswp-width={optimizedImageHeart.attributes.width}
-  data-pswp-height={optimizedImageHeart.attributes.height}
-  target="_blank"
+href={optimizedImageNosesThree.src}
+data-pswp-width={optimizedImageNosesThree.attributes.width}
+data-pswp-height={optimizedImageNosesThree.attributes.height}
+target="_blank"
 >
-  <Image src={imageHeart} alt="Heart-shaped coat preservation of chest area with Bully" height={350} />
+<Image src={imageNosesThree} alt={"Three dog nose casts"} height={350} />
 </a>
 
 <a
-  href={optimizedImageBlackPoof.src}
-  data-pswp-width={optimizedImageBlackPoof.attributes.width}
-  data-pswp-height={optimizedImageBlackPoof.attributes.height}
-  target="_blank"
+href={optimizedImagePawCatHand.src}
+data-pswp-width={optimizedImagePawCatHand.attributes.width}
+data-pswp-height={optimizedImagePawCatHand.attributes.height}
+target="_blank"
 >
-  <Image src={imageBlackPoof} alt="Skinless coat preservation with a Shih Tzu" height={350} />
+<Image src={imagePawCatHand} alt={"Sphinx cat paw cast"} height={350} />
 </a>
 
 <a
-  href={optimizedImageDrape.src}
-  data-pswp-width={optimizedImageDrape.attributes.width}
-  data-pswp-height={optimizedImageDrape.attributes.height}
-  target="_blank"
+href={optimizedImagePawDogBlackStand.src}
+data-pswp-width={optimizedImagePawDogBlackStand.attributes.width}
+data-pswp-height={optimizedImagePawDogBlackStand.attributes.height}
+target="_blank"
 >
-  <Image src={imageDrape} alt="Full body coat preservation with a Bulldog (bear rug style)" height={350} />
+<Image src={imagePawDogBlackStand} alt={"Paw cast with Great Dane on black stand"} height={350} />
 </a>
 
 <a
-  href={optimizedImageOrangeInFrame.src}
-  data-pswp-width={optimizedImageOrangeInFrame.attributes.width}
-  data-pswp-height={optimizedImageOrangeInFrame.attributes.height}
-  target="_blank"
+href={optimizedImagePawDogWhiteDown.src}
+data-pswp-width={optimizedImagePawDogWhiteDown.attributes.width}
+data-pswp-height={optimizedImagePawDogWhiteDown.attributes.height}
+target="_blank"
 >
-  <Image src={imageOrangeInFrame} alt="Framed long-haired coat preservation" height={350} />
+<Image src={imagePawDogWhiteDown} alt={"Two paw casts with hairless dog, facing down"} height={350} />
 </a>
 
 <a
-  href={optimizedImageTinyCat.src}
-  data-pswp-width={optimizedImageTinyCat.attributes.width}
-  data-pswp-height={optimizedImageTinyCat.attributes.height}
-  target="_blank"
+href={optimizedImagePawPrintPallete.src}
+data-pswp-width={optimizedImagePawPrintPallete.attributes.width}
+data-pswp-height={optimizedImagePawPrintPallete.attributes.height}
+target="_blank"
 >
-  <Image src={imageTinyCat} alt="Tiny coat preservation with cat" height={350} />
+<Image src={imagePawPrintPallete} alt={"Paw imprint in clay keepsake"} height={350} />
 </a>
 
 <a
-  href={optimizedImageTinyBall.src}
-  data-pswp-width={optimizedImageTinyBall.attributes.width}
-  data-pswp-height={optimizedImageTinyBall.attributes.height}
-  target="_blank"
+href={optimizedImagePawsNoseMarble.src}
+data-pswp-width={optimizedImagePawsNoseMarble.attributes.width}
+data-pswp-height={optimizedImagePawsNoseMarble.attributes.height}
+target="_blank"
 >
-  <Image src={imageTinyBall} alt="Skinless coat preservation with Tabby cat" height={350} />
+<Image src={imagePawsNoseMarble} alt={"3D paw print and nose cast with dog"} height={350} />
 </a>
 
 <a
-  href={optimizedImageFeathersVialsBox.src}
-  data-pswp-width={optimizedImageFeathersVialsBox.attributes.width}
-  data-pswp-height={optimizedImageFeathersVialsBox.attributes.height}
-  target="_blank"
+href={optimizedImagePawWhiteDogHand.src}
+data-pswp-width={optimizedImagePawWhiteDogHand.attributes.width}
+data-pswp-height={optimizedImagePawWhiteDogHand.attributes.height}
+target="_blank"
 >
-  <Image src={imageFeathersVialsBox} alt="Feather collection in glass vials" height={350} />
+<Image src={imagePawWhiteDogHand} alt={"Paw cast with hairless dog"} height={350} />
 </a>
 
 <a
-  href={optimizedImageFullCatSkull.src}
-  data-pswp-width={optimizedImageFullCatSkull.attributes.width}
-  data-pswp-height={optimizedImageFullCatSkull.attributes.height}
-  target="_blank"
+href={optimizedImagePawDogBlack.src}
+data-pswp-width={optimizedImagePawDogBlack.attributes.width}
+data-pswp-height={optimizedImagePawDogBlack.attributes.height}
+target="_blank"
 >
-  <Image src={imageFullCatSkull} alt="Full body coat preservation and skull cleaning in glass casket box with cat" height={350} />
+<Image src={imagePawDogBlack} alt={"Paw cast with Great Dane"} height={350} />
 </a>
 
 <a
-  href={optimizedImageHeartBlack.src}
-  data-pswp-width={optimizedImageHeartBlack.attributes.width}
-  data-pswp-height={optimizedImageHeartBlack.attributes.height}
-  target="_blank"
+href={optimizedImageIguana.src}
+data-pswp-width={optimizedImageIguana.attributes.width}
+data-pswp-height={optimizedImageIguana.attributes.height}
+target="_blank"
 >
-  <Image src={imageHeartBlack} alt="Heart-shaped coat preservation with Rottweiler" height={350} />
+<Image src={imageIguana} alt={"Cast of iguana foot"} height={350} />
 </a>
 
 <a
-  href={optimizedImageHeartBrownWhite.src}
-  data-pswp-width={optimizedImageHeartBrownWhite.attributes.width}
-  data-pswp-height={optimizedImageHeartBrownWhite.attributes.height}
-  target="_blank"
+href={optimizedImagePawWhiteDogUp.src}
+data-pswp-width={optimizedImagePawWhiteDogUp.attributes.width}
+data-pswp-height={optimizedImagePawWhiteDogUp.attributes.height}
+target="_blank"
 >
-  <Image src={imageHeartBrownWhite} alt="Mini heart-shaped coat preservation for Chihuahua" height={350} />
-</a>
-
-<a
-  href={optimizedImageVialsMusicBonesTable.src}
-  data-pswp-width={optimizedImageVialsMusicBonesTable.attributes.width}
-  data-pswp-height={optimizedImageVialsMusicBonesTable.attributes.height}
-  target="_blank"
->
-  <Image src={imageVialsMusicBonesTable} alt="Hair and whisker collection with dog, with septum bone" height={350} />
-</a>
-
-<a
-  href={optimizedImageBallsOrangeBlack.src}
-  data-pswp-width={optimizedImageBallsOrangeBlack.attributes.width}
-  data-pswp-height={optimizedImageBallsOrangeBlack.attributes.height}
-  target="_blank"
->
-  <Image src={imageBallsOrangeBlack} alt="Four coat preservation spheres with a Siamese cat" height={350} />
+<Image src={imagePawWhiteDogUp} alt={"Two paw casts with hairless dog, highlighting toe beans"} height={350} />
 </a>
 
 
