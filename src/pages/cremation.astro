@@ -1,0 +1,98 @@
+---
+import Layout from "../layouts/Base.astro";
+import { Image } from "astro:assets";
+import burialImage from "../images/pc/pc_dogrestroseshands.jpeg";
+import aquamationImage from "../images/cremation/cremation_ashesbox.jpg";
+import cremationImage from "../images/cremation/cremation_ashesjarskullflowers.jpg";
+import LineFancy from "../components/LineFancy.astro";
+---
+
+<Layout
+  title="Burial, cremation, and aquamation aftercare for your deceased pet"
+  description="Precious Creature offers a number of options for caring for your pet's body after death, including burial, cremation, and aquamation."
+>
+  <div
+    class="px-4 pt-4 font-display text-4xl lg:px-24 lg:pt-8 lg:text-6xl lg:font-bold"
+  >
+    Cremation & Burial
+  </div>
+  <div class="px-4 pt-4 font-display text-lg lg:px-24 lg:pt-4 lg:text-2xl">
+    The decision of how to honor the body of your passed loved one is a deeply
+    personal one.
+  </div>
+  <div class="justify-left flex items-center pl-4 pt-2 lg:hidden">
+    <LineFancy width="40%" />
+  </div>
+  <div
+    class="justify-left hidden items-center pl-4 pt-2 lg:flex lg:px-24 lg:pt-4"
+  >
+    <LineFancy width="30%" />
+  </div>
+  <div class="px-4 pt-2 lg:px-24">
+    Whether you have chosen a preservation method for your pet like bone
+    cleaning or taxidermy, or you are simply looking for a way to honor the body
+    of your passed loved one, you have a number of choices you can make
+    regarding the final disposition of your pet's body. We highlight those that
+    we offer or facilitate below.
+  </div>
+  <div
+    class="grid grid-cols-1 justify-items-center px-10 pt-4 lg:grid-cols-3 lg:gap-x-6 lg:px-24"
+  >
+    <div class="card glass mb-10 lg:mb-1">
+      <figure>
+        <Image
+          src={cremationImage}
+          alt="Ashes in a saucer with a skull and flowers in the background"
+          quality="max"
+        />
+      </figure>
+      <div class="card-body">
+        <a class="card-title text-3xl leading-8 lg:tracking-tighter"
+          >Traditional Cremation</a
+        >
+        <a class="text-sm"
+          >The traditional burning of a deceased's remains results in ashes that
+          you can then spread or house in an urn or other vessel. We have
+          collected a number of antique vessels for your consideration.</a
+        >
+      </div>
+    </div>
+    <div class="card glass mb-10 lg:mb-1">
+      <figure>
+        <Image
+          src={aquamationImage}
+          alt="Ashes in a gold box with the lid open"
+          quality="max"
+        />
+      </figure>
+      <div class="card-body">
+        <a class="card-title text-3xl lg:tracking-tight">Aquamation</a>
+        <a class="text-sm"
+          >Gentler on the body and kinder for the earth, aquamation is a popular
+          choice for handling a deceased's remains which still results in
+          material you can spread or preserve in your home.</a
+        >
+      </div>
+    </div>
+    <div class="card glass mb-10 lg:mb-1">
+      <figure>
+        <Image
+          src={burialImage}
+          alt="Painting of people riding horses next to grassy hills and circular arrangements of skulls"
+          quality="max"
+        />
+      </figure>
+      <div class="card-body">
+        <a class="card-title text-3xl lg:tracking-tight">Burial</a>
+        <a class="text-sm"
+          >Precious Creature regularly returns remains to families for
+          instructed home burial. We also own ten remote acres of desert land
+          which can serve as the resting place for your pet's body. It would be
+          our honor to host formal services for you, or we can respectfully
+          complete the burial in your absence.</a
+        >
+      </div>
+    </div>
+  </div>
+</Layout>
+

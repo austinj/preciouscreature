@@ -1,0 +1,158 @@
+---
+import Layout from "../layouts/Base.astro";
+import { Image } from "astro:assets";
+import coverImage from "../images/lauren.jpg";
+import LineFancy from "../components/LineFancy.astro";
+---
+
+<Layout
+  title="About Us"
+  description="Precious Creature is a taxidermy business owned and operated by expert taxidermist Lauren Kane in Southern California."
+>
+  <div class="lg:hidden">
+    <div class="px-4 pt-4 font-display text-4xl font-bold">Our story</div>
+    <div class="px-4 pt-4 font-display text-lg">
+      Where grief, art, craft, and passion meet.
+    </div>
+    <div class="flex items-center justify-center pb-1 pl-4 pt-4">
+      <LineFancy width="60%" />
+    </div>
+    <div class="flex items-center justify-center">
+      <Image
+        class="mb-2 mt-5 w-5/6 rounded-lg"
+        src={coverImage}
+        alt="Lauren in her workshop next to a skull and a taxidermied dog"
+        quality="max"
+      />
+    </div>
+    <div class="px-4 pt-4">
+      <p>
+        <span class="text-bold"
+          >Precious Creature is a full-time alternative pet aftercare
+          business/passion</span
+        > located in the sleepy city of Redlands, just an hour east of Los Angeles.
+        With a lifelong love of animals, art, and death care, owner and expert taxidermist
+        Lauren Kane marries all three together to bring a renewed vision to pet aftercare.
+        We have worked with over 350 families, and are always happy to provide references
+        regarding our services upon request.
+      </p>
+      <br />
+      <p>
+        We are a small team of two: Lauren and her magnificent apprentice Triss Krohne. We also receive assistance from
+        our internet helper Austin and
+        our partnered colleagues at Paws and Claws Aquamation and Memorials,
+        Gateway Pet Cemetery, and Valley Fur Shed Tannery. Our work has been
+        featured in <a
+          href="https://www.ebbartels.com/good-grief/"
+          class="font-medium underline decoration-gray-400 decoration-[1px] underline-offset-2"
+          >books</a
+        >, newspapers (<a
+          href="https://www.wsj.com/real-estate/luxury-homes/deceased-pet-home-memorials-62ac5827?st=6ht1x1x4gb608z6"
+          class="font-medium underline decoration-gray-400 decoration-[1px] underline-offset-2"
+          >1</a
+        >, <a
+          href="https://nypost.com/2017/05/16/these-extremely-loving-owners-preserve-their-pets-for-eternity/"
+          class="font-medium underline decoration-gray-400 decoration-[1px] underline-offset-2"
+          >2</a
+        >), podcasts (<a
+          href="https://www.ellekayetaxidermy.co.uk/podcast-1/episode/22ca8fec/lauren-kane-pet-mortician"
+          class="font-medium underline decoration-gray-400 decoration-[1px] underline-offset-2"
+          >1</a
+        >, <a
+          href="https://www.griefdreams.ca/podcast/134"
+          class="font-medium underline decoration-gray-400 decoration-[1px] underline-offset-2"
+          >2</a
+        >, <a
+          href="https://www.alieward.com/ologies/nassology"
+          class="font-medium underline decoration-gray-400 decoration-[1px] underline-offset-2"
+          >3</a
+        >), and <a
+          href="https://www.theodradek.com/"
+          class="font-medium underline decoration-gray-400 decoration-[1px] underline-offset-2"
+          >fancy zines</a
+        >.
+      </p>
+      <br />
+      <p>
+        Lauren lives in a cozy neighborhood with her familiar Laika. She is
+        inspired by Victorian and world mourning practices, natural history,
+        pets here and here no longer, and star-crossed souls.
+      </p>
+    </div>
+  </div>
+
+  <div class="hidden lg:mt-24 lg:block lg:justify-self-center lg:px-60">
+    <p class="pb-4 font-display text-7xl font-extrabold">Our story</p>
+    <div class="pb-4 font-display text-3xl tracking-tight">
+      Where grief, art, craft, and passion meet.
+    </div>
+    <div class="flex justify-center pb-10 pt-4">
+      <LineFancy width="60%" />
+    </div>
+    <div>
+      <div class="float-right mb-1 ml-1">
+        <Image
+          class="ml-3 rounded-lg"
+          src={coverImage}
+          width="350"
+          alt="Lauren in her workshop next to a skull and a taxidermied dog"
+          quality="max"
+        />
+      </div>
+      <div class="pb-4">
+        <p>
+          <span class="text-bold"
+            >Precious Creature is a full-time alternative pet aftercare
+            business/passion</span
+          > located in the sleepy city of Redlands, just an hour east of Los Angeles.
+          With a lifelong love of animals, art, and death care, owner and expert
+          taxidermist Lauren Kane marries all three together to bring a renewed vision
+          to pet aftercare. We have worked with over 350 families, and are always
+          happy to provide references regarding our services upon request.
+        </p>
+        <br />
+        <p>
+          We are a small team of two: Lauren and her magnificent apprentice
+          Triss Krohne. Our team is assisted by our internet helper Austin and
+          our partnered colleagues at Paws and Claws Aquamation and Memorials,
+          Gateway Pet Cemetery, and Valley Fur Shed Tannery. Our work has been
+          featured in <a
+            href="https://www.ebbartels.com/good-grief/"
+            class="font-medium underline decoration-gray-400 decoration-[1px] underline-offset-2 hover:decoration-black"
+            >books</a
+          >, newspapers (<a
+            href="https://www.wsj.com/real-estate/luxury-homes/deceased-pet-home-memorials-62ac5827?st=6ht1x1x4gb608z6"
+            class="font-medium underline decoration-gray-400 decoration-[1px] underline-offset-2 hover:decoration-black"
+            >1</a
+          >, <a
+            href="https://nypost.com/2017/05/16/these-extremely-loving-owners-preserve-their-pets-for-eternity/"
+            class="font-medium underline decoration-gray-400 decoration-[1px] underline-offset-2 hover:decoration-black"
+            >2</a
+          >), podcasts (<a
+            href="https://www.ellekayetaxidermy.co.uk/podcast-1/episode/22ca8fec/lauren-kane-pet-mortician"
+            class="font-medium underline decoration-gray-400 decoration-[1px] underline-offset-2 hover:decoration-black"
+            >1</a
+          >, <a
+            href="https://www.griefdreams.ca/podcast/134"
+            class="font-medium underline decoration-gray-400 decoration-[1px] underline-offset-2 hover:decoration-black"
+            >2</a
+          >, <a
+            href="https://www.alieward.com/ologies/nassology"
+            class="font-medium underline decoration-gray-400 decoration-[1px] underline-offset-2 hover:decoration-black"
+            >3</a
+          >), and <a
+            href="https://www.theodradek.com/"
+            class="font-medium underline decoration-gray-400 decoration-[1px] underline-offset-2 hover:decoration-black"
+            >fancy zines</a
+          >.
+        </p>
+        <br />
+        <p>
+          Lauren lives in a cozy neighborhood with her familiar Laika. She is
+          inspired by Victorian and world mourning practices, natural history,
+          pets here and here no longer, and star-crossed souls.
+        </p>
+      </div>
+    </div>
+  </div>
+</Layout>
