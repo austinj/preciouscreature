@@ -5,7 +5,7 @@ import LineFancy from "../components/LineFancy.astro";
 import { Image, getImage } from "astro:assets";
 
 import imageTail from "/src/images/skeleton/skeleton_and_fur_tail.jpg";
-const optimizedImageTail = await getImage({ src: imageTail, width: 500 });
+const optimizedImageTail = await getImage({ src: imageTail, width: 500, quality: 'max' });
 
 import imageDogWhippetPlant from "/src/images/skeleton/skeleton_skulldogwhippetplant1.jpg";
 const optimizedImageDogWhippetPlant = await getImage({ src: imageDogWhippetPlant, width: 500 });
@@ -113,7 +113,7 @@ data-pswp-width={optimizedImageTail.attributes.width}
 data-pswp-height={optimizedImageTail.attributes.height}
 target="_blank"
 >
-<Image src={imageTail} alt={"altText"} height={350} />
+<Image src={imageTail} alt={"altText"} height={350} quality="max" />
 </a>
 
 <a
@@ -122,7 +122,7 @@ data-pswp-width={optimizedImageDogWhippetPlant.attributes.width}
 data-pswp-height={optimizedImageDogWhippetPlant.attributes.height}
 target="_blank"
 >
-<Image src={imageDogWhippetPlant} alt={"altText"} height={350} />
+<Image src={imageDogWhippetPlant} alt={"altText"} height={350} quality="max" />
 </a>
 
 <a
@@ -131,7 +131,7 @@ data-pswp-width={optimizedImageVial.attributes.width}
 data-pswp-height={optimizedImageVial.attributes.height}
 target="_blank"
 >
-<Image src={imageVial} alt={"altText"} height={350} />
+<Image src={imageVial} alt={"altText"} height={350} quality="max" />
 </a>
 
 <a
@@ -140,7 +140,7 @@ data-pswp-width={optimizedImageFullDog.attributes.width}
 data-pswp-height={optimizedImageFullDog.attributes.height}
 target="_blank"
 >
-<Image src={imageFullDog} alt={"altText"} height={350} />
+<Image src={imageFullDog} alt={"altText"} height={350} quality="max" />
 </a>
 
 <a
@@ -149,7 +149,7 @@ data-pswp-width={optimizedImageCatFurBalls.attributes.width}
 data-pswp-height={optimizedImageCatFurBalls.attributes.height}
 target="_blank"
 >
-<Image src={imageCatFurBalls} alt={"altText"} height={350} />
+<Image src={imageCatFurBalls} alt={"altText"} height={350} quality="max" />
 </a>
 
 <a
@@ -158,7 +158,7 @@ data-pswp-width={optimizedImageCatHeartNose.attributes.width}
 data-pswp-height={optimizedImageCatHeartNose.attributes.height}
 target="_blank"
 >
-<Image src={imageCatHeartNose} alt={"altText"} height={350} />
+<Image src={imageCatHeartNose} alt={"altText"} height={350} quality="max" />
 </a>
 
 <a
@@ -167,7 +167,7 @@ data-pswp-width={optimizedImageCatHoldingPaw.attributes.width}
 data-pswp-height={optimizedImageCatHoldingPaw.attributes.height}
 target="_blank"
 >
-<Image src={imageCatHoldingPaw} alt={"altText"} height={350} />
+<Image src={imageCatHoldingPaw} alt={"altText"} height={350} quality="max" />
 </a>
 
 <a
@@ -176,7 +176,7 @@ data-pswp-width={optimizedImageSkullCatHeadstone.attributes.width}
 data-pswp-height={optimizedImageSkullCatHeadstone.attributes.height}
 target="_blank"
 >
-<Image src={imageSkullCatHeadstone} alt={"altText"} height={350} />
+<Image src={imageSkullCatHeadstone} alt={"altText"} height={350} quality="max" />
 </a>
 
 <a
@@ -185,7 +185,7 @@ data-pswp-width={optimizedImageSkullDogCandle.attributes.width}
 data-pswp-height={optimizedImageSkullDogCandle.attributes.height}
 target="_blank"
 >
-<Image src={imageSkullDogCandle} alt={"altText"} height={350} />
+<Image src={imageSkullDogCandle} alt={"altText"} height={350} quality="max" />
 </a>
 
 <a
@@ -194,7 +194,7 @@ data-pswp-width={optimizedImageBonesArranged.attributes.width}
 data-pswp-height={optimizedImageBonesArranged.attributes.height}
 target="_blank"
 >
-<Image src={imageBonesArranged} alt={"altText"} height={350} />
+<Image src={imageBonesArranged} alt={"altText"} height={350} quality="max" />
 </a>
 
 <a
@@ -203,7 +203,7 @@ data-pswp-width={optimizedImageSkullCrossbones.attributes.width}
 data-pswp-height={optimizedImageSkullCrossbones.attributes.height}
 target="_blank"
 >
-<Image src={imageSkullCrossbones} alt={"altText"} height={350} />
+<Image src={imageSkullCrossbones} alt={"altText"} height={350} quality="max" />
 </a>
 
 <a
@@ -212,7 +212,7 @@ data-pswp-width={optimizedImageSkullOldBrown.attributes.width}
 data-pswp-height={optimizedImageSkullOldBrown.attributes.height}
 target="_blank"
 >
-<Image src={imageSkullOldBrown} alt={"altText"} height={350} />
+<Image src={imageSkullOldBrown} alt={"altText"} height={350} quality="max" />
 </a>
 
 <a
@@ -221,7 +221,7 @@ data-pswp-width={optimizedImageSkullDogBox.attributes.width}
 data-pswp-height={optimizedImageSkullDogBox.attributes.height}
 target="_blank"
 >
-<Image src={imageSkullDogBox} alt={"altText"} height={350} />
+<Image src={imageSkullDogBox} alt={"altText"} height={350} quality="max" />
 </a>
 
 <a
@@ -230,7 +230,7 @@ data-pswp-width={optimizedImageSkullHazelPawPrint.attributes.width}
 data-pswp-height={optimizedImageSkullHazelPawPrint.attributes.height}
 target="_blank"
 >
-<Image src={imageSkullHazelPawPrint} alt={"altText"} height={350} />
+<Image src={imageSkullHazelPawPrint} alt={"altText"} height={350} quality="max" />
 </a>
 
 <a
@@ -239,7 +239,7 @@ data-pswp-width={optimizedImageCatCrossbones.attributes.width}
 data-pswp-height={optimizedImageCatCrossbones.attributes.height}
 target="_blank"
 >
-<Image src={imageCatCrossbones} alt={"altText"} height={350} />
+<Image src={imageCatCrossbones} alt={"altText"} height={350} quality="max" />
 </a>
 
 <a
@@ -248,7 +248,7 @@ data-pswp-width={optimizedImageSkullDogGoldTooth.attributes.width}
 data-pswp-height={optimizedImageSkullDogGoldTooth.attributes.height}
 target="_blank"
 >
-<Image src={imageSkullDogGoldTooth} alt={"altText"} height={350} />
+<Image src={imageSkullDogGoldTooth} alt={"altText"} height={350} quality="max" />
 </a>
 
 <a
@@ -257,7 +257,7 @@ data-pswp-width={optimizedImageSkullTableBlack.attributes.width}
 data-pswp-height={optimizedImageSkullTableBlack.attributes.height}
 target="_blank"
 >
-<Image src={imageSkullTableBlack} alt={"altText"} height={350} />
+<Image src={imageSkullTableBlack} alt={"altText"} height={350} quality="max" />
 </a>
 
 <a
@@ -266,7 +266,7 @@ data-pswp-width={optimizedImageThree.attributes.width}
 data-pswp-height={optimizedImageThree.attributes.height}
 target="_blank"
 >
-<Image src={imageThree} alt={"altText"} height={350} />
+<Image src={imageThree} alt={"altText"} height={350} quality="max" />
 </a>
 
 <a
@@ -275,7 +275,7 @@ data-pswp-width={optimizedImageDogArcticTulip.attributes.width}
 data-pswp-height={optimizedImageDogArcticTulip.attributes.height}
 target="_blank"
 >
-<Image src={imageDogArcticTulip} alt={"altText"} height={350} />
+<Image src={imageDogArcticTulip} alt={"altText"} height={350} quality="max" />
 </a>
 
 <a
@@ -284,7 +284,7 @@ data-pswp-width={optimizedImageDogSkullCandles.attributes.width}
 data-pswp-height={optimizedImageDogSkullCandles.attributes.height}
 target="_blank"
 >
-<Image src={imageDogSkullCandles} alt={"altText"} height={350} />
+<Image src={imageDogSkullCandles} alt={"altText"} height={350} quality="max" />
 </a>
 
 <a
@@ -293,7 +293,7 @@ data-pswp-width={optimizedImageSkullCatClose.attributes.width}
 data-pswp-height={optimizedImageSkullCatClose.attributes.height}
 target="_blank"
 >
-<Image src={imageSkullCatClose} alt={"altText"} height={350} />
+<Image src={imageSkullCatClose} alt={"altText"} height={350} quality="max" />
 </a>
 
 <a
@@ -302,7 +302,7 @@ data-pswp-width={optimizedImageSkullDogMarble.attributes.width}
 data-pswp-height={optimizedImageSkullDogMarble.attributes.height}
 target="_blank"
 >
-<Image src={imageSkullDogMarble} alt={"altText"} height={350} />
+<Image src={imageSkullDogMarble} alt={"altText"} height={350} quality="max" />
 </a>
 
 
