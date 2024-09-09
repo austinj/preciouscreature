@@ -1,113 +1,35 @@
 ---
-import LightboxImage from "../components/LightboxImage.astro";
-import Layout from "../layouts/Gallery.astro";
+import Layout from "../layouts/Base.astro";
+import LineFancy from "../components/LineFancy.astro";
+
 ---
 
 <Layout
   title="Fur for pet preservation and pet taxidermy"
-  description="Precious Creature offers a range of services including casts from your loved one's body, fur preservation, bone and skull preservation, and full pet taxidermy."
->
-  <p slot="title">Coat</p>
-  <p slot="subtitle">
-    By preserving your companion's coat, you can have a memorial of them to
+  description="Precious Creature offers a range of services including casts from your loved one's body, fur preservation, bone and skull preservation, and full pet taxidermy.">
+
+  <div class="lg:flex lg:flex-col">
+    <div
+      class="px-4 pt-4 font-display text-4xl font-bold lg:px-24 lg:pt-8 lg:text-6xl"
+    >
+    Coat
+    </div>
+    <div class="justify-left flex items-center pl-4 pt-2 lg:hidden">
+      <LineFancy width="40%" />
+    </div>
+    <div class="hidden lg:mx-20 lg:flex lg:pl-4 lg:pt-3">
+      <LineFancy width="30%" />
+    </div>
+    <div class="px-4 pt-4 font-display text-lg lg:px-24 lg:pt-6">
+      By preserving your companion's coat, you can have a memorial of them to
     touch and cherish.
-  </p>
-  <p slot="description">
-    Coat preservation is one of the most versatile methods of preserving and
-    remembering your pet. Families choose to remember their pets through shaped
-    fur; paw, tail, or complete pelt preservation; whisker and fur clippings;
-    and felted balls.
-  </p>
-  <LightboxImage
-    imagePath="/src/images/coat/coat_akita.jpg"
-    altText="Coat preservation of the face and ears of an Akita"
-    height="1200"
-    width="960"
-  />
-  <LightboxImage
-    imagePath="/src/images/coat/coat_ballneedles.jpg"
-    altText="Three needle felted fur spheres with a Whippet and a Himalayan cat"
-    height="1200"
-    width="960"
-  />
-  <LightboxImage
-    imagePath="/src/images/coat/coat_ballornament.jpg"
-    altText="Coat preservation sphere with a Pomeranian"
-    height="1200"
-    width="960"
-  />
-  <LightboxImage
-    imagePath="/src/images/coat/coat_heart.jpg"
-    altText="Heart-shaped coat preservation of chest area with Bully"
-    height="1200"
-    width="960"
-  />
+    </div>
+    <div class="px-4 pt-4 lg:px-24 lg:pt-2">
+      Coat preservation is one of the most versatile methods of preserving and
+      remembering your pet. Families choose to remember their pets through shaped
+      fur; paw, tail, or complete pelt preservation; whisker and fur clippings;
+      and felted balls.
+      </div>
+    </div>
 
-  <LightboxImage
-    imagePath="/src/images/coat/coat_blackpoof.jpg"
-    altText="Skinless coat preservation with a Shih Tzu"
-    height="1200"
-    width="960"
-  />
-  <LightboxImage
-    imagePath="/src/images/coat/coat_drape.jpg"
-    altText="Full body coat preservation with a Bulldog (bear rug style)"
-    height="1200"
-    width="960"
-  />
-
-  <LightboxImage
-    imagePath="/src/images/coat/coat_orangeinframe.jpg"
-    altText="Framed long-haired coat preservation"
-    height="1200"
-    width="960"
-  />
-  <LightboxImage
-    imagePath="/src/images/coat/coat_tinycat.jpg"
-    altText="Tiny coat preservation with cat"
-    height="1200"
-    width="900"
-  />
-  <LightboxImage
-    imagePath="/src/images/coat/coat_tinyball.jpg"
-    altText="Skinless coat preservation with Tabby cat"
-    height="1200"
-    width="960"
-  />
-  <LightboxImage
-    imagePath="/src/images/coat/coat_feathersvialsbox.jpeg"
-    altText="Feather collection in glass vials"
-    height="1200"
-    width="900"
-  />
-  <LightboxImage
-    imagePath="/src/images/coat/coat_fullcatskullincase2.jpg"
-    altText="Full body coat preservation and skull cleaning in glass casket box with cat"
-    height="1200"
-    width="900"
-  />
-  <LightboxImage
-    imagePath="/src/images/coat/coat_heartblack.jpg"
-    altText="Heart-shaped coat preservation with Rottweiler"
-    height="1200"
-    width="960"
-  />
-  <LightboxImage
-    imagePath="/src/images/coat/coat_heartbrownwhite.jpeg"
-    altText="Mini heart-shaped coat preservation for Chihuahua"
-    height="1200"
-    width="900"
-  />
-  <LightboxImage
-    imagePath="/src/images/coat/coat_vialsmusicbonestable.jpeg"
-    altText="Hair and whisker collection with dog, with septum bone"
-    height="1200"
-    width="900"
-  />
-  <LightboxImage
-    imagePath="/src/images/coat/coat_ballsorangeblack.jpg"
-    altText="Four coat preservation spheres with a Siamese cat"
-    height="1200"
-    width="959"
-  />
 </Layout>
