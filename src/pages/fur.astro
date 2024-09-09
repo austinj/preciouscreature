@@ -2,6 +2,11 @@
 import Layout from "../layouts/Base.astro";
 import LineFancy from "../components/LineFancy.astro";
 
+import { Image, getImage } from "astro:assets";
+import image from "/src/images/coat/coat_akita.jpg";
+
+const optimizedImage = await getImage({ src: image, width: 960 });
+
 ---
 
 <Layout
@@ -31,5 +36,40 @@ import LineFancy from "../components/LineFancy.astro";
       and felted balls.
       </div>
     </div>
+
+    
+<div id="gallery">
+  <a
+      href={optimizedImage.src}
+      data-pswp-width={optimizedImage.attributes.width}
+      data-pswp-height={optimizedImage.attributes.height}
+      target="_blank"
+  >
+      <Image src={image} alt={"alt"} height={350} />
+  </a>
+</div>
+
+
+<script>
+  import PhotoSwipeLightbox from "photoswipe/lightbox";
+  import "photoswipe/style.css";
+
+  let lightbox: PhotoSwipeLightbox;
+
+  document.addEventListener("astro:page-load", () => {
+      lightbox = new PhotoSwipeLightbox({
+          gallery: "#gallery",
+          children: "a",
+          pswpModule: () => import("photoswipe"),
+      });
+
+      lightbox.init();
+  });
+
+  document.addEventListener("astro:before-swap", () => {
+      lightbox.destroy();
+  });
+</script>
+
 
 </Layout>
