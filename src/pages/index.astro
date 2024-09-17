@@ -64,7 +64,7 @@ const optimizedCoverMobile = await getImage({
   </div>
 
   <Fragment slot="head">
-    <link rel="preload" href={optimizedCoverDesktop.src} as="image" />
-    <link rel="preload" href={optimizedCoverMobile.src} as="image" />
+    <link rel="preload" href={optimizedCoverDesktop.src} as="image" fetchpriority="high" />
+    <link rel="preload" href={optimizedCoverMobile.src} as="image" fetchpriority="high" />
   </Fragment>
 </Layout>
