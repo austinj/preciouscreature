@@ -1,85 +1,70 @@
 ---
 import Layout from "../layouts/Base.astro";
-import { Image } from "astro:assets";
-import coverImage from "../images/cover.webp";
+import { Image, getImage } from "astro:assets";
 import LineFancy from "../components/LineFancy.astro";
+
+import coverDesktop from "../images/cover.webp";
+const optimizedCoverDesktop = await getImage({
+  src: coverDesktop,
+  width: 500,
+  quality: "max",
+});
+
+import coverMobile from "../images/cover.webp";
+const optimizedCoverMobile = await getImage({
+  src: coverMobile,
+  width: 350,
+  quality: "max",
+});
 ---
 
 <Layout
   title="Pet Aftercare, Pet Taxidermy, and Pet Preservation"
   description="Precious Creature is a pet aftercare, pet preservation, and taxidermy designs service in California. "
 >
-  <div class="lg:hidden">
-    <div class="flex items-center justify-center">
+  <div class="px-4 lg:mt-10 lg:px-24 lg:pt-5">
+    <div class="relative">
       <Image
-        class="mb-2 mt-5 w-5/6 rounded-lg"
-        src={coverImage}
+        class="mx-auto mb-4 mt-4 w-[350px] rounded-lg lg:float-right lg:ml-6 lg:w-[500px]"
+        src={coverMobile}
+        srcset={`${optimizedCoverMobile.src} 350w, ${optimizedCoverDesktop.src} 500w`}
+        sizes="(max-width: 1024px) 350px, 500px"
         alt="Small dog's skull with a nose cast and tail preservation next to them. Antlers are in the background."
         fetchpriority="high"
-        width="300"
-        quality="max"
       />
-    </div>
-    <div class="px-4 py-4 font-display text-4xl">
-      <strong>Honoring your companion.</strong>
-    </div>
-    <div class="flex items-center justify-center">
-      <LineFancy width="70%" />
-    </div>
-    <div class="px-4 pt-4 font-display text-lg">
-      At Precious Creature, we provide compassionate pet aftercare services
-      using taxidermy, leather-free preservation, and other traditional and
-      innovative artisanal methods.
-    </div>
-    <div class="px-4 pt-4">
-      We work with families across the United States to care for deceased pets
-      with dignity and compassion. <strong
-        >Because every family and loved one is unique, we work individually with
-        you to create the right memorial for your departed companion.</strong
-      > For families who would prefer honoring the memory of their pet without preserving
-      their hard or soft tissue, we regularly provide services including casts and
-      felted hair spheres. Explore our website to learn more.
-    </div>
-    <div class="px-4 pt-4">
-      <strong
-        >Contact us to learn more about the ways we can work together to honor
-        your companion.</strong
-      >
+      <div>
+        <p
+          class="py-3 font-display text-4xl font-bold lg:text-6xl lg:font-normal"
+        >
+          Honoring your companion.
+        </p>
+        <div class="mx-auto w-[300px] lg:mx-0 lg:w-[350px]">
+          <LineFancy />
+        </div>
+        <div class="pt-3 font-display text-lg">
+          At Precious Creature, we provide compassionate pet aftercare services
+          using taxidermy, leather-free preservation, and other traditional and
+          innovative artisanal methods.
+        </div>
+        <div class="pt-3">
+          We work with families across the United States to care for deceased
+          pets with dignity and compassion. <strong
+            >Because every family and loved one is unique, we work individually
+            with you to create the right memorial for your departed companion.</strong
+          > For families who would prefer honoring the memory of their pet without
+          preserving their hard or soft tissue, we regularly provide services including
+          casts and felted hair spheres. Explore our website to learn more.
+        </div>
+        <div class="pt-3 font-bold">
+          Contact us to learn more about the ways we can work together to honor
+          your companion.
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="hidden lg:mt-10 lg:pt-10 lg:block lg:justify-self-center lg:px-24">
-    <div class="float-right mb-1 ml-3">
-      <Image
-        class="rounded-lg"
-        src={coverImage}
-        width="500"
-        alt="Small dog's skull with a nose cast and tail preservation next to them. Antlers are in the background."
-        fetchpriority="high"
-        quality="max"
-      />
-    </div>
-    <p class="pb-4 font-display text-6xl">Honoring your companion.</p>
-    <div class="flex items-center pb-4">
-      <LineFancy width="40%" />
-    </div>
-    <div class="pb-4 font-display text-lg">
-      At Precious Creature, we provide compassionate pet aftercare services
-      using taxidermy, leather-free preservation, and other traditional and
-      innovative artisanal methods.
-    </div>
-    <div class="pb-4">
-      We work with families across the United States to care for deceased pets
-      with dignity and compassion. <strong
-        >Because every family and loved one is unique, we work individually with
-        you to create the right memorial for your departed companion.</strong
-      > For families who would prefer honoring the memory of their pet without preserving
-      their hard or soft tissue, we regularly provide services including casts and
-      felted hair spheres. Explore our website to learn more.
-    </div>
-    <div class="font-bold">
-      Contact us to learn more about the ways we can work together to honor your
-      companion.
-    </div>
-  </div>
+  <Fragment slot="head">
+    <link rel="preload" href={optimizedCoverDesktop.src} as="image" />
+    <link rel="preload" href={optimizedCoverMobile.src} as="image" />
+  </Fragment>
 </Layout>
