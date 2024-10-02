@@ -22,7 +22,7 @@ const optimizedCoverMobile = await getImage({
   title="Pet Aftercare, Pet Taxidermy, and Pet Preservation"
   description="Precious Creature is a pet aftercare, pet preservation, and taxidermy designs service in California. "
 >
-  <div class="px-4 sm:px-20 lg:mt-10 lg:px-40 xl:pt-5 xl:px-72">
+  <div class="px-4 sm:px-20 lg:mt-10 lg:px-40 xl:px-72 xl:pt-5">
     <div class="relative">
       <Image
         class="mx-auto mb-4 mt-4 w-[350px] rounded-lg xl:float-right xl:ml-6 xl:w-[500px]"
@@ -64,7 +64,17 @@ const optimizedCoverMobile = await getImage({
   </div>
 
   <Fragment slot="head">
-    <link rel="preload" href={optimizedCoverDesktop.src} as="image" fetchpriority="high" />
-    <link rel="preload" href={optimizedCoverMobile.src} as="image" fetchpriority="high" />
+    <link
+      rel="preload"
+      href={optimizedCoverDesktop.src}
+      as="image"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      href={optimizedCoverMobile.src}
+      as="image"
+      fetchpriority="high"
+    />
   </Fragment>
 </Layout>

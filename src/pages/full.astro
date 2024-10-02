@@ -248,9 +248,6 @@ const optimizedimageFullShoulderChi2 = await getImage({
   width: 500,
   quality: "max",
 });
-
-
-
 ---
 
 <Layout
@@ -263,7 +260,7 @@ const optimizedimageFullShoulderChi2 = await getImage({
     >
       Taxidermy
     </div>
-    <div class="flex pl-4 pt-2 lg:pl-24 w-[200px] lg:w-[500px]">
+    <div class="flex w-[200px] pl-4 pt-2 lg:w-[500px] lg:pl-24">
       <LineFancy />
     </div>
     <div class="px-4 pt-4 font-display text-lg lg:px-24 lg:pt-6">
@@ -402,19 +399,19 @@ const optimizedimageFullShoulderChi2 = await getImage({
       />
     </a>
 
-  <a
-  href={optimizedimageFullShoulderChi2.src}
-  data-pswp-width={optimizedimageFullShoulderChi2.attributes.width}
-  data-pswp-height={optimizedimageFullShoulderChi2.attributes.height}
-  target="_blank"
->
-  <Image
-    src={imageFullShoulderChi2}
-    alt={"altText"}
-    height={350}
-    quality="max"
-  />
-</a>
+    <a
+      href={optimizedimageFullShoulderChi2.src}
+      data-pswp-width={optimizedimageFullShoulderChi2.attributes.width}
+      data-pswp-height={optimizedimageFullShoulderChi2.attributes.height}
+      target="_blank"
+    >
+      <Image
+        src={imageFullShoulderChi2}
+        alt={"altText"}
+        height={350}
+        quality="max"
+      />
+    </a>
 
     <a
       href={optimizedImagePawVial.src}

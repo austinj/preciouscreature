@@ -12,109 +12,105 @@ import LineFancy from "../components/LineFancy.astro";
   title="Options in pet preservation and pet taxidermy"
   description="Precious Creature offers a range of services including casts from your loved one's body, fur preservation, bone and skull preservation, and full pet taxidermy."
 >
-<div class="px-4 mt-4 sm:px-20 xl:mt-10 xl:px-32">
-  <div
-    class="font-display text-4xl font-bold xl:text-6xl"
-  >
-    Preservation
-  </div>
-  <div class="flex pt-2 w-[200px] lg:w-[500px]">
-    <LineFancy />
-  </div>
-  <div class="pt-4 pb-4 font-display text-lg xl:pt-4 xl:text-2xl">
-    We provide aftercare for the most challenging time in pet companionship.
-  </div>
-  <div class="pt-2">
-    Just as every individual and family's relationship with their pet is unique,
-    so is our approach to understanding and supporting you. There are a number
-    of ways you can memorialize your companion.
-  </div>
-  <div class="pb-8 pt-4">
-    As you'll notice when looking through our past work, families commonly
-    combine services to find the best way to memorialize their pet, such as a
-    combined skeleton, coat, and cast preservation. All images shown are
-    projects that were completed by Precious Creature. They are presented here
-    with the express permission of the loved one's family.
-  </div>
-  <div
-    class="grid grid-cols-1 justify-items-center pt-4 md:grid-cols-2 md:gap-x-6 xl:grid-cols-4 xl:gap-x-6"
-  >
-    <div class="card glass mb-10">
-      <figure>
-        <Image
-          src={coatImage}
-          alt="Akita's pelt with a focus on the face!"
-          quality="max"
-        />
-      </figure>
-      <div class="card-body">
-        <span class="card-title text-3xl">Coat</span>
-        <span class="text-sm"
-          >Versatile and intimate, the warmth of your pet's coat is a tangible
-          memorial to hold.</span
-        >
-        <div class="card-actions justify-center">
-          <a href="/fur"><button class="btn text-lg">Past work</button></a>
+  <div class="mt-4 px-4 sm:px-20 xl:mt-10 xl:px-32">
+    <div class="font-display text-4xl font-bold xl:text-6xl">Preservation</div>
+    <div class="flex w-[200px] pt-2 lg:w-[500px]">
+      <LineFancy />
+    </div>
+    <div class="pb-4 pt-4 font-display text-lg xl:pt-4 xl:text-2xl">
+      We provide aftercare for the most challenging time in pet companionship.
+    </div>
+    <div class="pt-2">
+      Just as every individual and family's relationship with their pet is
+      unique, so is our approach to understanding and supporting you. There are
+      a number of ways you can memorialize your companion.
+    </div>
+    <div class="pb-8 pt-4">
+      As you'll notice when looking through our past work, families commonly
+      combine services to find the best way to memorialize their pet, such as a
+      combined skeleton, coat, and cast preservation. All images shown are
+      projects that were completed by Precious Creature. They are presented here
+      with the express permission of the loved one's family.
+    </div>
+    <div
+      class="grid grid-cols-1 justify-items-center pt-4 md:grid-cols-2 md:gap-x-6 xl:grid-cols-4 xl:gap-x-6"
+    >
+      <div class="card glass mb-10">
+        <figure>
+          <Image
+            src={coatImage}
+            alt="Akita's pelt with a focus on the face!"
+            quality="max"
+          />
+        </figure>
+        <div class="card-body">
+          <span class="card-title text-3xl">Coat</span>
+          <span class="text-sm"
+            >Versatile and intimate, the warmth of your pet's coat is a tangible
+            memorial to hold.</span
+          >
+          <div class="card-actions justify-center">
+            <a href="/fur"><button class="btn text-lg">Past work</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="card glass mb-10">
+        <figure>
+          <Image
+            src={castsImage}
+            alt="Casts of two large dog paws on a black stand"
+            quality="max"
+          />
+        </figure>
+        <div class="card-body">
+          <span class="card-title text-3xl">Casts</span>
+          <span class="text-sm"
+            >Inorganic and lifelike, casts use alternative materials to
+            commemorate your beloved.</span
+          >
+          <div class="card-actions justify-center">
+            <a href="/casts"><button class="btn text-lg">Past work</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="card glass mb-10">
+        <figure>
+          <Image
+            src={skeletonImage}
+            alt="Dog's skull with a jar of bones and a plant in the background"
+            quality="max"
+          />
+        </figure>
+        <div class="card-body">
+          <span class="card-title text-3xl">Skeleton</span>
+          <span class="text-sm"
+            >Revealing and elegant, bones tell the remarkable story of your
+            loved one's life.</span
+          >
+          <div class="card-actions justify-center">
+            <a href="/bones"><button class="btn text-lg">Past work</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="card glass lg:mb-10">
+        <figure>
+          <Image
+            src={taxidermyImage}
+            alt="Taxidermied small dog, sitting up and looking proud"
+            quality="max"
+          />
+        </figure>
+        <div class="card-body">
+          <span class="card-title text-3xl">Taxidermy</span>
+          <span class="text-sm"
+            >Sculptural and emotive, taxidermy preserves your pet's body to
+            cherish forever.</span
+          >
+          <div class="card-actions justify-center">
+            <a href="/full"><button class="btn text-lg">Past work</button></a>
+          </div>
         </div>
       </div>
     </div>
-    <div class="card glass mb-10">
-      <figure>
-        <Image
-          src={castsImage}
-          alt="Casts of two large dog paws on a black stand"
-          quality="max"
-        />
-      </figure>
-      <div class="card-body">
-        <span class="card-title text-3xl">Casts</span>
-        <span class="text-sm"
-          >Inorganic and lifelike, casts use alternative materials to
-          commemorate your beloved.</span
-        >
-        <div class="card-actions justify-center">
-          <a href="/casts"><button class="btn text-lg">Past work</button></a>
-        </div>
-      </div>
-    </div>
-    <div class="card glass mb-10">
-      <figure>
-        <Image
-          src={skeletonImage}
-          alt="Dog's skull with a jar of bones and a plant in the background"
-          quality="max"
-        />
-      </figure>
-      <div class="card-body">
-        <span class="card-title text-3xl">Skeleton</span>
-        <span class="text-sm"
-          >Revealing and elegant, bones tell the remarkable story of your loved
-          one's life.</span
-        >
-        <div class="card-actions justify-center">
-          <a href="/bones"><button class="btn text-lg">Past work</button></a>
-        </div>
-      </div>
-    </div>
-    <div class="card glass lg:mb-10">
-      <figure>
-        <Image
-          src={taxidermyImage}
-          alt="Taxidermied small dog, sitting up and looking proud"
-          quality="max"
-        />
-      </figure>
-      <div class="card-body">
-        <span class="card-title text-3xl">Taxidermy</span>
-        <span class="text-sm"
-          >Sculptural and emotive, taxidermy preserves your pet's body to
-          cherish forever.</span
-        >
-        <div class="card-actions justify-center">
-          <a href="/full"><button class="btn text-lg">Past work</button></a>
-        </div>
-      </div>
-    </div>
   </div>
-</div>
 </Layout>
