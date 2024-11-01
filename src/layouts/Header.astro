@@ -12,21 +12,21 @@ import {
 <StickyHeader
   class="sticky top-0 z-20 border-b bg-tan transition-all"
   scrollY={40}
-  defaultClass="py-2 lg:py-3"
-  activeClass="bg-white/10 border-gray-200 backdrop-blur-lg border-transparent"
+  defaultClass="py-1 border-black"
+  activeClass="bg-white/10 backdrop-blur-lg border-transparent"
 >
-  <header class="container px-10 justify-around flex">
+  <header class="container mx-auto justify-between gap-5 p-3 lg:flex lg:p-2">
     <Astronav closeOnClick>
-      <div class="flex w-full justify-between md:w-auto">
+      <div class="flex w-full justify-between lg:w-auto">
         <a class="font-serif text-2xl tracking-wide" href="/"
           >precious creature</a
         >
-        <div class="block md:hidden">
+        <div class="block lg:hidden">
           <MenuIcon class="mt-2 h-4 w-4 text-gray-800" />
         </div>
       </div>
-      <MenuItems class="hidden text-lg md:flex md:pt-1">
-        <ul class="flex flex-col md:flex-row md:gap-5">
+      <MenuItems class="hidden text-lg lg:flex lg:pt-1">
+        <ul class="flex flex-col lg:flex-row lg:gap-5">
           <li>
             <Dropdown class="group">
               <button class="-mb-1 flex items-center">
@@ -47,7 +47,7 @@ import {
               </button>
               <DropdownItems class="relative">
                 <div
-                  class="top-2 w-40 rounded pl-3 font-normal md:absolute md:border md:bg-tan md:p-3 md:shadow"
+                  class="top-2 w-40 rounded pl-3 font-normal lg:absolute lg:border lg:bg-tan lg:p-3 lg:shadow"
                 >
                   <ul>
                     <li class="-mb-1">
@@ -93,7 +93,7 @@ import {
               </button>
               <DropdownItems class="relative">
                 <div
-                  class="top-2 w-40 rounded pl-3 font-normal md:absolute md:border md:bg-tan md:p-3 md:shadow"
+                  class="top-2 w-40 rounded pl-3 font-normal lg:absolute lg:border lg:bg-tan lg:p-3 lg:shadow"
                 >
                   <ul>
                     <li class="-mb-1">
