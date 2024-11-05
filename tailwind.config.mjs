@@ -15,16 +15,16 @@ export default {
       },
     },
     screens: {
-      'sm': '640px',
+      sm: "640px",
       // => @media (min-width: 640px) { ... }
 
-      'md': '1200px',
+      md: "1200px",
       // => @media (min-width: 768px) { ... }
 
-      'lg': '1600px',
+      lg: "1600px",
       // => @media (min-width: 1024px) { ... }
 
-      'xl': '1800px',
+      xl: "1800px",
       // => @media (min-width: 1280px) { ... }
     },
     colors: {
