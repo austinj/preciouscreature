@@ -38,6 +38,7 @@ export default {
       yellow: colors.yellow,
       red: colors.red,
       tan: "#e8e2d1",
+      "tan-light": "#f1eee3",
       "tan-dark": "#565584",
       peach: "#ffefe6",
     },
