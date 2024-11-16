@@ -11,84 +11,82 @@ import LineFancy from "../components/LineFancy.astro";
   title="Burial, cremation, and aquamation aftercare for your deceased pet"
   description="Precious Creature offers a number of options for caring for your pet's body after death, including burial, cremation, and aquamation."
 >
-<div class="px-5 md:px-40 pt-5 md:pt-14">
-  <div
-    class="font-display text-4xl font-bold md:text-6xl"
-  >
-    Cremation & Burial
-  </div>
-  <div class="flex w-[200px] pl-4 pt-2 md:w-[500px]">
-    <LineFancy />
-  </div>
-  <div class="pt-4 font-display text-lg md:pt-4 md:text-2xl">
-    The decision of how to honor the body of your passed loved one is a deeply
-    personal one.
-  </div>
-  <div class="pb-10 pt-2">
-    Whether you have chosen a preservation method for your pet like bone
-    cleaning or taxidermy, or you are simply looking for a way to honor the body
-    of your passed loved one, you have a number of choices you can make
-    regarding the final disposition of your pet's body. We highlight those that
-    we offer or facilitate below.
-  </div>
-  <div
-    class="grid grid-cols-1 justify-items-center pt-4 md:grid-cols-3 md:gap-x-6"
-  >
-    <div class="card glass mb-10 md:mb-1">
-      <figure>
-        <Image
-          src={cremationImage}
-          alt="Ashes in a saucer with a skull and flowers in the background"
-          quality="max"
-        />
-      </figure>
-      <div class="card-body">
-        <span class="card-title text-3xl leading-8 md:tracking-tighter"
-          >Traditional Cremation</span
-        >
-        <span class="text-sm"
-          >The traditional burning of a deceased's remains results in ashes that
-          you can then spread or house in an urn or other vessel. We have
-          collected a number of antique vessels for your consideration.</span
-        >
+  <div class="px-5 pt-5 md:px-40 md:pt-14">
+    <div class="font-display text-4xl font-bold md:text-6xl">
+      Cremation & Burial
+    </div>
+    <div class="flex w-[200px] pl-4 pt-2 md:w-[500px]">
+      <LineFancy />
+    </div>
+    <div class="pt-4 font-display text-lg md:pt-4 md:text-2xl">
+      The decision of how to honor the body of your passed loved one is a deeply
+      personal one.
+    </div>
+    <div class="pb-10 pt-2">
+      Whether you have chosen a preservation method for your pet like bone
+      cleaning or taxidermy, or you are simply looking for a way to honor the
+      body of your passed loved one, you have a number of choices you can make
+      regarding the final disposition of your pet's body. We highlight those
+      that we offer or facilitate below.
+    </div>
+    <div
+      class="grid grid-cols-1 justify-items-center pt-4 md:grid-cols-3 md:gap-x-6"
+    >
+      <div class="card glass mb-10 md:mb-1">
+        <figure>
+          <Image
+            src={cremationImage}
+            alt="Ashes in a saucer with a skull and flowers in the background"
+            quality="max"
+          />
+        </figure>
+        <div class="card-body">
+          <span class="card-title text-3xl leading-8 md:tracking-tighter"
+            >Traditional Cremation</span
+          >
+          <span class="text-sm"
+            >The traditional burning of a deceased's remains results in ashes
+            that you can then spread or house in an urn or other vessel. We have
+            collected a number of antique vessels for your consideration.</span
+          >
+        </div>
+      </div>
+      <div class="card glass mb-10 md:mb-1">
+        <figure>
+          <Image
+            src={aquamationImage}
+            alt="Ashes in a gold box with the lid open"
+            quality="max"
+          />
+        </figure>
+        <div class="card-body">
+          <span class="card-title text-3xl md:tracking-tight">Aquamation</span>
+          <span class="text-sm"
+            >Gentler on the body and kinder for the earth, aquamation is a
+            popular choice for handling a deceased's remains which still results
+            in material you can spread or preserve in your home.</span
+          >
+        </div>
+      </div>
+      <div class="card glass mb-10 md:mb-1">
+        <figure>
+          <Image
+            src={burialImage}
+            alt="Painting of people riding horses next to grassy hills and circular arrangements of skulls"
+            quality="max"
+          />
+        </figure>
+        <div class="card-body">
+          <span class="card-title text-3xl md:tracking-tight">Burial</span>
+          <span class="text-sm"
+            >Precious Creature regularly returns remains to families for
+            instructed home burial. We also own ten remote acres of desert land
+            which can serve as the resting place for your pet's body. It would
+            be our honor to host formal services for you, or we can respectfully
+            complete the burial in your absence.</span
+          >
+        </div>
       </div>
     </div>
-    <div class="card glass mb-10 md:mb-1">
-      <figure>
-        <Image
-          src={aquamationImage}
-          alt="Ashes in a gold box with the lid open"
-          quality="max"
-        />
-      </figure>
-      <div class="card-body">
-        <span class="card-title text-3xl md:tracking-tight">Aquamation</span>
-        <span class="text-sm"
-          >Gentler on the body and kinder for the earth, aquamation is a popular
-          choice for handling a deceased's remains which still results in
-          material you can spread or preserve in your home.</span
-        >
-      </div>
-    </div>
-    <div class="card glass mb-10 md:mb-1">
-      <figure>
-        <Image
-          src={burialImage}
-          alt="Painting of people riding horses next to grassy hills and circular arrangements of skulls"
-          quality="max"
-        />
-      </figure>
-      <div class="card-body">
-        <span class="card-title text-3xl md:tracking-tight">Burial</span>
-        <span class="text-sm"
-          >Precious Creature regularly returns remains to families for
-          instructed home burial. We also own ten remote acres of desert land
-          which can serve as the resting place for your pet's body. It would be
-          our honor to host formal services for you, or we can respectfully
-          complete the burial in your absence.</span
-        >
-      </div>
-    </div>
   </div>
-</div>
 </Layout>
