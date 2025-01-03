@@ -1,120 +1,134 @@
----
-import {
-  Astronav,
-  MenuItems,
-  MenuIcon,
-  Dropdown,
-  DropdownItems,
-  StickyHeader,
-} from "astro-navbar";
----
-
-<StickyHeader
-  class="sticky top-0 z-20 px-5 transition-all md:px-40 lg:flex lg:justify-between"
-  scrollY={50}
-  defaultClass="py-4 border-transparent bg-tan"
-  activeClass="py-2 bg-white/10 backdrop-blur-lg"
->
-  <Astronav closeOnClick>
-    <div class="flex w-full justify-between lg:w-auto">
-      <a class="font-serif text-2xl tracking-wide" href="/">precious creature</a
+<nav class="bg-tan relative z-10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <!-- Logo -->
+      <a href="/" class="font-serif text-2xl tracking-wide">precious creature</a>
+      <!-- Mobile menu button -->
+      <button
+        id="menu-toggle"
+        class="md:hidden hover:gray-300 focus:outline-none"
       >
-      <div class="block lg:hidden">
-        <MenuIcon class="h-4 w-4 text-gray-800" />
+        <svg
+          class="h-6 w-6"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          />
+        </svg>
+      </button>
+      <!-- Desktop menu -->
+      <div class="hidden md:flex space-x-6">
+        <div class="relative group">
+          <button class="nav-link flex items-center">
+            Preservation
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4 ml-1 text-gray-500 group-hover:text-gray-700 transition-colors duration-200"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+          <div
+            class="dropdown-menu opacity-0 invisible group-hover:opacity-100 group-hover:visible bg-tan text-sm mt-1 rounded-md shadow-lg flex-col transition-all duration-300 delay-100"
+          >
+            <a href="/preservation" class="dropdown-item">Overview</a>
+            <a href="/fur" class="dropdown-item">Coat</a>
+            <a href="/casts" class="dropdown-item">Casts</a>
+            <a href="/bones" class="dropdown-item">Skeleton</a>
+            <a href="/full" class="dropdown-item">Taxidermy</a>
+          </div>
+        </div>
+        <a href="/cremation" class="nav-link">Cremation</a>
+        <div class="relative group">
+          <button class="nav-link flex items-center">
+            Learn
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4 ml-1 text-gray-500 group-hover:text-gray-700 transition-colors duration-200"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+          <div
+            class="dropdown-menu opacity-0 invisible group-hover:opacity-100 group-hover:visible bg-tan text-sm mt-1 rounded-md shadow-lg flex-col transition-all duration-300 delay-100"
+          >
+            <a href="/about" class="dropdown-item">About</a>
+            <a href="/grief" class="dropdown-item">Grief</a>
+            <a href="/faq" class="dropdown-item">FAQ</a>
+          </div>
+        </div>
+        <a href="/contact" class="nav-link">Contact</a>
+        <a href="https://family.preciouscreature.com/" class="nav-link">Login</a>
       </div>
     </div>
-    <MenuItems class="hidden lg:flex">
-      <ul class="flex flex-col lg:flex-row lg:gap-5">
-        <li>
-          <Dropdown class="group">
-            <button class="flex items-center">
-              <span> Preservation</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="3"
-                stroke="currentColor"
-                class="mt-0.5 h-3 w-3 group-open:rotate-180"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
-              </svg>
-            </button>
-            <DropdownItems class="relative">
-              <div
-                class="top-2 w-40 rounded border bg-tan-light p-2 shadow lg:absolute"
-              >
-                <ul>
-                  <li>
-                    <a href="/preservation">Overview</a>
-                  </li>
-                  <li>
-                    <a href="/fur">Coat</a>
-                  </li>
-                  <li>
-                    <a href="/casts">Casts</a>
-                  </li>
-                  <li>
-                    <a href="/bones">Skeleton</a>
-                  </li>
-                  <li>
-                    <a href="/full">Taxidermy</a>
-                  </li>
-                </ul>
-              </div>
-            </DropdownItems>
-          </Dropdown>
-        </li>
-        <li>
-          <a href="/cremation">Cremation</a>
-        </li>
-        <li>
-          <Dropdown class="group">
-            <button class="flex items-center">
-              <span> Learn</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="3"
-                stroke="currentColor"
-                class="mt-0.5 h-3 w-3 group-open:rotate-180"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
-              </svg>
-            </button>
-            <DropdownItems class="relative">
-              <div
-                class="top-2 w-40 rounded border bg-tan-light p-2 lg:absolute"
-              >
-                <ul>
-                  <li>
-                    <a href="/about">About</a>
-                  </li>
-                  <li>
-                    <a href="/grief">Grief</a>
-                  </li>
-                  <li>
-                    <a href="/faq">FAQ</a>
-                  </li>
-                </ul>
-              </div>
-            </DropdownItems>
-          </Dropdown>
-          <li>
-            <a href="/contact">Contact</a>
-          </li>
-          <li>
-            <a href="https://family.preciouscreature.com/">Login</a>
-          </li>
-        </li>
-      </ul>
-    </MenuItems>
-  </Astronav>
-</StickyHeader>
+  </div>
+
+  <div id="mobile-menu" class="hidden md:hidden grid-cols-2 gap-4 py-2 px-4">
+    <!-- Column 1: Preservation and Cremation -->
+    <div>
+      <div>
+        <button class="w-full text-left font-semibold">Preservation</button>
+        <div class="pl-4 flex flex-col space-y-0.5">
+          <a href="/preservation" class="block">Overview</a>
+          <a href="/fur" class="block">Coat</a>
+          <a href="/casts" class="block">Casts</a>
+          <a href="/bones" class="block">Skeleton</a>
+          <a href="/fur" class="block">Taxidermy</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Column 2: Learn, Contact, and Login -->
+    <div>
+      <div>
+        <button class="w-full text-left font-semibold">Learn</button>
+        <div class="pl-4 flex flex-col space-y-0.5">
+          <a href="/about" class="block">About</a>
+          <a href="/grief" class="block">Grief</a>
+          <a href="/faq" class="block">FAQ</a>
+        </div>
+      </div>
+      <a href="/cremation" class="block font-semibold mt-2">Cremation</a>
+      <a href="/contact" class="block font-semibold mt-2">Contact</a>
+      <a href="https://family.preciouscreature.com/" class="block font-semibold mt-2">Login</a>
+    </div>
+  </div>
+</nav>
+
+<script>
+const menuToggle = document.getElementById('menu-toggle');
+const mobileMenu = document.getElementById('mobile-menu');
+
+menuToggle.addEventListener('click', () => {
+  if (mobileMenu.classList.contains('hidden')) {
+    mobileMenu.classList.remove('hidden');
+    mobileMenu.classList.add('grid');
+  } else {
+    mobileMenu.classList.remove('grid');
+    mobileMenu.classList.add('hidden');
+  }
+});
+</script>

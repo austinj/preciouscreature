@@ -48,7 +48,7 @@ const optimizedImages = await Promise.all(
   title="Bone preservation for pet preservation and pet taxidermy"
   description="Precious Creature offers a range of services including casts from your loved one's body, fur preservation, bone and skull preservation, and full pet taxidermy."
 >
-  <div class="px-5 pt-5 md:px-40 md:pt-14 lg:flex lg:flex-col">
+  <div class="px-5 pt-5 md:px-20 md:pt-14 lg:flex lg:flex-col">
     <div class="font-display text-4xl font-bold lg:text-6xl">Skeleton</div>
     <div class="flex w-[200px] pt-2 md:w-[500px]">
       <LineFancy />
@@ -66,7 +66,7 @@ const optimizedImages = await Promise.all(
     </div>
   </div>
   
-<div id="gallery" class="grid grid-cols-1 justify-items-center gap-y-4 pt-4 sm:grid-cols-3 md:mt-4 md:grid-cols-4 md:gap-x-4 md:px-40">
+<div id="gallery" class="grid grid-cols-1 justify-items-center gap-y-4 pt-4 sm:grid-cols-3 md:mt-4 md:grid-cols-4 md:gap-x-4 md:px-20">
   {optimizedImages.map((image) => (
     <a
       href={image.optimized.src}
