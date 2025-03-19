@@ -14,21 +14,23 @@
     "@astrojs/netlify": "^6.2.3",
     "@astrojs/partytown": "^2.1.4",
     "@astrojs/sitemap": "^3.3.0",
-    "@astrojs/tailwind": "^6.0.0",
+    "@tailwindcss/vite": "^4.0.14",
     "astro": "^5.5.3",
     "astro-navbar": "^2.3.9",
     "photoswipe": "^5.4.4",
-    "photoswipe-dynamic-caption-plugin": "^1.2.7",
-    "tailwindcss": "^3.4.16"
+    "photoswipe-dynamic-caption-plugin": "^1.2.7"
   },
   "devDependencies": {
     "@egoist/tailwindcss-icons": "^1.8.2",
     "@iconify/json": "^2.2.284",
     "@tailwindcss/forms": "^0.5.9",
     "@types/photoswipe": "^4.1.6",
-    "daisyui": "^4.12.22",
+    "autoprefixer": "^10.4.21",
+    "daisyui": "^5.0.6",
+    "postcss": "^8.5.3",
     "prettier": "^3.4.2",
     "prettier-plugin-astro": "^0.14.1",
-    "prettier-plugin-tailwindcss": "^0.6.9"
+    "prettier-plugin-tailwindcss": "^0.6.9",
+    "tailwindcss": "^4.0.14"
   }
 }
