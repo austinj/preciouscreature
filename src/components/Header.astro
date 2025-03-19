@@ -4,23 +4,9 @@
       <!-- Logo -->
       <a href="/" class="font-serif text-2xl tracking-wide">precious creature</a>
       <!-- Mobile menu button -->
-      <button
-        id="menu-toggle"
-        class="md:hidden hover:gray-300 focus:outline-none"
-      >
-        <svg
-          class="h-6 w-6"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 6h16M4 12h16m-7 6h7"
-          />
+      <button id="menu-toggle" class="md:hidden hover:gray-300 focus:outline-none">
+        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
         </svg>
       </button>
       <!-- Desktop menu -->
@@ -28,24 +14,11 @@
         <div class="relative group">
           <button class="nav-link flex items-center">
             Preservation
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-4 w-4 ml-1 text-gray-500 group-hover:text-gray-700 transition-colors duration-200"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 9l-7 7-7-7"
-              />
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1 text-gray-500 group-hover:text-gray-700 transition-colors duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
             </svg>
           </button>
-          <div
-            class="dropdown-menu opacity-0 invisible group-hover:opacity-100 group-hover:visible bg-tan text-sm mt-1 rounded-md shadow-lg flex-col transition-all duration-300 delay-100"
-          >
+          <div class="dropdown-menu opacity-0 invisible group-hover:opacity-100 group-hover:visible bg-tan text-sm mt-1 rounded-md shadow-lg flex-col transition-all duration-300 delay-100">
             <a href="/preservation" class="dropdown-item">Overview</a>
             <a href="/fur" class="dropdown-item">Coat</a>
             <a href="/casts" class="dropdown-item">Casts</a>
@@ -57,24 +30,11 @@
         <div class="relative group">
           <button class="nav-link flex items-center">
             Learn
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-4 w-4 ml-1 text-gray-500 group-hover:text-gray-700 transition-colors duration-200"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 9l-7 7-7-7"
-              />
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1 text-gray-500 group-hover:text-gray-700 transition-colors duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
             </svg>
           </button>
-          <div
-            class="dropdown-menu opacity-0 invisible group-hover:opacity-100 group-hover:visible bg-tan text-sm mt-1 rounded-md shadow-lg flex-col transition-all duration-300 delay-100"
-          >
+          <div class="dropdown-menu opacity-0 invisible group-hover:opacity-100 group-hover:visible bg-tan text-sm mt-1 rounded-md shadow-lg flex-col transition-all duration-300 delay-100">
             <a href="/about" class="dropdown-item">About</a>
             <a href="/grief" class="dropdown-item">Grief</a>
             <a href="/faq" class="dropdown-item">FAQ</a>
@@ -86,7 +46,7 @@
     </div>
   </div>
 
-  <div id="mobile-menu" class="hidden md:hidden grid-cols-2 gap-4 py-2 px-4">
+  <div id="mobile-menu" class="hidden md:hidden flex-col gap-4 py-2 px-4">
     <!-- Column 1: Preservation and Cremation -->
     <div>
       <div>
@@ -119,16 +79,21 @@
 </nav>
 
 <script>
-const menuToggle = document.getElementById('menu-toggle');
-const mobileMenu = document.getElementById('mobile-menu');
-
-menuToggle.addEventListener('click', () => {
-  if (mobileMenu.classList.contains('hidden')) {
-    mobileMenu.classList.remove('hidden');
-    mobileMenu.classList.add('grid');
-  } else {
-    mobileMenu.classList.remove('grid');
-    mobileMenu.classList.add('hidden');
+  function setupMobileMenu() {
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+  
+    if (!menuToggle || !mobileMenu) return;
+  
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
   }
-});
-</script>
+  
+  // Run on initial load
+  setupMobileMenu();
+  
+  // Ensure it runs after navigation in Astro's SPA mode
+  document.addEventListener('astro:after-swap', setupMobileMenu);
+  </script>
+  
