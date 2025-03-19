@@ -4,117 +4,44 @@ import LineFancy from "../components/LineFancy.astro";
 
 import { Image, getImage } from "astro:assets";
 
-import imageAkita from "/src/images/coat/coat_akita.jpg";
-const optimizedImageAkita = await getImage({
-  src: imageAkita,
-  width: 500,
-  quality: "max",
-});
+// Define an array of image objects
+const images = [
+  { src: import("/src/images/coat/coat_akita.jpg"), alt: "Coat preservation of the face and ears of an Akita" },
+  { src: import("/src/images/coat/coat_ballneedles.jpg"), alt: "Three needle felted fur spheres with a Whippet and a Himalayan cat" },
+  { src: import("/src/images/coat/coat_ballornament.jpg"), alt: "Coat preservation sphere with a Pomeranian" },
+  { src: import("/src/images/coat/coat_heart.jpg"), alt: "Heart-shaped coat preservation of chest area with Bully" },
+  { src: import("/src/images/coat/coat_blackpoof.jpg"), alt: "Skinless coat preservation with a Shih Tzu" },
+  { src: import("/src/images/coat/coat_drape.jpg"), alt: "Full body coat preservation with a Bulldog (bear rug style)" },
+  { src: import("/src/images/coat/coat_orangeinframe.jpg"), alt: "Framed long-haired coat preservation" },
+  { src: import("/src/images/coat/coat_tinycat.jpg"), alt: "Tiny coat preservation with cat" },
+  { src: import("/src/images/coat/coat_tinyball.jpg"), alt: "Skinless coat preservation with Tabby cat" },
+  { src: import("/src/images/coat/coat_feathersvialsbox.jpg"), alt: "Feather collection in glass vials" },
+  { src: import("/src/images/coat/coat_fullcatskullincase2.jpg"), alt: "Full body coat preservation and skull cleaning in glass casket box with cat" },
+  { src: import("/src/images/coat/coat_heartblack.jpg"), alt: "Heart-shaped coat preservation with Rottweiler" },
+  { src: import("/src/images/coat/coat_heartbrownwhite.jpg"), alt: "Mini heart-shaped coat preservation for Chihuahua" },
+  { src: import("/src/images/coat/coat_vialsmusicbonestable.jpg"), alt: "Hair and whisker collection with dog, with septum bone" },
+  { src: import("/src/images/coat/coat_ballsorangeblack.jpg"), alt: "Four coat preservation spheres with a Siamese cat" },
+];
 
-import imageBallNeedles from "/src/images/coat/coat_ballneedles.jpg";
-const optimizedImageBallNeedles = await getImage({
-  src: imageBallNeedles,
-  width: 500,
-  quality: "max",
-});
-
-import imageBallOrnament from "/src/images/coat/coat_ballornament.jpg";
-const optimizedImageBallOrnament = await getImage({
-  src: imageBallOrnament,
-  width: 500,
-  quality: "max",
-});
-
-import imageHeart from "/src/images/coat/coat_heart.jpg";
-const optimizedImageHeart = await getImage({
-  src: imageHeart,
-  width: 500,
-  quality: "max",
-});
-
-import imageBlackPoof from "/src/images/coat/coat_blackpoof.jpg";
-const optimizedImageBlackPoof = await getImage({
-  src: imageBlackPoof,
-  width: 500,
-  quality: "max",
-});
-
-import imageDrape from "/src/images/coat/coat_drape.jpg";
-const optimizedImageDrape = await getImage({
-  src: imageDrape,
-  width: 500,
-  quality: "max",
-});
-
-import imageOrangeInFrame from "/src/images/coat/coat_orangeinframe.jpg";
-const optimizedImageOrangeInFrame = await getImage({
-  src: imageOrangeInFrame,
-  width: 500,
-  quality: "max",
-});
-
-import imageTinyCat from "/src/images/coat/coat_tinycat.jpg";
-const optimizedImageTinyCat = await getImage({
-  src: imageTinyCat,
-  width: 500,
-  quality: "max",
-});
-
-import imageTinyBall from "/src/images/coat/coat_tinyball.jpg";
-const optimizedImageTinyBall = await getImage({
-  src: imageTinyBall,
-  width: 500,
-  quality: "max",
-});
-
-import imageFeathersVialsBox from "/src/images/coat/coat_feathersvialsbox.jpg";
-const optimizedImageFeathersVialsBox = await getImage({
-  src: imageFeathersVialsBox,
-  width: 500,
-  quality: "max",
-});
-
-import imageFullCatSkull from "/src/images/coat/coat_fullcatskullincase2.jpg";
-const optimizedImageFullCatSkull = await getImage({
-  src: imageFullCatSkull,
-  width: 500,
-  quality: "max",
-});
-
-import imageHeartBlack from "/src/images/coat/coat_heartblack.jpg";
-const optimizedImageHeartBlack = await getImage({
-  src: imageHeartBlack,
-  width: 500,
-  quality: "max",
-});
-
-import imageHeartBrownWhite from "/src/images/coat/coat_heartbrownwhite.jpg";
-const optimizedImageHeartBrownWhite = await getImage({
-  src: imageHeartBrownWhite,
-  width: 500,
-  quality: "max",
-});
-
-import imageVialsMusicBonesTable from "/src/images/coat/coat_vialsmusicbonestable.jpg";
-const optimizedImageVialsMusicBonesTable = await getImage({
-  src: imageVialsMusicBonesTable,
-  width: 500,
-  quality: "max",
-});
-
-import imageBallsOrangeBlack from "/src/images/coat/coat_ballsorangeblack.jpg";
-const optimizedImageBallsOrangeBlack = await getImage({
-  src: imageBallsOrangeBlack,
-  width: 500,
-  quality: "max",
-});
+// Resolve image imports and optimize images
+const optimizedImages = await Promise.all(
+  images.map(async (image) => {
+    const importedImage = await image.src;
+    const optimized = await getImage({
+      src: importedImage.default,
+      width: 500,
+      quality: "max",
+    });
+    return { ...image, src: importedImage.default, optimized };
+  })
+);
 ---
 
 <Layout
   title="Fur for pet preservation and pet taxidermy"
   description="Precious Creature offers a range of services including casts from your loved one's body, fur preservation, bone and skull preservation, and full pet taxidermy."
 >
-  <div class="px-5 pt-5 md:flex md:flex-col md:px-40 md:pt-14">
+  <div class="px-5 pt-5 md:flex md:flex-col md:px-20 md:pt-14">
     <div class="font-display text-4xl font-bold md:text-6xl">Coat</div>
     <div class="flex w-[200px] pt-2 md:w-[500px]">
       <LineFancy />
@@ -133,217 +60,18 @@ const optimizedImageBallsOrangeBlack = await getImage({
 
   <div
     id="gallery"
-    class="grid grid-cols-1 justify-items-center gap-y-4 px-5 pt-4 sm:grid-cols-3 md:mt-4 md:grid-cols-4 md:gap-x-4 md:px-40"
+    class="grid grid-cols-1 justify-items-center gap-y-4 px-5 pt-4 sm:grid-cols-3 md:mt-4 md:grid-cols-4 md:gap-x-4 md:px-20"
   >
-    <a
-      href={optimizedImageAkita.src}
-      data-pswp-width={optimizedImageAkita.attributes.width}
-      data-pswp-height={optimizedImageAkita.attributes.height}
-      target="_blank"
-    >
-      <Image
-        src={imageAkita}
-        alt="Coat preservation of the face and ears of an Akita"
-        height={350}
-        quality="max"
-      />
-    </a>
-
-    <a
-      href={optimizedImageBallNeedles.src}
-      data-pswp-width={optimizedImageBallNeedles.attributes.width}
-      data-pswp-height={optimizedImageBallNeedles.attributes.height}
-      target="_blank"
-    >
-      <Image
-        src={imageBallNeedles}
-        alt="Three needle felted fur spheres with a Whippet and a Himalayan cat"
-        height={350}
-        quality="max"
-      />
-    </a>
-
-    <a
-      href={optimizedImageBallOrnament.src}
-      data-pswp-width={optimizedImageBallOrnament.attributes.width}
-      data-pswp-height={optimizedImageBallOrnament.attributes.height}
-      target="_blank"
-    >
-      <Image
-        src={imageBallOrnament}
-        alt="Coat preservation sphere with a Pomeranian"
-        height={350}
-        quality="max"
-      />
-    </a>
-
-    <a
-      href={optimizedImageHeart.src}
-      data-pswp-width={optimizedImageHeart.attributes.width}
-      data-pswp-height={optimizedImageHeart.attributes.height}
-      target="_blank"
-    >
-      <Image
-        src={imageHeart}
-        alt="Heart-shaped coat preservation of chest area with Bully"
-        height={350}
-        quality="max"
-      />
-    </a>
-
-    <a
-      href={optimizedImageBlackPoof.src}
-      data-pswp-width={optimizedImageBlackPoof.attributes.width}
-      data-pswp-height={optimizedImageBlackPoof.attributes.height}
-      target="_blank"
-    >
-      <Image
-        src={imageBlackPoof}
-        alt="Skinless coat preservation with a Shih Tzu"
-        height={350}
-        quality="max"
-      />
-    </a>
-
-    <a
-      href={optimizedImageDrape.src}
-      data-pswp-width={optimizedImageDrape.attributes.width}
-      data-pswp-height={optimizedImageDrape.attributes.height}
-      target="_blank"
-    >
-      <Image
-        src={imageDrape}
-        alt="Full body coat preservation with a Bulldog (bear rug style)"
-        height={350}
-        quality="max"
-      />
-    </a>
-
-    <a
-      href={optimizedImageOrangeInFrame.src}
-      data-pswp-width={optimizedImageOrangeInFrame.attributes.width}
-      data-pswp-height={optimizedImageOrangeInFrame.attributes.height}
-      target="_blank"
-    >
-      <Image
-        src={imageOrangeInFrame}
-        alt="Framed long-haired coat preservation"
-        height={350}
-        quality="max"
-      />
-    </a>
-
-    <a
-      href={optimizedImageTinyCat.src}
-      data-pswp-width={optimizedImageTinyCat.attributes.width}
-      data-pswp-height={optimizedImageTinyCat.attributes.height}
-      target="_blank"
-    >
-      <Image
-        src={imageTinyCat}
-        alt="Tiny coat preservation with cat"
-        height={350}
-        quality="max"
-      />
-    </a>
-
-    <a
-      href={optimizedImageTinyBall.src}
-      data-pswp-width={optimizedImageTinyBall.attributes.width}
-      data-pswp-height={optimizedImageTinyBall.attributes.height}
-      target="_blank"
-    >
-      <Image
-        src={imageTinyBall}
-        alt="Skinless coat preservation with Tabby cat"
-        height={350}
-        quality="max"
-      />
-    </a>
-
-    <a
-      href={optimizedImageFeathersVialsBox.src}
-      data-pswp-width={optimizedImageFeathersVialsBox.attributes.width}
-      data-pswp-height={optimizedImageFeathersVialsBox.attributes.height}
-      target="_blank"
-    >
-      <Image
-        src={imageFeathersVialsBox}
-        alt="Feather collection in glass vials"
-        height={350}
-        quality="max"
-      />
-    </a>
-
-    <a
-      href={optimizedImageFullCatSkull.src}
-      data-pswp-width={optimizedImageFullCatSkull.attributes.width}
-      data-pswp-height={optimizedImageFullCatSkull.attributes.height}
-      target="_blank"
-    >
-      <Image
-        src={imageFullCatSkull}
-        alt="Full body coat preservation and skull cleaning in glass casket box with cat"
-        height={350}
-        quality="max"
-      />
-    </a>
-
-    <a
-      href={optimizedImageHeartBlack.src}
-      data-pswp-width={optimizedImageHeartBlack.attributes.width}
-      data-pswp-height={optimizedImageHeartBlack.attributes.height}
-      target="_blank"
-    >
-      <Image
-        src={imageHeartBlack}
-        alt="Heart-shaped coat preservation with Rottweiler"
-        height={350}
-        quality="max"
-      />
-    </a>
-
-    <a
-      href={optimizedImageHeartBrownWhite.src}
-      data-pswp-width={optimizedImageHeartBrownWhite.attributes.width}
-      data-pswp-height={optimizedImageHeartBrownWhite.attributes.height}
-      target="_blank"
-    >
-      <Image
-        src={imageHeartBrownWhite}
-        alt="Mini heart-shaped coat preservation for Chihuahua"
-        height={350}
-        quality="max"
-      />
-    </a>
-
-    <a
-      href={optimizedImageVialsMusicBonesTable.src}
-      data-pswp-width={optimizedImageVialsMusicBonesTable.attributes.width}
-      data-pswp-height={optimizedImageVialsMusicBonesTable.attributes.height}
-      target="_blank"
-    >
-      <Image
-        src={imageVialsMusicBonesTable}
-        alt="Hair and whisker collection with dog, with septum bone"
-        height={350}
-        quality="max"
-      />
-    </a>
-
-    <a
-      href={optimizedImageBallsOrangeBlack.src}
-      data-pswp-width={optimizedImageBallsOrangeBlack.attributes.width}
-      data-pswp-height={optimizedImageBallsOrangeBlack.attributes.height}
-      target="_blank"
-    >
-      <Image
-        src={imageBallsOrangeBlack}
-        alt="Four coat preservation spheres with a Siamese cat"
-        height={350}
-        quality="max"
-      />
-    </a>
+    {optimizedImages.map((image) => (
+      <a
+        href={image.optimized.src}
+        data-pswp-width={image.optimized.attributes.width}
+        data-pswp-height={image.optimized.attributes.height}
+        target="_blank"
+      >
+        <Image src={image.src} alt={image.alt} height={350} quality="max" />
+      </a>
+    ))}
   </div>
 
   <script>

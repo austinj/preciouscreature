@@ -4,103 +4,42 @@ import LineFancy from "../components/LineFancy.astro";
 
 import { Image, getImage } from "astro:assets";
 
-import imageCompleteDog from "/src/images/casts/casts_completedog.jpg";
-const optimizedImageCompleteDog = await getImage({
-  src: imageCompleteDog,
-  width: 500,
-  quality: "max",
-});
+// Define an array of image objects
+const images = [
+  { src: import("/src/images/casts/casts_completedog.jpg"), alt: "Full body cast of Chihuahua on sculptural base" },
+  { src: import("/src/images/casts/casts_facecat.jpg"), alt: "Face cast with Sphinx cat" },
+  { src: import("/src/images/casts/casts_pawsdogwhippetyellow.jpg"), alt: "Paw casts with Whippet" },
+  { src: import("/src/images/casts/casts_nosesthree.jpg"), alt: "Three dog nose casts" },
+  { src: import("/src/images/casts/casts_pawcathand.jpg"), alt: "Sphinx cat paw cast" },
+  { src: import("/src/images/casts/casts_pawdogblackstand.jpg"), alt: "Paw cast with Great Dane on black stand" },
+  { src: import("/src/images/casts/casts_pawdogwhitedown.jpg"), alt: "Two paw casts with hairless dog, facing down" },
+  { src: import("/src/images/casts/casts_pawprintpallete.jpg"), alt: "Paw imprint in clay keepsake" },
+  { src: import("/src/images/casts/casts_pawsnosemarble.jpg"), alt: "3D paw print and nose cast with dog" },
+  { src: import("/src/images/casts/casts_pawwhitedoghand.jpg"), alt: "Paw cast with hairless dog" },
+  { src: import("/src/images/casts/casts_pawdogblack.jpg"), alt: "Paw cast with Great Dane" },
+  { src: import("/src/images/casts/casts_iguana.jpg"), alt: "Cast of iguana foot" },
+  { src: import("/src/images/casts/casts_pawwhitedogup.jpg"), alt: "Two paw casts with hairless dog, highlighting toe beans" },
+];
 
-import imageFaceCat from "/src/images/casts/casts_facecat.jpg";
-const optimizedImageFaceCat = await getImage({
-  src: imageFaceCat,
-  width: 500,
-  quality: "max",
-});
-
-import imagePawsDogWhippetYellow from "/src/images/casts/casts_pawsdogwhippetyellow.jpg";
-const optimizedImagePawsDogWhippetYellow = await getImage({
-  src: imagePawsDogWhippetYellow,
-  width: 500,
-  quality: "max",
-});
-
-import imageNosesThree from "/src/images/casts/casts_nosesthree.jpg";
-const optimizedImageNosesThree = await getImage({
-  src: imageNosesThree,
-  width: 500,
-  quality: "max",
-});
-
-import imagePawCatHand from "/src/images/casts/casts_pawcathand.jpg";
-const optimizedImagePawCatHand = await getImage({
-  src: imagePawCatHand,
-  width: 500,
-  quality: "max",
-});
-
-import imagePawDogBlackStand from "/src/images/casts/casts_pawdogblackstand.jpg";
-const optimizedImagePawDogBlackStand = await getImage({
-  src: imagePawDogBlackStand,
-  width: 500,
-  quality: "max",
-});
-
-import imagePawDogWhiteDown from "/src/images/casts/casts_pawdogwhitedown.jpg";
-const optimizedImagePawDogWhiteDown = await getImage({
-  src: imagePawDogWhiteDown,
-  width: 500,
-  quality: "max",
-});
-
-import imagePawPrintPallete from "/src/images/casts/casts_pawprintpallete.jpg";
-const optimizedImagePawPrintPallete = await getImage({
-  src: imagePawPrintPallete,
-  width: 500,
-  quality: "max",
-});
-
-import imagePawsNoseMarble from "/src/images/casts/casts_pawsnosemarble.jpg";
-const optimizedImagePawsNoseMarble = await getImage({
-  src: imagePawsNoseMarble,
-  width: 500,
-  quality: "max",
-});
-
-import imagePawWhiteDogHand from "/src/images/casts/casts_pawwhitedoghand.jpg";
-const optimizedImagePawWhiteDogHand = await getImage({
-  src: imagePawWhiteDogHand,
-  width: 500,
-  quality: "max",
-});
-
-import imagePawDogBlack from "/src/images/casts/casts_pawdogblack.jpg";
-const optimizedImagePawDogBlack = await getImage({
-  src: imagePawDogBlack,
-  width: 500,
-  quality: "max",
-});
-
-import imageIguana from "/src/images/casts/casts_iguana.jpg";
-const optimizedImageIguana = await getImage({
-  src: imageIguana,
-  width: 500,
-  quality: "max",
-});
-
-import imagePawWhiteDogUp from "/src/images/casts/casts_pawwhitedogup.jpg";
-const optimizedImagePawWhiteDogUp = await getImage({
-  src: imagePawWhiteDogUp,
-  width: 500,
-  quality: "max",
-});
+// Resolve image imports and optimize images
+const optimizedImages = await Promise.all(
+  images.map(async (image) => {
+    const importedImage = await image.src;
+    const optimized = await getImage({
+      src: importedImage.default,
+      width: 500,
+      quality: "max",
+    });
+    return { ...image, src: importedImage.default, optimized };
+  })
+);
 ---
 
 <Layout
   title="Casts for pet preservation and pet taxidermy"
   description="Precious Creature offers a range of services including casts from your loved one's body, fur preservation, bone and skull preservation, and full pet taxidermy."
 >
-  <div class="px-5 pt-5 md:flex md:flex-col md:px-40 md:pt-14">
+  <div class="px-5 pt-5 md:flex md:flex-col md:px-20 md:pt-14">
     <div class="font-display text-4xl font-bold md:text-6xl">Casts</div>
     <div class="flex w-[200px] pt-2 md:w-[500px]">
       <LineFancy />
@@ -119,189 +58,18 @@ const optimizedImagePawWhiteDogUp = await getImage({
 
   <div
     id="gallery"
-    class="grid grid-cols-1 justify-items-center gap-y-4 pt-4 sm:grid-cols-3 md:mt-4 md:grid-cols-4 md:gap-x-4 md:px-40"
+    class="grid grid-cols-1 justify-items-center gap-y-4 pt-4 sm:grid-cols-3 md:mt-4 md:grid-cols-4 md:gap-x-4 md:px-20"
   >
-    <a
-      href={optimizedImageCompleteDog.src}
-      data-pswp-width={optimizedImageCompleteDog.attributes.width}
-      data-pswp-height={optimizedImageCompleteDog.attributes.height}
-      target="_blank"
-    >
-      <Image
-        src={imageCompleteDog}
-        alt={"Full body cast of Chihuahua on sculptural base"}
-        height={350}
-        quality="max"
-      />
-    </a>
-
-    <a
-      href={optimizedImageFaceCat.src}
-      data-pswp-width={optimizedImageFaceCat.attributes.width}
-      data-pswp-height={optimizedImageFaceCat.attributes.height}
-      target="_blank"
-    >
-      <Image
-        src={imageFaceCat}
-        alt={"Face cast with Sphinx cat"}
-        height={350}
-        quality="max"
-      />
-    </a>
-
-    <a
-      href={optimizedImagePawsDogWhippetYellow.src}
-      data-pswp-width={optimizedImagePawsDogWhippetYellow.attributes.width}
-      data-pswp-height={optimizedImagePawsDogWhippetYellow.attributes.height}
-      target="_blank"
-    >
-      <Image
-        src={imagePawsDogWhippetYellow}
-        alt={"Paw casts with Whippet"}
-        height={350}
-        quality="max"
-      />
-    </a>
-
-    <a
-      href={optimizedImageNosesThree.src}
-      data-pswp-width={optimizedImageNosesThree.attributes.width}
-      data-pswp-height={optimizedImageNosesThree.attributes.height}
-      target="_blank"
-    >
-      <Image
-        src={imageNosesThree}
-        alt={"Three dog nose casts"}
-        height={350}
-        quality="max"
-      />
-    </a>
-
-    <a
-      href={optimizedImagePawCatHand.src}
-      data-pswp-width={optimizedImagePawCatHand.attributes.width}
-      data-pswp-height={optimizedImagePawCatHand.attributes.height}
-      target="_blank"
-    >
-      <Image
-        src={imagePawCatHand}
-        alt={"Sphinx cat paw cast"}
-        height={350}
-        quality="max"
-      />
-    </a>
-
-    <a
-      href={optimizedImagePawDogBlackStand.src}
-      data-pswp-width={optimizedImagePawDogBlackStand.attributes.width}
-      data-pswp-height={optimizedImagePawDogBlackStand.attributes.height}
-      target="_blank"
-    >
-      <Image
-        src={imagePawDogBlackStand}
-        alt={"Paw cast with Great Dane on black stand"}
-        height={350}
-        quality="max"
-      />
-    </a>
-
-    <a
-      href={optimizedImagePawDogWhiteDown.src}
-      data-pswp-width={optimizedImagePawDogWhiteDown.attributes.width}
-      data-pswp-height={optimizedImagePawDogWhiteDown.attributes.height}
-      target="_blank"
-    >
-      <Image
-        src={imagePawDogWhiteDown}
-        alt={"Two paw casts with hairless dog, facing down"}
-        height={350}
-        quality="max"
-      />
-    </a>
-
-    <a
-      href={optimizedImagePawPrintPallete.src}
-      data-pswp-width={optimizedImagePawPrintPallete.attributes.width}
-      data-pswp-height={optimizedImagePawPrintPallete.attributes.height}
-      target="_blank"
-    >
-      <Image
-        src={imagePawPrintPallete}
-        alt={"Paw imprint in clay keepsake"}
-        height={350}
-        quality="max"
-      />
-    </a>
-
-    <a
-      href={optimizedImagePawsNoseMarble.src}
-      data-pswp-width={optimizedImagePawsNoseMarble.attributes.width}
-      data-pswp-height={optimizedImagePawsNoseMarble.attributes.height}
-      target="_blank"
-    >
-      <Image
-        src={imagePawsNoseMarble}
-        alt={"3D paw print and nose cast with dog"}
-        height={350}
-        quality="max"
-      />
-    </a>
-
-    <a
-      href={optimizedImagePawWhiteDogHand.src}
-      data-pswp-width={optimizedImagePawWhiteDogHand.attributes.width}
-      data-pswp-height={optimizedImagePawWhiteDogHand.attributes.height}
-      target="_blank"
-    >
-      <Image
-        src={imagePawWhiteDogHand}
-        alt={"Paw cast with hairless dog"}
-        height={350}
-        quality="max"
-      />
-    </a>
-
-    <a
-      href={optimizedImagePawDogBlack.src}
-      data-pswp-width={optimizedImagePawDogBlack.attributes.width}
-      data-pswp-height={optimizedImagePawDogBlack.attributes.height}
-      target="_blank"
-    >
-      <Image
-        src={imagePawDogBlack}
-        alt={"Paw cast with Great Dane"}
-        height={350}
-        quality="max"
-      />
-    </a>
-
-    <a
-      href={optimizedImageIguana.src}
-      data-pswp-width={optimizedImageIguana.attributes.width}
-      data-pswp-height={optimizedImageIguana.attributes.height}
-      target="_blank"
-    >
-      <Image
-        src={imageIguana}
-        alt={"Cast of iguana foot"}
-        height={350}
-        quality="max"
-      />
-    </a>
-
-    <a
-      href={optimizedImagePawWhiteDogUp.src}
-      data-pswp-width={optimizedImagePawWhiteDogUp.attributes.width}
-      data-pswp-height={optimizedImagePawWhiteDogUp.attributes.height}
-      target="_blank"
-    >
-      <Image
-        src={imagePawWhiteDogUp}
-        alt={"Two paw casts with hairless dog, highlighting toe beans"}
-        height={350}
-        quality="max"
-      />
-    </a>
+    {optimizedImages.map((image) => (
+      <a
+        href={image.optimized.src}
+        data-pswp-width={image.optimized.attributes.width}
+        data-pswp-height={image.optimized.attributes.height}
+        target="_blank"
+      >
+        <Image src={image.src} alt={image.alt} height={350} quality="max" />
+      </a>
+    ))}
   </div>
 
   <script>

@@ -14,19 +14,6 @@ export default {
         doglady: "url('../images/doglady.webp')",
       },
     },
-    screens: {
-      sm: "640px",
-      // => @media (min-width: 640px) { ... }
-
-      md: "1200px",
-      // => @media (min-width: 768px) { ... }
-
-      lg: "1600px",
-      // => @media (min-width: 1024px) { ... }
-
-      xl: "1800px",
-      // => @media (min-width: 1280px) { ... }
-    },
     colors: {
       transparent: "transparent",
       current: "currentColor",
@@ -39,7 +26,7 @@ export default {
       red: colors.red,
       tan: "#e8e2d1",
       "tan-light": "#f1eee3",
-      "tan-dark": "#565584",
+      "tan-dark": "#d4ccb4",
       peach: "#ffefe6",
     },
     fontFamily: {
