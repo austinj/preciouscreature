@@ -67,7 +67,7 @@ const optimizedImages = await Promise.all(
         data-pswp-height={image.optimized.attributes.height}
         target="_blank"
       >
-        <Image src={image.src} alt={image.alt} height={350} quality="max" />
+        <Image src={image.src} alt={image.alt} quality="max" class="rounded-xl" />
       </a>
     ))}
   </div>
