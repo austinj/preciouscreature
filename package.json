@@ -3,9 +3,10 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
+    "fix-images": "node scripts/fixorientation.js",
+    "dev": "npm run fix-images && astro dev",
+    "start": "npm run fix-images && astro dev",
+    "build": "npm run fix-images && astro build",
     "preview": "astro preview",
     "astro": "astro",
     "format": "npx prettier --write ."
@@ -18,7 +19,8 @@
     "astro": "^5.5.3",
     "astro-navbar": "^2.3.9",
     "photoswipe": "^5.4.4",
-    "photoswipe-dynamic-caption-plugin": "^1.2.7"
+    "photoswipe-dynamic-caption-plugin": "^1.2.7",
+    "sharp": "^0.33.5"
   },
   "devDependencies": {
     "@egoist/tailwindcss-icons": "^1.8.2",
