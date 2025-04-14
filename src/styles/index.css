@@ -12,6 +12,8 @@
     min-height: 100dvh;
     display: flex;
     flex-direction: column;
+    color: #000; /* or any dark color */
+    background-color: #fff; /* just to avoid blend issues */
   }
 
   li.active {
