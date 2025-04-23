@@ -4,13 +4,13 @@
       <!-- Logo -->
       <a href="/" class="font-serif text-2xl tracking-wide">precious creature</a>
       <!-- Mobile menu button -->
-      <button id="menu-toggle" class="md:hidden hover:gray-300 focus:outline-none" aria-label="MenuToggle">
+      <button id="menu-toggle" class="lg:hidden hover:gray-300 focus:outline-none" aria-label="MenuToggle">
         <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
         </svg>
       </button>
       <!-- Desktop menu -->
-      <div class="hidden md:flex space-x-6">
+      <div class="hidden lg:flex space-x-6">
         <div class="relative group">
           <button class="nav-link flex items-center">
             Preservation
@@ -46,39 +46,37 @@
     </div>
   </div>
 
-<!-- Mobile menu -->
-<div id="mobile-menu" class="hidden md:hidden grid grid-cols-2 gap-4 py-2 px-4">
-  <!-- Column 1: Preservation and Cremation -->
-  <div>
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="hidden lg:hidden grid grid-cols-2 gap-4 py-2 px-4">
+    <!-- Column 1: Preservation and Cremation -->
     <div>
-      <button class="w-full text-left font-semibold">Preservation</button>
-      <div class="pl-4 flex flex-col space-y-0.5">
-        <a href="/preservation" class="block">Overview</a>
-        <a href="/fur" class="block">Coat</a>
-        <a href="/casts" class="block">Casts</a>
-        <a href="/bones" class="block">Skeleton</a>
-        <a href="/full" class="block">Taxidermy</a>
+      <div>
+        <button class="w-full text-left font-semibold">Preservation</button>
+        <div class="pl-4 flex flex-col space-y-0.5">
+          <a href="/preservation" class="block">Overview</a>
+          <a href="/fur" class="block">Coat</a>
+          <a href="/casts" class="block">Casts</a>
+          <a href="/bones" class="block">Skeleton</a>
+          <a href="/full" class="block">Taxidermy</a>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Column 2: Learn, Contact, and Login -->
-  <div>
+    <!-- Column 2: Learn, Contact, and Login -->
     <div>
-      <button class="w-full text-left font-semibold">Learn</button>
-      <div class="pl-4 flex flex-col space-y-0.5">
-        <a href="/about" class="block">About</a>
-        <a href="/grief" class="block">Grief</a>
-        <a href="/faq" class="block">FAQ</a>
+      <div>
+        <button class="w-full text-left font-semibold">Learn</button>
+        <div class="pl-4 flex flex-col space-y-0.5">
+          <a href="/about" class="block">About</a>
+          <a href="/grief" class="block">Grief</a>
+          <a href="/faq" class="block">FAQ</a>
+        </div>
       </div>
+      <a href="/cremation" class="block font-semibold mt-2">Cremation</a>
+      <a href="/contact" class="block font-semibold mt-2">Contact</a>
+      <a href="https://family.preciouscreature.com/" class="block font-semibold mt-2">Login</a>
     </div>
-    <a href="/cremation" class="block font-semibold mt-2">Cremation</a>
-    <a href="/contact" class="block font-semibold mt-2">Contact</a>
-    <a href="https://family.preciouscreature.com/" class="block font-semibold mt-2">Login</a>
   </div>
-</div>
-
-
 </nav>
 
 <script>
@@ -98,5 +96,5 @@
   
   // Ensure it runs after navigation in Astro's SPA mode
   document.addEventListener('astro:after-swap', setupMobileMenu);
-  </script>
-  
+</script>
+
